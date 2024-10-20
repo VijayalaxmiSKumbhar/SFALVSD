@@ -16,7 +16,7 @@ $ sudo make install
 ```
 
 
-# verilog
+# Iverilog
 ## Steps to install iverilog
 
 
