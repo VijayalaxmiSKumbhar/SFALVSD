@@ -1,7 +1,7 @@
 # Day 1: Tools Installation
 
 ## Yosys
-///
+```
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
 $ cd yosys
@@ -12,20 +12,20 @@ $ sudo apt-get install build-essential clang bison flex \
     libboost-python-dev libboost-filesystem-dev zlib1g-dev
 $ make config-gcc
 $ make 
-$ sudo make install ///
+$ sudo make install ```
 
 # verilog
 ## Steps to install iverilog
-### 
-sudo apt-get update
-sudo apt-get install iverilog ###
+```
++ sudo apt-get update
++ sudo apt-get install iverilog ```
 
 # gtkwave
 
 ## Steps to install gtkwave
 
-###
-sudo apt-get update
-sudo apt install gtkwave ###
+```
++ sudo apt-get update
++ sudo apt install gtkwave ```
 
 
