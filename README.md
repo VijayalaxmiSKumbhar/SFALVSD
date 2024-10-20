@@ -1,5 +1,7 @@
 # Day 1: Tools Installation
 
+
+***
 ## Yosys
 ```
 $ sudo apt-get update
@@ -17,7 +19,9 @@ $ sudo make install
 
 ![yosys](https://github.com/user-attachments/assets/5d02e3c8-1915-4843-8b31-253f72423556)  
 
+***
 
+---
 
 # Iverilog
 ## Steps to install iverilog
@@ -30,6 +34,11 @@ sudo apt-get install iverilog
 
 ![iverilog](https://github.com/user-attachments/assets/512b794e-c63a-423a-8caa-252b191db63e)
 
+
+---
+
+***
+
 # gtkwave
 
 ## Steps to install gtkwave
@@ -40,5 +49,9 @@ sudo apt-get update
 sudo apt install gtkwave
 
 ```
+
+![gtkwave](https://github.com/user-attachments/assets/a3b185f9-e798-4742-a72c-387be8f40abb)
+
+***
 
 
