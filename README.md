@@ -14,18 +14,20 @@ $ make config-gcc
 $ make 
 $ sudo make install ```
 
+
 # verilog
 ## Steps to install iverilog
+
 ```
-+ sudo apt-get update
-+ sudo apt-get install iverilog ```
+sudo apt-get update
+sudo apt-get install iverilog ```
 
 # gtkwave
 
 ## Steps to install gtkwave
 
 ```
-+ sudo apt-get update
-+ sudo apt install gtkwave ```
+sudo apt-get update
+sudo apt install gtkwave ```
 
 
