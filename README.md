@@ -28,6 +28,8 @@ sudo apt-get update
 sudo apt-get install iverilog
 ```
 
+![iverilog](https://github.com/user-attachments/assets/512b794e-c63a-423a-8caa-252b191db63e)
+
 # gtkwave
 
 ## Steps to install gtkwave
