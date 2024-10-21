@@ -1,7 +1,14 @@
 # Day 0: Summary of Digital VLSI SoC Design and Planning
 
+## Step1: Chip Modelling
 
+![Capture](https://github.com/user-attachments/assets/09f91696-937b-4bd8-9045-fafd02103e19)
 
++ Write the C code for an application and compile it using the gcc in Linux and measure the output O0 as given in the figure.
++ Model the entire specifications of the application in C environment, compile it and measure the output O1
++ Ensure that output O0 = O1.
+
+## Step 2: RTL architect
 
 # Day 1: Tools Installation
 
