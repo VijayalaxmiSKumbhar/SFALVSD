@@ -18,6 +18,12 @@
 
 ## Step 3: SoC Design Flow
 
+![Untitled](https://github.com/user-attachments/assets/4fcb2012-ba25-4f0c-8403-d2cae24ac987)
+
++ Divide the verilog code into multiple links like Processor as one part and Peripherals/IPs on another part
++ Processor Verilog code is synthesizable that is the code is converted into Gates
++ Make sure that verilog code written for processor is synthesizable, so that it can be easily converted into Gates
++ 
 
 
 # Day 1: Tools Installation
