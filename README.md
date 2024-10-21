@@ -22,8 +22,11 @@
 
 + Divide the verilog code into multiple links like Processor as one part and Peripherals/IPs on another part
 + Processor Verilog code is synthesizable that is the code is converted into Gates
+
+![image](https://github.com/user-attachments/assets/ec3647a8-9005-47a8-83b6-6ad7f39e5a3a)
+
 + Make sure that verilog code written for processor is synthesizable, so that it can be easily converted into Gates
-+ 
++ Prepherals/IPs are divided into Macros and Analog IPs. 
 
 
 # Day 1: Tools Installation
