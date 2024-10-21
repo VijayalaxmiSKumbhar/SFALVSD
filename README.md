@@ -1,3 +1,8 @@
+# Day 0: Summary of Digital VLSI SoC Design and Planning
+
+
+
+
 # Day 1: Tools Installation
 
 
