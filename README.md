@@ -6,9 +6,19 @@
 
 + Write the C code for an application and compile it using the gcc in Linux and measure the output O0 as given in the figure.
 + Model the entire specifications of the application in C environment, compile it and measure the output O1
-+ Ensure that output O0 = O1.
++ Ensure that output O0 == O1.
 
 ## Step 2: RTL architect
+
+![Capture](https://github.com/user-attachments/assets/67ed0c25-662e-45d9-908e-40c8590bfa1b)
+
++ Understand the specifications and represent the specifications in one of the hardware language like Verilog.
++ Take the same application, run on the hardware and measure O2.
++ Make sure that O2 == O1, so that functionality is retained.
+
+## Step 3: SoC Design Flow
+
+
 
 # Day 1: Tools Installation
 
