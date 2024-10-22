@@ -1,6 +1,6 @@
 # Day 0: Summary of Digital VLSI SoC Design and Planning
 
-## Step1: Chip Modelling
+## Chip Modelling
 
 ![Capture](https://github.com/user-attachments/assets/09f91696-937b-4bd8-9045-fafd02103e19)
 
@@ -8,7 +8,7 @@
 + Model the entire specifications of the application in C environment, compile it and measure the output O1
 + Ensure that output O0 == O1.
 
-## Step 2: RTL architect
+## RTL architect
 
 ![Capture](https://github.com/user-attachments/assets/67ed0c25-662e-45d9-908e-40c8590bfa1b)
 
@@ -16,7 +16,7 @@
 + Take the same application, run on the hardware and measure O2.
 + Make sure that O2 == O1, so that functionality is retained.
 
-## Step 3: SoC Design Flow
+## SoC Design Flow
 
 ![image](https://github.com/user-attachments/assets/a9bc6248-f968-4043-a921-8ee7465092e7)
 
@@ -26,7 +26,16 @@
 ![image](https://github.com/user-attachments/assets/ec3647a8-9005-47a8-83b6-6ad7f39e5a3a)
 
 + Make sure that verilog code written for processor is synthesizable, so that it can be easily converted into Gates
-+ Prepherals/IPs are divided into Macros and Analog IPs. 
++ Prepherals/IPs are divided into Macros and Analog IPs. The more popular analog IP is 10-bit ADC.
++ Processor and Macros are synthesizable, whereas analog IPs need not be synthesizable.
+
+## SoC Integration
+
+![image](https://github.com/user-attachments/assets/6167041f-2659-419b-99ec-b7677c223eff)
+
+## RTL2GDS
+
+## GDSII: Graphical Data stream Information Interchange
 
 
 # Day 1: Tools Installation
