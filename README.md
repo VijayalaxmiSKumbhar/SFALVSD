@@ -34,6 +34,7 @@
 ![image](https://github.com/user-attachments/assets/6167041f-2659-419b-99ec-b7677c223eff)
 
 ## RTL2GDS
++ RTL2GDS refers to the process of converting a Register Transfer Level (RTL) design, typically described in a Hardware Description Language (HDL) such as VHDL or Verilog, into a GDSII file, which represents the geometric layout of the integrated circuit for fabrication.
 
 ## GDSII (Graphical Data Stream Information Interchange)
 
@@ -45,9 +46,9 @@
 
 ![image](https://github.com/user-attachments/assets/a09eeac5-feee-4e0f-b715-ca52fb76da4d)
 
-
-   
-
+# Conclusion
+Digital VLSI SoC design and planning encompasses the design, integration, and implementation of complex electronic systems within a single chip. 
+ 
 
 # Day 1: Tools Installation
 
