@@ -35,7 +35,7 @@
 
 ## RTL2GDS
 
-## GDSII: Graphical Data stream Information Interchange
+## GDSII
 
 
 # Day 1: Tools Installation
