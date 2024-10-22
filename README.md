@@ -35,7 +35,18 @@
 
 ## RTL2GDS
 
-## GDSII
+## GDSII (Graphical Data Stream Information Interchange)
+
++ It is a file which contains only metal layers. Information about the fabrication of chip.
++ GDSII will go for DRC/LVS checks, to retain the connectivity.
++ GDSII file is then sent to factory. This process of sending GDSII to the factory is knowns as tapeout. Receiving the chips back from factory is called tapein.
+
+## Prepare a Board
+
+![image](https://github.com/user-attachments/assets/a09eeac5-feee-4e0f-b715-ca52fb76da4d)
+
+
+   
 
 
 # Day 1: Tools Installation
