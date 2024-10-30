@@ -190,7 +190,22 @@ It is the behavioral representation of the required specification
  ![image](https://github.com/user-attachments/assets/d6f3d17b-d8d5-4add-b114-9acf0b848704)
 
 + Step 2: Command to read library is 
-> read_liberty -lib  .. /my_lib/lib/sky130_fd_sc__hd_tt_025c_1v80.lib
+> read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+![image](https://github.com/user-attachments/assets/a1a96698-b8ed-4412-ad97-fff77933e889)
+
++ Step 3: Command to read design is 
+> read_verilog good_mux.v
+![image](https://github.com/user-attachments/assets/c0687f96-15d8-443b-bb8f-e705014f290a)
+
++ Step 4: Mention the module name which you want to synthesize
+> synth -top good_mux
+![image](https://github.com/user-attachments/assets/9094144f-2d32-4eb9-9b24-96c3e9be9cc9)
+
++ Step 5: Generate the netlist
+> abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+### abc is the command that will convert RTL into gates and what gates it has to link to is specified in the library.
+
+
 ## Lab 3: Yosys 1 good mux part2 
 ## Lab 3: Yosys 1 good mux part2 
 
