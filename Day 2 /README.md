@@ -155,5 +155,26 @@ endmodule
 
 ```
 
+# flatten command: To write flat netlist
+
+![image](https://github.com/user-attachments/assets/d2b939ab-68e3-42e7-9e47-8400b1000eae)
+
+### write_verilog -noattr multiple_modules_flat.v
+
+### !gvim  multiple_modules_flat.v
+
+![image](https://github.com/user-attachments/assets/9103fbdc-371e-4900-b516-cf7346792084)
+
+## Difference between hierarchical and flat
+
+### In gvim type :vsp multiple_modules_hier.v
+
+![image](https://github.com/user-attachments/assets/867d07dd-64de-4822-bfad-23a7096b1874)
+
+# synthesizing sub module in multiple_modules
+
+
+
+
 
 
