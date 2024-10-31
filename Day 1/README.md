@@ -194,31 +194,31 @@ It is the behavioral representation of the required specification
 
 ## Lab 3: Yosys 1 good mux part1 
 
-+ Step 1: Invoke yosys
++ ## Step 1: Invoke yosys
   
  ![image](https://github.com/user-attachments/assets/d6f3d17b-d8d5-4add-b114-9acf0b848704)
 
-+ Step 2: Command to read library is
++ ## Step 2: Command to read library is
   
-> read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+> ## read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![image](https://github.com/user-attachments/assets/a1a96698-b8ed-4412-ad97-fff77933e889)
 
-+ Step 3: Command to read design is
++ ## Step 3: Command to read design is
   
-> read_verilog good_mux.v
+> ## read_verilog good_mux.v
 
 ![image](https://github.com/user-attachments/assets/c0687f96-15d8-443b-bb8f-e705014f290a)
 
-+ Step 4: Mention the module name which you want to synthesize
++ ## Step 4: Mention the module name which you want to synthesize
   
-> synth -top good_mux
+> ## synth -top good_mux
 
 ![image](https://github.com/user-attachments/assets/9094144f-2d32-4eb9-9b24-96c3e9be9cc9)
 
 + Step 5: Generate the netlist
   
-> abc  -liberty  /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+> ## abc  -liberty  /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ### abc is the command that will convert RTL into gates and what gates it has to link to is specified in the library.
 ### The logic of good_mux is realized using standard cells available in library sky130_fd_sc_hd__tt_025C_1v80.
@@ -230,13 +230,29 @@ It is the behavioral representation of the required specification
 
 
 
-+ Step 6: The command to see what logic it has realized is
-> show
++ ## Step 6: The command to see what logic it has realized is
+> ## show
 
 ![image](https://github.com/user-attachments/assets/cffe304a-b4ec-408e-ab9b-a63d9454f8e3)
 
 
-## Lab 3: Yosys 1 good mux part2 
++ ## Step 7: How to write netlist
+> ## write_verlig good_mux_netlist.v
+
+![image](https://github.com/user-attachments/assets/6301c3ec-c996-420a-a96a-d6e426033e66)
+
+> ## !gvim good_mux_netlist.v
+
+![image](https://github.com/user-attachments/assets/29ae03fa-49c7-4e68-a139-34ee3c32b7be)
+
+> ## To see a good netlist modify the command as
+> ## write_verilog -noattr good_mux_netlist.v
+> ## gvim good_mux_netlist.v
+
+![image](https://github.com/user-attachments/assets/1cc12e5e-4a79-4d20-a710-ff7801539aca)
+
+![image](https://github.com/user-attachments/assets/bd4eebca-ea02-43af-8005-04bf2dc21818)
+
 
 
 
