@@ -24,7 +24,19 @@
 
 :sp /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_model/sky130_fd_sc_a2111o_1.behavioral.v
 
-![image](https://github.com/user-attachments/assets/3ea97697-dd59-4346-8dad-6f0b73931d64)
+![image](https://github.com/user-attachments/assets/5ebc9c4b-3037-475c-b87c-9763dc740d43)
+
+## Verilog model of 2 input AND Gate
+
+![image](https://github.com/user-attachments/assets/7160414a-e348-471c-8855-82171faa54e9)
+
+## Wider cells are faster but area is going to be more. They also consume more power.
+
+## Smaller cells delay will be more and area will be less
+
+![image](https://github.com/user-attachments/assets/6b204267-0b92-4b7b-b51f-2136a9e67c26)
+
+
 
 
 
