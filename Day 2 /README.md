@@ -173,6 +173,22 @@ endmodule
 
 # synthesizing sub module in multiple_modules
 
+## Steps
+
+### + read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+### + read_verilog /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_files/multiple_modules.v
+
+### + synth -top sub_module1
+
+![image](https://github.com/user-attachments/assets/340b92b7-3ff8-4210-bad4-5b2aa6a5caf5)
+
+
+![image](https://github.com/user-attachments/assets/67e5644f-0ab5-4b8f-a85a-1216eebdd150)
+
+
+
+
 
 
 
