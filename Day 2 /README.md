@@ -175,11 +175,11 @@ endmodule
 
 ## Steps
 
-### + read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+### read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-### + read_verilog /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_files/multiple_modules.v
+### read_verilog /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_files/multiple_modules.v
 
-### + synth -top sub_module1
+### synth -top sub_module1
 
 ![image](https://github.com/user-attachments/assets/340b92b7-3ff8-4210-bad4-5b2aa6a5caf5)
 
@@ -188,9 +188,9 @@ endmodule
 
 
 ```
-### + abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+### abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-### + show
+### show
 
 
 ![image](https://github.com/user-attachments/assets/fd2c519a-f4a9-4203-8aa0-e23bbb495054)
