@@ -165,26 +165,33 @@ It is the behavioral representation of the required specification
  …………
  …………
 ## Why different flavors of gate?
+
 ![image](https://github.com/user-attachments/assets/9c71cd91-988e-48f0-b33e-dad715dc77a6)
 
 
 # Introduction to Logic Synthesis Part2
+
 ## Why do we need Slow cells?
+
 ![image](https://github.com/user-attachments/assets/3fd7187e-6492-47ee-af6e-e272937baddd)
 
  
 ## Faster Cells Vs Slower Cells
+
 ![image](https://github.com/user-attachments/assets/4f5f40b5-c88b-4282-b28c-59c0c861fe3f)
 
 ## Selection of Cells 
+
 ![image](https://github.com/user-attachments/assets/ad834dc4-2776-4b0b-b3b3-e665fecf5de9)
 
  
 ## Synthesis Illustration
+
 ![image](https://github.com/user-attachments/assets/10febcab-302b-4a18-8fa4-419b80738bab)
 
  
 # Labs using Yosys and Sky130 PDKs
+
 ## Lab 3: Yosys 1 good mux part1 
 
 + Step 1: Invoke yosys
