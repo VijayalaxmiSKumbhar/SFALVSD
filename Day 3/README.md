@@ -36,6 +36,12 @@
 
 ![image](https://github.com/user-attachments/assets/6b204267-0b92-4b7b-b51f-2136a9e67c26)
 
+# Hierarchical vs Flat Synthesis
+
+## Multiple module
+
+![image](https://github.com/user-attachments/assets/a517d07d-d9ce-45df-bab7-62d4e6182684)
+
 
 
 
