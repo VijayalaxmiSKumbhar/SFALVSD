@@ -199,7 +199,7 @@ It is the behavioral representation of the required specification
  ![image](https://github.com/user-attachments/assets/d6f3d17b-d8d5-4add-b114-9acf0b848704)
 
 + Step 2: Command to read library is
-+ 
+  
 > read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ![image](https://github.com/user-attachments/assets/a1a96698-b8ed-4412-ad97-fff77933e889)
