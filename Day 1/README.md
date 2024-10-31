@@ -221,10 +221,23 @@ It is the behavioral representation of the required specification
 > abc  -liberty  /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 ### abc is the command that will convert RTL into gates and what gates it has to link to is specified in the library.
+### The logic of good_mux is realized using standard cells available in library sky130_fd_sc_hd__tt_025C_1v80.
+
+![image](https://github.com/user-attachments/assets/cc266e73-3017-4bab-93db-1404230c7eaf)
+
+
+![image](https://github.com/user-attachments/assets/5e28937b-03ac-4fe6-b703-378838d11d89)
+
+
+
++ Step 6: The command to see what logic it has realized is
+> show
+
+![image](https://github.com/user-attachments/assets/cffe304a-b4ec-408e-ab9b-a63d9454f8e3)
 
 
 ## Lab 3: Yosys 1 good mux part2 
-## Lab 3: Yosys 1 good mux part2 
+
 
 
 
