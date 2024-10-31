@@ -245,7 +245,7 @@ It is the behavioral representation of the required specification
 
 ![image](https://github.com/user-attachments/assets/29ae03fa-49c7-4e68-a139-34ee3c32b7be)
 
-> ## To see a good netlist modify the command as
+> ## To see a simplified netlist modify the command as
 > ## write_verilog -noattr good_mux_netlist.v
 > ## gvim good_mux_netlist.v
 
