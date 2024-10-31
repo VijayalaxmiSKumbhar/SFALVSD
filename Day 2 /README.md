@@ -187,6 +187,22 @@ endmodule
 ![image](https://github.com/user-attachments/assets/67e5644f-0ab5-4b8f-a85a-1216eebdd150)
 
 
+```
+### + abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+### + show
+
+
+![image](https://github.com/user-attachments/assets/fd2c519a-f4a9-4203-8aa0-e23bbb495054)
+
+## Why sub module level synthesis?
+
+![image](https://github.com/user-attachments/assets/ed765405-9b4b-425b-9390-844ae30d45a9)
+
+
+
+
+
 
 
 
