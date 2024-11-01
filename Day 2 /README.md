@@ -200,6 +200,18 @@ show
 
 ![image](https://github.com/user-attachments/assets/ed765405-9b4b-425b-9390-844ae30d45a9)
 
+## Various Flop Coding Styles and Optimization
+
+### Why Flops and Flop Coding Styles?
+
+![image](https://github.com/user-attachments/assets/5fa6dbe4-fe02-4a78-b622-6a3f104ee6af)
+
++ ### Flop is a storage element
+
++ ### Set/Reset are used to intialize the flop, they can be synchronous/asynchronous
+  
+![image](https://github.com/user-attachments/assets/1ec8cf95-8a52-455e-bbd1-6888171adea0)
+
 
 
 
