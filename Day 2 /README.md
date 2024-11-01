@@ -188,10 +188,11 @@ endmodule
 
 
 ```
-### abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-### show
+show
 
+```
 
 ![image](https://github.com/user-attachments/assets/fd2c519a-f4a9-4203-8aa0-e23bbb495054)
 
