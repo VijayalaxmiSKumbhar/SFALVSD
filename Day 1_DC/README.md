@@ -96,6 +96,22 @@
 
 ![image](https://github.com/user-attachments/assets/0b50a80d-5dc5-4788-8a8e-48fd4bd6990b)
 
+# DC Setup
+
+![image](https://github.com/user-attachments/assets/6e16877b-3593-430c-acb3-5fa1075753b6)
+
+# Implementation flow of ASIC ----> Steps in converting RTL to the Physical database(GDS)
+
+![image](https://github.com/user-attachments/assets/d757a911-6e08-4b7c-bdcc-76d507e668f2)
+
+# DC Synthesis Flow
+
+![Uploading image.png…]()
+
+
+
+
+
 
 
 
