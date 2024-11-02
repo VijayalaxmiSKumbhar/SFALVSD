@@ -64,11 +64,19 @@
 ![image](https://github.com/user-attachments/assets/1b113711-a087-40fe-b0ba-80a71abbe4de)
 
 
-
-
 ![image](https://github.com/user-attachments/assets/a120c12d-d0cb-45d3-b54d-ca50ca2d36df)
 
 ### GLS Output: It has _6_, _7_, _8_ which was not there in RTL, it clearly indicates GLS.
 
 ![image](https://github.com/user-attachments/assets/8601072b-7581-4afe-ad44-89f15226c3b6)
+
+## Example bad_mux.v
+
+### RTL Simulation
+
+![image](https://github.com/user-attachments/assets/75e106bc-295d-4d7b-9dff-00e0abfdb61d)
+
+### The waveform clearly indicates that it is not functioning as mux. It is lookin as if as flop.
+
+![image](https://github.com/user-attachments/assets/09743a29-f8cb-4efd-86fd-057ac71affac)
 
