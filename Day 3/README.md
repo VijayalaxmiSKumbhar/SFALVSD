@@ -178,8 +178,61 @@ endmodule
 
 # Sequential optimzations for unused outputs
 
+### Example counter_opt.v
+
+```
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = count[0];
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+    	count <= 3'b000;
+	else
+    	count <= count + 1;
+end
+
+endmodule
+
+```
+
+![image](https://github.com/user-attachments/assets/89cb5025-16ea-4208-9c9f-8f509e4445fa)
+
+#Synthesis
+
+![image](https://github.com/user-attachments/assets/89dd87ff-c939-4401-a8a9-839689af0647)
+
 
 ![image](https://github.com/user-attachments/assets/3759f888-7c5c-40ab-88a5-14551b0be549)
+
+### Example counter_opt2.v
+
+```
+module counter_opt (input clk , input reset , output q);
+reg [2:0] count;
+assign q = (count[2:0] == 3'b100);
+
+always @(posedge clk ,posedge reset)
+begin
+	if(reset)
+    	count <= 3'b000;
+	else
+    	count <= count + 1;
+end
+
+endmodule
+
+```
+
+
+# Synthesis
+
+![image](https://github.com/user-attachments/assets/6c3b9b24-417d-43cb-a481-de4154e406eb)
+
+![image](https://github.com/user-attachments/assets/d16b37b0-f5a3-4498-ad59-f005c52a9c28)
+
+![image](https://github.com/user-attachments/assets/b26e5b4b-e003-4b60-8c2d-71b86b18bb9f)
 
 
 
