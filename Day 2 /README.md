@@ -300,6 +300,51 @@ show
 
 ![image](https://github.com/user-attachments/assets/f5dbf6ae-c3ab-4144-a9bf-3b950c214fe3)
 
+![image](https://github.com/user-attachments/assets/1172facc-efaf-4b52-b0f0-02f3e51f0504)
+
+# Consider an example of mult_2.v to understand interesting optimisations
+
+```
+module mul2 (input [2:0] a, output [3:0] y);
+	assign y = a * 2;
+endmodule
+
+```
+
+![image](https://github.com/user-attachments/assets/72084067-4a34-4b6d-9ad1-9e8acf6c3dfe)
+
+![image](https://github.com/user-attachments/assets/f2ae7678-01ce-4f79-85d9-b4d265378db9)
+
+## Synthesis in yosys
+
+![image](https://github.com/user-attachments/assets/88ff775a-eb6f-4d43-a35b-06481bd3795d)
+
+Not necessary to run abc
+
+![image](https://github.com/user-attachments/assets/156ad2d6-9ffc-406f-b7a0-c0fdb07a52fd)
+
+![image](https://github.com/user-attachments/assets/44082b82-3de4-4055-b823-2e35edd00d02)
+
+# Consider a special case where y is multiplied with 9
+
+![image](https://github.com/user-attachments/assets/2a3ccf95-d562-49ab-8006-d77682702e16)
+
+```
+module mult8 (input [2:0] a , output [5:0] y);
+	assign y = a * 9;
+endmodule
+
+```
+## Do the synthesis in yosys
+
+![image](https://github.com/user-attachments/assets/337535da-43ab-4948-83cb-298f03d3c215)
+
+![image](https://github.com/user-attachments/assets/61cfeab5-8936-4d96-a97f-0e104164a59b)
+
+
+
+
+
 
 
 
