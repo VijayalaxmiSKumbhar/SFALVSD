@@ -128,6 +128,10 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/7ccc21d3-62d9-4c15-b6e1-1b1b2522a55c)
 
+### Mismatch due to blocking Statement
+
+![image](https://github.com/user-attachments/assets/4fadd667-9040-4ef9-8f1e-32b81a20750c)
+
 
 
 
