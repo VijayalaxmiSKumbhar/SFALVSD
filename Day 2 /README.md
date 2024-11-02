@@ -209,9 +209,18 @@ show
 + ### Flop is a storage element
 
 + ### Set/Reset are used to intialize the flop, they can be synchronous/asynchronous
+
++ ## Example of flop with asynchronous input
+
+![image](https://github.com/user-attachments/assets/34b0e242-190e-47b2-9b02-240a6403e529)
+
+![image](https://github.com/user-attachments/assets/a656765e-9375-450b-8cf0-cdbe25089e5d)
+
+
   
 ![image](https://github.com/user-attachments/assets/1ec8cf95-8a52-455e-bbd1-6888171adea0)
 
+# Lab Steps: flop synthesis simulations
 
 
 
