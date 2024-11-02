@@ -57,6 +57,14 @@
 
 ![image](https://github.com/user-attachments/assets/1a4f9543-5979-49e2-907a-defabf22db1f)
 
+### Synthesis
+
+![image](https://github.com/user-attachments/assets/e4ccc2de-0334-4ec5-bee0-23a5ece20487)
+
+![image](https://github.com/user-attachments/assets/1b113711-a087-40fe-b0ba-80a71abbe4de)
+
+
+
 
 ![image](https://github.com/user-attachments/assets/a120c12d-d0cb-45d3-b54d-ca50ca2d36df)
 
