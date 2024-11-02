@@ -34,9 +34,30 @@
 
 ![image](https://github.com/user-attachments/assets/3ab0f50f-b4dc-4b00-b811-17e1be156847)
 
+# What is Synthesis?
+
+![image](https://github.com/user-attachments/assets/9133ceaa-a321-438d-8404-a0b80b180d65)
+
+# What is .lib?
+
+![image](https://github.com/user-attachments/assets/a4722537-28b5-409b-9b93-52caa6356201)
+
+# Why different flavours of gate?
+
+![image](https://github.com/user-attachments/assets/d7d91bd4-58b8-486f-9cbc-a04ae6c4a959)
+
+# Why we need Slow cells?
+
+![image](https://github.com/user-attachments/assets/1318fc94-8234-4f5c-8267-17c5f00d8955)
+
+# Faster Cells Vs Slower Cells
+
+![image](https://github.com/user-attachments/assets/3c1dde0a-8c17-4a6f-8ab3-76504a89c8ad)
 
 
 
-![image](https://github.com/user-attachments/assets/9a17c224-e2ce-4bef-b4d4-be638659eacd)
+
+
+
 
 
