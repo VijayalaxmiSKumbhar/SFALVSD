@@ -179,6 +179,10 @@ endmodule
 # Sequential optimzations for unused outputs
 
 
+![image](https://github.com/user-attachments/assets/3759f888-7c5c-40ab-88a5-14551b0be549)
+
+
+
 
 
 
