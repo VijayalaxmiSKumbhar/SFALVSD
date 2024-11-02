@@ -118,6 +118,15 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/4ca50431-8aa5-4c5b-89f5-bf1ef3de59af)
 
+### Synthesis
+
+![image](https://github.com/user-attachments/assets/84cddbf0-fed9-419e-9051-56dffcc9823e)
+
+![image](https://github.com/user-attachments/assets/0c1560dd-c2e3-4f8a-be21-f15c322027ce)
+
+### GLS Output
+
+![image](https://github.com/user-attachments/assets/7ccc21d3-62d9-4c15-b6e1-1b1b2522a55c)
 
 
 
