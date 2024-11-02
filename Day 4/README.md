@@ -16,6 +16,18 @@
 
 ## Synthesis-Simulation mismatch
 
+![image](https://github.com/user-attachments/assets/73867b06-17aa-43a3-aad9-125f3b3e259a)
+
+### Missing Sensitivit List
+
+![image](https://github.com/user-attachments/assets/46693612-003b-4aef-aea5-3173337d5a70)
+
+# Blocking and Non-blocking Statements in verilog
+
+![image](https://github.com/user-attachments/assets/12f24d1a-69cf-4309-9afd-dffb5e7bd179)
+
+### Caveats with Blocking Statements
+
 
 
 
