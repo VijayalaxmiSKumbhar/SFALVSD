@@ -292,6 +292,14 @@ show
   
 ![image](https://github.com/user-attachments/assets/1e512cf4-e666-4d41-923e-bc1ec49bfaaf)
 
+## Similar Steps can be followed for D flip-flop asynchronous set
+
+![image](https://github.com/user-attachments/assets/d9b542b3-98d6-4edf-8d76-5b4b6c234d36)
+
+## D flip-flop synchronous reset
+
+![image](https://github.com/user-attachments/assets/f5dbf6ae-c3ab-4144-a9bf-3b950c214fe3)
+
 
 
 
