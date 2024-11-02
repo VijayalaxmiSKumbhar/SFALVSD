@@ -267,6 +267,31 @@ show
 ![image](https://github.com/user-attachments/assets/4a379fb1-0191-404a-ab74-085c7296af1a)
 
 
+# Synthesis of Asynchronous reset/set and Synchronous Set using yosys
+
++ ### Step 1: read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
++ ### Step 2: read_verilog /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_files/dff_asyncres.v
+
+![image](https://github.com/user-attachments/assets/2b0885f4-cda2-45b7-8076-4d4b117525f9)
+
++ ### Step 3: synth -top dff_asyncres
+
+![image](https://github.com/user-attachments/assets/de7419b3-c0c5-4a55-891e-1cd99e9f79de)
+
++ ### Step 4: Since we are using D flip-flop use a keyword dfflibmap
+### dfflibmap -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+![image](https://github.com/user-attachments/assets/9cc0122e-dd0e-442c-8b60-e678790e6edb)
+
++ ### Step 5: abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+![image](https://github.com/user-attachments/assets/413deae9-6b0b-4a75-8af0-a9807293a1df)
+
++ ### Step 6: show
+  
+![image](https://github.com/user-attachments/assets/1e512cf4-e666-4d41-923e-bc1ec49bfaaf)
+
 
 
 
