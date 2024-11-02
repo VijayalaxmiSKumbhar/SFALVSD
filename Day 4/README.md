@@ -26,9 +26,17 @@
 
 ![image](https://github.com/user-attachments/assets/12f24d1a-69cf-4309-9afd-dffb5e7bd179)
 
-### Caveats with Blocking Statements
+### Example 1: Caveats with Blocking Statements
 
+![image](https://github.com/user-attachments/assets/3140adf7-5f9b-4f2d-82ba-44bc72e0dbf6)
 
+### Written with Non-Blocking statements: Use these statements to write sequential circuits
+
+![image](https://github.com/user-attachments/assets/27a8db0b-133d-4975-9dbb-878a12b797e0)
+
+### Example 2: Caveats with Blocking Statements
+
+![image](https://github.com/user-attachments/assets/e9f16714-a83e-4ba0-920b-47bce3ee7a78)
 
 
 #  Labs on GLS and Synthesis-Simulation Mismatch
