@@ -319,7 +319,7 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/88ff775a-eb6f-4d43-a35b-06481bd3795d)
 
-Not necessary to run abc
+### Not necessary to run abc as number of standard cells are zero
 
 ![image](https://github.com/user-attachments/assets/156ad2d6-9ffc-406f-b7a0-c0fdb07a52fd)
 
@@ -340,6 +340,15 @@ endmodule
 ![image](https://github.com/user-attachments/assets/337535da-43ab-4948-83cb-298f03d3c215)
 
 ![image](https://github.com/user-attachments/assets/61cfeab5-8936-4d96-a97f-0e104164a59b)
+
+# Netlist of mult8
+
+![image](https://github.com/user-attachments/assets/6ac0f508-016c-442f-b861-63b3fbba2c63)
+
+
+![image](https://github.com/user-attachments/assets/2f8f1db0-8d35-4fbb-abbf-19f33af11549)
+
+
 
 
 
