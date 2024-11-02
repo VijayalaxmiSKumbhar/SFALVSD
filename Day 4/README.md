@@ -114,6 +114,9 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/b2ba6b7f-5621-411f-af85-758d6ab29cfc)
 
+### RTL Simulation
+
+![image](https://github.com/user-attachments/assets/4ca50431-8aa5-4c5b-89f5-bf1ef3de59af)
 
 
 
