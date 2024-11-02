@@ -224,8 +224,53 @@ show
 
 # Lab Steps: flop synthesis simulations
 
+```
+## Consider an example of Asynchronous Reset
 
+### Step 1:
+![image](https://github.com/user-attachments/assets/74dc92c0-c732-4584-93e2-fccf7a21b84d)
 
+### Step 2:
+
+![image](https://github.com/user-attachments/assets/4fb6e286-816b-4d2c-b8bf-d631dfd4673d)
+
+### Step 3:
+
+![image](https://github.com/user-attachments/assets/d46c05a6-3dcf-4e52-898f-6704f2284961)
+
+```
+
+```
+## Consider an example of Asynchronous set
+
+### Step 1:
+
+![image](https://github.com/user-attachments/assets/0dd905df-3ba3-42bc-9eb2-2fb300dfc8f3)
+
+### Step 2:
+![image](https://github.com/user-attachments/assets/da4ba326-57a9-453c-a0ff-bc5bcc40e4e5)
+
+### Step 3:
+
+![image](https://github.com/user-attachments/assets/29b95b75-85b1-42fe-a230-51baea8890c2)
+![image](https://github.com/user-attachments/assets/a921f31a-eb60-453b-af98-e63e250c966d)
+
+```
+
+```
+## Consider an example of synchronous reset
+
+### Step 1:
+![image](https://github.com/user-attachments/assets/f3d07edb-976f-41fd-9685-9c9aa1cd32be)
+
+### Step 2:
+![image](https://github.com/user-attachments/assets/dfb24951-38f8-42a8-b026-f4deea24d9c5)
+
+### Step 3:
+
+![image](https://github.com/user-attachments/assets/4a379fb1-0191-404a-ab74-085c7296af1a)
+
+```
 
 
 
