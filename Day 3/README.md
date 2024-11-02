@@ -112,6 +112,21 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/9f16501d-7068-4373-bc38-6ec7d7f9891c)
 
+# Synthesis
+
+```
+1. read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+2. read_verilog /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_files/dff_const1.v
+3. synth -top dff_const1
+4. dfflibmap -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+5. abc -liberty /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+6. show
+
+```
+
+![image](https://github.com/user-attachments/assets/354cdcec-bd85-4933-b104-4d08db253ffb)
+
+
 # Simulation of dff_const2.v
 
 ### In this example of irrespective of clock and reset Q is always one.
