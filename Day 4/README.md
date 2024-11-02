@@ -98,5 +98,26 @@
 
 # Labs on synth-sim mismatch for blocking statement
 
+### Example: blocking_caveat.v
+
+```
+module blocking_caveat (input a , input b , input  c, output reg d);
+reg x;
+always @ (*)
+begin
+	d = x & c;
+	x = a | b;
+end
+endmodule
+
+```
+
+![image](https://github.com/user-attachments/assets/b2ba6b7f-5621-411f-af85-758d6ab29cfc)
+
+
+
+
+
+
 
 
