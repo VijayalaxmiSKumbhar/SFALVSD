@@ -80,3 +80,9 @@
 
 ![image](https://github.com/user-attachments/assets/09743a29-f8cb-4efd-86fd-057ac71affac)
 
+## Synthesis
+
+![image](https://github.com/user-attachments/assets/31ea3a33-21c1-45c7-a9af-e23a4ef6d474)
+
+![image](https://github.com/user-attachments/assets/9d7f57d2-f187-415a-90fe-ca1b2d4c9f68)
+
