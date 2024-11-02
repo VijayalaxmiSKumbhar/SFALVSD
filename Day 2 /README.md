@@ -210,15 +210,17 @@ show
 
 + ### Set/Reset are used to intialize the flop, they can be synchronous/asynchronous
 
+![image](https://github.com/user-attachments/assets/1ec8cf95-8a52-455e-bbd1-6888171adea0)
+
 + ## Example of flop with asynchronous input
 
-![image](https://github.com/user-attachments/assets/34b0e242-190e-47b2-9b02-240a6403e529)
-
-![image](https://github.com/user-attachments/assets/a656765e-9375-450b-8cf0-cdbe25089e5d)
+![image](https://github.com/user-attachments/assets/90e81d45-9c8f-4579-a23e-be4ac1ccc5d7)
 
 
-  
-![image](https://github.com/user-attachments/assets/1ec8cf95-8a52-455e-bbd1-6888171adea0)
++ ## Code and hardware with Asynchronous/Synchronous inputs
+
+![image](https://github.com/user-attachments/assets/6d4a6478-54e3-4035-bad7-240bbc51431d)
+
 
 # Lab Steps: flop synthesis simulations
 
