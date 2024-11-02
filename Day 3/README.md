@@ -139,7 +139,44 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/53a24021-c390-4609-b5e0-3d31ee01820b)
 
+# Synthesis
 
+![image](https://github.com/user-attachments/assets/0ac0fcc7-d569-4911-8d7c-00ba6e220f6a)
+
+# Simulation of dff_const3.v
+
+```
+module dff_const3(input clk, input reset, output reg q);
+reg q1;
+
+always @(posedge clk, posedge reset)
+begin
+	if(reset)
+	begin
+    	q <= 1'b1;
+    	q1 <= 1'b0;
+	end
+	else
+	begin
+    	q1 <= 1'b1;
+    	q <= q1;
+	end
+end
+
+endmodule
+
+```
+
+![image](https://github.com/user-attachments/assets/586dea9f-bf59-46d2-9cf0-513601e75069)
+
+![image](https://github.com/user-attachments/assets/cd6b19ca-e65f-4335-9a9b-310f69278c32)
+
+# Synthesis
+
+![image](https://github.com/user-attachments/assets/c01eb273-577f-4781-8896-10a8299dc041)
+
+
+# Sequential optimzations for unused outputs
 
 
 
