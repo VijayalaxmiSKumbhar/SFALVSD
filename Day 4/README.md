@@ -49,6 +49,13 @@
 
 ![image](https://github.com/user-attachments/assets/0b5971f2-2995-4ae8-8395-46c4bb866ed4)
 
+# RTL Simulation
+
+![image](https://github.com/user-attachments/assets/18dc8b8c-b05f-4e92-a073-1a6ef07b4749)
+
+### Output
+
+![image](https://github.com/user-attachments/assets/1a4f9543-5979-49e2-907a-defabf22db1f)
 
 
 ![image](https://github.com/user-attachments/assets/a120c12d-d0cb-45d3-b54d-ca50ca2d36df)
