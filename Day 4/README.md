@@ -86,4 +86,10 @@
 
 ![image](https://github.com/user-attachments/assets/789c34d5-5a07-41f3-b3ac-1fca387d9e49)
 
+# GLS Output bad_mux.v
+
+![image](https://github.com/user-attachments/assets/df78f3c2-e938-49cb-8b48-417a0470d6e9)
+
+![image](https://github.com/user-attachments/assets/04e36312-f114-4f80-b793-ab2f201e3fb4)
+
 
