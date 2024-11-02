@@ -52,7 +52,34 @@
 
 # Faster Cells Vs Slower Cells
 
-![image](https://github.com/user-attachments/assets/3c1dde0a-8c17-4a6f-8ab3-76504a89c8ad)
+![image](https://github.com/user-attachments/assets/0a6cb594-b2e7-4437-b30d-43edfd3eb2cc)
+
+# Selection of Cells
+
+![image](https://github.com/user-attachments/assets/9d6247f9-bd64-4ac0-8394-4447f142ffa0)
+
+# Synthesis
+
+![image](https://github.com/user-attachments/assets/42b0489c-65d5-42c6-bfea-539d6ddb3ea0)
+
+# Logic Synthesis Basics
+
+## Example
+
+![image](https://github.com/user-attachments/assets/21b0683c-e15b-4de5-9d34-ae4e983b1c37)
+
+## Let us find which is the correct implementation with the following standard cell details
+
+![image](https://github.com/user-attachments/assets/b38c534b-7db0-45c3-a519-5f45ec8abac1)
+
+## Comparison of Implementations
+
+![image](https://github.com/user-attachments/assets/eff8e5f2-f0f7-4df1-8b45-b6a779cddd1e)
+
+# Goals of Logic Synthesis
+
+![image](https://github.com/user-attachments/assets/c3ad1d35-9ca8-4fe0-b92f-2d9d22deaf33)
+
 
 
 
