@@ -106,7 +106,8 @@
 
 # DC Synthesis Flow
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/e68dc3ba-3c2b-4fce-9f80-14a307d63495)
+
 
 
 
