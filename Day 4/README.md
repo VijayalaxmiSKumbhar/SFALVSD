@@ -15,3 +15,15 @@
 ![image](https://github.com/user-attachments/assets/c754cb26-0347-4c77-ad55-275797d9a434)
 
 ## Synthesis-Simulation mismatch
+
+
+
+
+#  Labs on GLS and Synthesis-Simulation Mismatch
+
+![image](https://github.com/user-attachments/assets/a120c12d-d0cb-45d3-b54d-ca50ca2d36df)
+
+### GLS Output
+
+![image](https://github.com/user-attachments/assets/8601072b-7581-4afe-ad44-89f15226c3b6)
+
