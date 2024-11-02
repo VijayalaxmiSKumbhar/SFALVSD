@@ -80,6 +80,22 @@
 
 ![image](https://github.com/user-attachments/assets/c3ad1d35-9ca8-4fe0-b92f-2d9d22deaf33)
 
+![image](https://github.com/user-attachments/assets/be39e294-bdab-4897-8164-9e032cae0d42)
+
+# Introduction to Design Compiler (DC)
+
+## What is DC?
+
+![image](https://github.com/user-attachments/assets/e92a467a-219b-46cb-8373-928c9be94d6a)
+
+## Common Terminologies associated with DC
+
+![image](https://github.com/user-attachments/assets/09f82b5c-7095-4f9b-9807-af1876a47fc6)
+
+## Synopsys Design Constraints (SDC)
+
+![image](https://github.com/user-attachments/assets/0b50a80d-5dc5-4788-8a8e-48fd4bd6990b)
+
 
 
 
