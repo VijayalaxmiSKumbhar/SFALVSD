@@ -41,6 +41,16 @@
 
 #  Labs on GLS and Synthesis-Simulation Mismatch
 
+### Examples to understand GLS
+
+![image](https://github.com/user-attachments/assets/ad2191fc-a72f-4d31-96cb-05dc6aa41f27)
+
+### Ternary operator (?)
+
+![image](https://github.com/user-attachments/assets/0b5971f2-2995-4ae8-8395-46c4bb866ed4)
+
+
+
 ![image](https://github.com/user-attachments/assets/a120c12d-d0cb-45d3-b54d-ca50ca2d36df)
 
 ### GLS Output
