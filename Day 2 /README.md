@@ -224,7 +224,7 @@ show
 
 # Lab Steps: flop synthesis simulations
 
-```
+
 ## Consider an example of Asynchronous Reset
 
 ### Step 1:
@@ -238,9 +238,7 @@ show
 
 ![image](https://github.com/user-attachments/assets/d46c05a6-3dcf-4e52-898f-6704f2284961)
 
-```
 
-```
 ## Consider an example of Asynchronous set
 
 ### Step 1:
@@ -255,9 +253,7 @@ show
 ![image](https://github.com/user-attachments/assets/29b95b75-85b1-42fe-a230-51baea8890c2)
 ![image](https://github.com/user-attachments/assets/a921f31a-eb60-453b-af98-e63e250c966d)
 
-```
 
-```
 ## Consider an example of synchronous reset
 
 ### Step 1:
@@ -270,7 +266,7 @@ show
 
 ![image](https://github.com/user-attachments/assets/4a379fb1-0191-404a-ab74-085c7296af1a)
 
-```
+
 
 
 
