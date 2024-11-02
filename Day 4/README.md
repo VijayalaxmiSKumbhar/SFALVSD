@@ -92,4 +92,11 @@
 
 ![image](https://github.com/user-attachments/assets/04e36312-f114-4f80-b793-ab2f201e3fb4)
 
+# Synthesis-Simulation mismatch due to missing sensitivity list
+
+![image](https://github.com/user-attachments/assets/8e360189-be33-4526-9e79-5b7cea54e0bd)
+
+# Labs on synth-sim mismatch for blocking statement
+
+
 
