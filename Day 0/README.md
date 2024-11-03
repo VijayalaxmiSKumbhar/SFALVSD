@@ -1,4 +1,6 @@
-# Welcome to the SFALVSD repository! This repository is designed to 
+# Welcome to the SFALVSD repository. This repository is a comprehensive 12-week SoC Design and Implementation course, featuring 6 weeks of foundational instruction on semiconductor design basics, including floorplanning, placement, clock tree synthesis (CTS), routing, optimization, and verification organized by VSD.
+
+
 # Summary of Digital VLSI SoC Design and Planning
 
 <details>
