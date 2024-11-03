@@ -1,6 +1,8 @@
-# Day 4: GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
+# GLS, blocking vs non-blocking and Synthesis-Simulation mismatch
 
-## Introduction Gate Level Simulation (GLS), Synthesis-Simulation mismatches
+<details>
+<summary>Introduction Gate Level Simulation (GLS), Synthesis-Simulation mismatches</summary>
+<br>
 
 ### What is GLS and Why GLS?
 
@@ -14,15 +16,23 @@
 
 ![image](https://github.com/user-attachments/assets/c754cb26-0347-4c77-ad55-275797d9a434)
 
-## Synthesis-Simulation mismatch
+</details>
 
+<details>
+<summary>Synthesis-Simulation mismatch</summary>
+<br>
+	
 ![image](https://github.com/user-attachments/assets/73867b06-17aa-43a3-aad9-125f3b3e259a)
 
 ### Missing Sensitivit List
 
 ![image](https://github.com/user-attachments/assets/46693612-003b-4aef-aea5-3173337d5a70)
 
-# Blocking and Non-blocking Statements in verilog
+</details>
+
+<details>
+<summary>Blocking and Non-blocking Statements in verilog</summary>
+<br>
 
 ![image](https://github.com/user-attachments/assets/12f24d1a-69cf-4309-9afd-dffb5e7bd179)
 
@@ -38,8 +48,10 @@
 
 ![image](https://github.com/user-attachments/assets/e9f16714-a83e-4ba0-920b-47bce3ee7a78)
 
+</details>
 
-#  Labs on GLS and Synthesis-Simulation Mismatch
+<details>
+<summary>Labs on GLS and Synthesis-Simulation Mismatch</summary>
 
 ### Examples to understand GLS
 
@@ -70,7 +82,11 @@
 
 ![image](https://github.com/user-attachments/assets/8601072b-7581-4afe-ad44-89f15226c3b6)
 
-## Example bad_mux.v
+</details>
+
+<details>
+<summary>Example bad_mux.v</summary>
+<br>
 
 ### RTL Simulation
 
@@ -86,6 +102,7 @@
 
 ![image](https://github.com/user-attachments/assets/789c34d5-5a07-41f3-b3ac-1fca387d9e49)
 
+
 # GLS Output bad_mux.v
 
 ![image](https://github.com/user-attachments/assets/df78f3c2-e938-49cb-8b48-417a0470d6e9)
@@ -96,7 +113,11 @@
 
 ![image](https://github.com/user-attachments/assets/8e360189-be33-4526-9e79-5b7cea54e0bd)
 
-# Labs on synth-sim mismatch for blocking statement
+</details>
+
+<details>
+<summary>Labs on synth-sim mismatch for blocking statement</summary>
+<br>
 
 ### Example: blocking_caveat.v
 
@@ -134,6 +155,7 @@ endmodule
 
 ### Use blocking statements with atmost care.
 
+</details>
 
 
 
