@@ -55,10 +55,12 @@ sudo apt install gtkwave
 
 </details>
 
-# Day 1: Introduction to Verilog RTL design and Synthesis
+# Introduction to Verilog RTL design and Synthesis
 
-+ Introduction to open-source simulator iverilog
-++ Introduction to iverilog design test bench
+<details>
+<summary>Introduction to open-source simulator iverilog</summary>
+<br>
+    
 ## What is Simulator?
 •	Simulator is a tool for checking design
 •	iverilog is the simulator
@@ -82,11 +84,17 @@ Testbench is the setup to apply the stimulus(test_vectors) to the design to chec
 
  ![image](https://github.com/user-attachments/assets/27709a8f-e3c5-4143-a09a-3c2bc9b32673)
 
+</details>
+
 
 # Labs using iverilog and gtkwave
 
-## Lab 1: Introduction to lab
-# Tools Setup 
+#### Lab 1: Introduction
+
+<details>
+<summary>Tools Setup</summary>
+<br>
+    
 + git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 + my_lib contains all the library files which are needed.
 + lib contains sky130 standard cell library used for synthesis
@@ -96,9 +104,17 @@ Testbench is the setup to apply the stimulus(test_vectors) to the design to chec
 ![image](https://github.com/user-attachments/assets/f21382fc-a1b7-4ae6-826e-49222dd80c3a)
 ![image](https://github.com/user-attachments/assets/306fc5d3-8a91-42a8-8203-7de857132bd7)
 
+</details>
 
-# Lab 2: Introduction to iverilog gtkwave part1
+
+#### Lab 2: Introduction to iverilog gtkwave part1
+
+<details>
+<summary>iverilog</summary>
+<br>
+    
 + Step 1: go to Verilog_files
+
 + Step 2: Load the design using the command iverilog good_mux.v tb_good_mux.v
 ![image](https://github.com/user-attachments/assets/960353a2-4f02-46f3-9743-baf389e9f150)
 
@@ -121,16 +137,25 @@ Click on tb good mux, inputs and outputs signal will appear drag and drop them a
 To see the transitions of particular input
 ![image](https://github.com/user-attachments/assets/9e38417f-8401-47af-9856-35975db1110c)
 
- 
+ </details>
 
-# Lab 2: Introduction to iverilog gtkwave part2
+#### Lab 2: Introduction to iverilog gtkwave part2
+
+<details>
+<summary>file structure</summary>
+<br>
+    
 + Let us look into the file structure
 ![image](https://github.com/user-attachments/assets/7ebdbed0-8a04-4559-a316-6106f9c7219a)
 
 ![image](https://github.com/user-attachments/assets/f70afea0-2f11-4060-9a2f-b27b147d81a3)
 
+</details>
 
-# Introduction to Yosys and Logic Synthesis
+<details>
+<summary>Introduction to Yosys and Logic Synthesis</summary>
+<br>
+
 ## What is Synthesizer?
 + It is tool used for converting RTL into netlist
 + Yosys is the synthesizer
@@ -147,7 +172,12 @@ To see the transitions of particular input
 The set of primary inputs/outputs remains same between RTL design and synthesized netlist
 Same test bench can be used
 
-# Introduction to Logic Synthesis Part1
+</details>
+
+<details>
+<summary>Introduction to Logic Synthesis Part1</summary>  
+<br>
+
 ## What is RTL design?
 It is the behavioral representation of the required specification
 ## What happens in Synthesis?
@@ -173,9 +203,12 @@ It is the behavioral representation of the required specification
 
 ![image](https://github.com/user-attachments/assets/9c71cd91-988e-48f0-b33e-dad715dc77a6)
 
+</details>
 
-# Introduction to Logic Synthesis Part2
-
+<details>
+<summary>Introduction to Logic Synthesis Part2</summary>
+<br>
+    
 ## Why do we need Slow cells?
 
 ![image](https://github.com/user-attachments/assets/3fd7187e-6492-47ee-af6e-e272937baddd)
@@ -194,11 +227,16 @@ It is the behavioral representation of the required specification
 
 ![image](https://github.com/user-attachments/assets/10febcab-302b-4a18-8fa4-419b80738bab)
 
+ </details>
  
 # Labs using Yosys and Sky130 PDKs
 
-## Lab 3: Yosys 1 good mux part1 
+#### Lab 3: Yosys 1 good mux part1 
 
+<details>
+<summary>yosys good mux</summary>
+<br>
+    
 + ## Step 1: Invoke yosys
   
  ![image](https://github.com/user-attachments/assets/d6f3d17b-d8d5-4add-b114-9acf0b848704)
@@ -257,6 +295,8 @@ It is the behavioral representation of the required specification
 ![image](https://github.com/user-attachments/assets/1cc12e5e-4a79-4d20-a710-ff7801539aca)
 
 ![image](https://github.com/user-attachments/assets/bd4eebca-ea02-43af-8005-04bf2dc21818)
+
+</details>
 
 
 
