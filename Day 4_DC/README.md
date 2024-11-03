@@ -35,3 +35,31 @@
 
 </details>
 
+<details>
+<summary>Lab 18: Boundary optimizations </summary>
+<br>
+
+
+</details>
+
+<details>
+<summary>Lab 19: Register Retiming </summary>
+<br>
+
+
+</details>
+
+<details>
+<summary>Lab 20: Isolating output ports </summary>
+<br>
+
+
+</details>
+
+<details>
+<summary>Lab 21: MultiCycle Path </summary>
+<br>
+
+
+</details>
+
