@@ -1,7 +1,9 @@
 # Advanced Synthesis and STA with DC
 
-## Introduction to Course
-
+<details>
+<summary>Introduction to Course</summary>
+<br>
+  
 ## Agenda
 
 ![image](https://github.com/user-attachments/assets/465e7ccd-0e4f-49a3-8499-9ac8be780f3b)
@@ -18,7 +20,11 @@
 
 ![image](https://github.com/user-attachments/assets/c4630ed1-c4f6-452c-8f39-a79e89545f7a)
 
-# Basics of Digital Logic Design and Synthesis
+</details>
+
+<details>
+<summary>Basics of Digital Logic Design and Synthesis</summary>
+<br>
 
 ![image](https://github.com/user-attachments/assets/6739f061-1dc8-4d20-b09d-ed649f272e4c)
 
@@ -62,7 +68,10 @@
 
 ![image](https://github.com/user-attachments/assets/42b0489c-65d5-42c6-bfea-539d6ddb3ea0)
 
-# Logic Synthesis Basics
+</details>
+
+<details>
+<summary>Logic Synthesis Basics</summary>
 
 ## Example
 
@@ -82,7 +91,11 @@
 
 ![image](https://github.com/user-attachments/assets/be39e294-bdab-4897-8164-9e032cae0d42)
 
-# Introduction to Design Compiler (DC)
+</details>
+
+<details>
+<summary>Introduction to Design Compiler (DC)</summary>
+<br>
 
 ## What is DC?
 
@@ -108,9 +121,15 @@
 
 ![image](https://github.com/user-attachments/assets/e68dc3ba-3c2b-4fce-9f80-14a307d63495)
 
-# Labs on DC
+</details>
+
+<details>
+<summary>Labs on DC</summary>
+<br>
 
 ## Lab 1: Invoking DC Basic Setup
+
+</details>
 
 
 
