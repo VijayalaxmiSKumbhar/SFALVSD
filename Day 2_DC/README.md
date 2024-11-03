@@ -53,6 +53,22 @@ Delay = function (load capacitance)
 <summary>What are Constraints </summary>
 <br>
 
+#### What are timing paths and how it affects design?
+
+###### Example
+![image](https://github.com/user-attachments/assets/562cc8c4-3298-408c-9b63-7433c5b74097)
+
+###### Start and End points of timing paths
+
+![image](https://github.com/user-attachments/assets/b78223ce-93cb-44ae-a385-79c638b52fef)
+
+
+#### Constrainig the Design- Why Constraints?
+
+##### Example
+![image](https://github.com/user-attachments/assets/2308f304-3aa5-45f3-82e7-ff566530c558)
+
+
 
 </details>
 
