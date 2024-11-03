@@ -1,4 +1,4 @@
-# Welcome to the SFAL-VSD SoC Design Program Repository.
+# Welcome to the SFAL-VSD SoC Design Program Repository 
 ###### This repository documents a semiconductor design basics, including floorplanning, placement, clock tree synthesis (CTS), routing, optimization, and verification organized by VSD.
 
 
@@ -81,6 +81,25 @@
 ![image](https://github.com/user-attachments/assets/a09eeac5-feee-4e0f-b715-ca52fb76da4d)
 
 </details>
+
+# Repo Organization
+
+<div style="overflow-x: auto; white-space: nowrap;">
+  <pre>
+1. Daily Progress Overview: Each folder includes a comprehensive overview of daily activities, including learning summaries, tool installations, relevant code and design files.
+2. Tools: Detailed, step-by-step documentation of the necessary tools for the program, along with installation instructions and screenshots.
+  </pre>
+</div>
+
+# Aim and Objectives
+
+```
+* Understand the basics of System on Chip (SoC) design.
+* Acquire practical experience using industry-standard tools and processes.
+* Documentation of daily tasks.
+* Present projects and the results of learning.
+
+```
 
 # Learning Goals
 
