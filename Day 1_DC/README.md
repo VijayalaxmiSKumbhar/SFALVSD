@@ -124,16 +124,62 @@
 </details>
 
 <details>
-<summary>Labs on DC</summary>
+<summary>Lab 1: Invoking DC Basic Setup</summary>
 <br>
 
-## Lab 1: Invoking DC Basic Setup
+## 
 
 </details>
 
 
+<details>
+<summary>Lab 2: ddc gui with design_vision</summary>
+<br>
+
+## 
+
+</details>
+
+<details>
+<summary>Lab 3: dc synopsys dc setup</summary>
+<br>
+
+## 
+
+</details>
+
+<details>
+<summary>TCL Quick Refresher</summary>
+<br>
+
+## Set
+#### For set $ is not used.
+  
+![image](https://github.com/user-attachments/assets/aeea0bc9-3618-4422-94a7-9e4630a91faa)
+
+## Conditional Statements
+#### Note: Strictly follow the syntax to avoid errors
+##### if statement
+  
+![image](https://github.com/user-attachments/assets/41f23848-58cd-4511-8b1a-d69c5c98fcec)
+
+##### while statement
+![image](https://github.com/user-attachments/assets/e9986d69-ba64-476d-a4bd-a174c4b7d836)
+
+##### for loop
+![image](https://github.com/user-attachments/assets/4fdf1c9a-e2b0-44bb-b88d-fc55369b44e6)
 
 
+</details>
+
+
+<details>
+<summary>Lab 4: tcl scripting</summary>
+<br>
+
+## 
+
+</details>
 
 
 
