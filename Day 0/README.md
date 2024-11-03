@@ -82,6 +82,15 @@
 
 </details>
 
+# Learning Goals
+
+
+### Task Repository
+
+| Day  | Folder  |Activity  |
+| ------------ | ------------ | ------------ |
+| Day 1  | Day 1/  |  Tools Installation |
+
 
  
 
