@@ -1,8 +1,10 @@
-# Day 3: Combinational and Sequential Optimizations
+# Combinational and Sequential Optimizations
 
-## Introduction to optimizations
+<details>
+<summary>Introduction to optimizations</summary>
+<br>
 
-### Combinational Logic Optimization methods
+#### Combinational Logic Optimization methods
 
 ![image](https://github.com/user-attachments/assets/931a7aed-2f51-4c75-ae71-4db1b1e526f1)
 
@@ -18,8 +20,12 @@
 
 ![image](https://github.com/user-attachments/assets/f6e14690-fcc2-4fb8-8a92-8854cf9f577c)
 
-# Sequential Logic Optimization Techniques
+</details>
 
+<details>
+<summary>Sequential Logic Optimization Techniques</summary>
+<br>
+	
 ![image](https://github.com/user-attachments/assets/ebb3fdec-a0ce-4b5b-9fa5-1c28d4d47b58)
 
 + ## Sequential Constant Propagation
@@ -30,12 +36,19 @@
 
 ![image](https://github.com/user-attachments/assets/e48b0d95-ee26-4f84-ada7-136e870ff02b)
 
-## Advanced Optimization Techniques
+</details>
+
+<details>
+<summary>Advanced Optimization Techniques</summary>
 
 ![image](https://github.com/user-attachments/assets/8064ddc8-1a37-4024-aecb-bfd91550c8e6)
 
-# Labs on  Combinational Logic Optimization 
+</details>
 
+<details>
+<summary>Labs on  Combinational Logic Optimization </summary>
+<br>
+	
 ## Following examples are used to understand optimization
 
 ![image](https://github.com/user-attachments/assets/ac6c9007-e3ad-4c77-a7cd-abe5216118bf)
@@ -66,10 +79,11 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/9df4c4d7-c4dc-4b8e-b00f-a67cd4192f21)
 
+</details>
 
-
-
-### Example opt_check2 (Two input OR Gate)
+<details>
+<summary>Example opt_check2 (Two input OR Gate)</summary>
+<br>
 
 ```
 module opt_check2 (input a , input b , output y);
@@ -83,8 +97,12 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/fffd65a7-6f9d-460e-baa8-7c42ee0a185d)
 
-### Example opt_check3 (Three input AND Gate)
+</details>
 
+<details>
+<summary>Example opt_check3 (Three input AND Gate)</summary>
+<br>
+	
 ```
 module opt_check3 (input a , input b, input c , output y);
 	assign y = a?(c?b:0):0;
@@ -97,8 +115,12 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/2eccd524-8836-4277-a557-c4b330e5ac0a)
 
-# Labs on Sequential Optimization Techniques
+</details>
 
+<details>
+<summary>Labs on Sequential Optimization Techniques</summary>
+<br>
+	
 ### Example
 
 ![image](https://github.com/user-attachments/assets/1a2ef660-0c3a-4a70-9ef2-6ed770806145)
@@ -126,8 +148,11 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/354cdcec-bd85-4933-b104-4d08db253ffb)
 
+</details>
 
-# Simulation of dff_const2.v
+<details>
+<summary>Simulation of dff_const2.v</summary>
+<br>
 
 ### In this example of irrespective of clock and reset Q is always one.
 
@@ -143,7 +168,11 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/0ac0fcc7-d569-4911-8d7c-00ba6e220f6a)
 
-# Simulation of dff_const3.v
+</details>
+
+<details>
+<summary>Simulation of dff_const3.v</summary>
+<br> 
 
 ```
 module dff_const3(input clk, input reset, output reg q);
@@ -175,9 +204,12 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/c01eb273-577f-4781-8896-10a8299dc041)
 
+</details>
 
-# Sequential optimzations for unused outputs
-
+<details>
+<summary>Sequential optimzations for unused outputs</summary>
+<br>
+	
 ### Example counter_opt.v
 
 ```
@@ -206,7 +238,12 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/3759f888-7c5c-40ab-88a5-14551b0be549)
 
-### Example counter_opt2.v
+</details>
+
+<details>
+<summary>Example counter_opt2.v</summary>
+<br>
+
 
 ```
 module counter_opt (input clk , input reset , output q);
@@ -234,7 +271,7 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/b26e5b4b-e003-4b60-8c2d-71b86b18bb9f)
 
-
+</details>
 
 
 
