@@ -4,6 +4,7 @@
 <details>
 <summary> Chip Modelling </summary>
 <br>
+ 
 ![Capture](https://github.com/user-attachments/assets/09f91696-937b-4bd8-9045-fafd02103e19)
 
 + Write the C code for an application and compile it using the gcc in Linux and measure the output O0 as given in the figure.
@@ -12,15 +13,17 @@
 
 </details>
 
-
-
-## RTL architect
+<details>
+<summary> RTL architect </summary>
+<br>
 
 ![Capture](https://github.com/user-attachments/assets/67ed0c25-662e-45d9-908e-40c8590bfa1b)
 
 + Understand the specifications and represent the specifications in one of the hardware language like Verilog.
 + Take the same application, run on the hardware and measure O2.
 + Make sure that O2 == O1, so that functionality is retained.
+
+</details>
 
 ## SoC Design Flow
 
