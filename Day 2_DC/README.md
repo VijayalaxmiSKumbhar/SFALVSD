@@ -87,8 +87,25 @@ Delay = function (load capacitance)
 </details>
 
 <details>
-<summary>Timing dot libs </summary>
+<summary>Lab 5: Timing dot libs </summary>
 <br>
 
 
 </details>
+
+
+<details>
+<summary>Lab 6: Exploring dot libs part 1 </summary>
+<br>
+
+
+</details>
+
+
+<details>
+<summary>Lab 7: Exploring dot libs part 2 </summary>
+<br>
+
+
+</details>
+
