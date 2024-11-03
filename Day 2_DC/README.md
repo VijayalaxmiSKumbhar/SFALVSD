@@ -80,8 +80,19 @@ Delay = function (load capacitance)
 </details>
 
 <details>
-<summary>Inp Trans Output Load </summary>
+<summary>IO Constraints </summary>
 <br>
+
+##### Is IO Delay Modelling Sufficient?
+
+![image](https://github.com/user-attachments/assets/d6399d90-606d-41f3-a195-fc4f21ba9b49)
+
+![image](https://github.com/user-attachments/assets/38425de3-8995-4315-96ab-78a8a089e121)
+
++ Note: 70:30 rule that is 70% (External Delay) and 30% (Internal Delay)
+
+### Summary
+![image](https://github.com/user-attachments/assets/8dfd992f-f574-406f-9dcc-478ce064b410)
 
 
 </details>
