@@ -1,10 +1,12 @@
-# Day 2: Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
+# Timing libs, hierarchical vs flat synthesis and efficient flop coding styles
 
-## Lab Steps
+#### Lab Steps
 
-# Introduction to timing .libs
+##### Introduction to timing .libs
 
-## Introduction to dot Lib 
+<details>
+<summary>Introduction to dot Lib</summary>
+<br>
 
 ![image](https://github.com/user-attachments/assets/035d7cf3-845b-4185-a30a-528c4d198a30)
 
@@ -12,6 +14,7 @@
 ### Here tt --> indicates a typical process
 ### 025c --> temperature
 ### 1v80 --> voltage that is 1.8 V
+
 ![image](https://github.com/user-attachments/assets/fc7d9485-4cac-4079-b400-50bcca7c237d)
 
 ## Different types of cells in library
@@ -36,9 +39,13 @@
 
 ![image](https://github.com/user-attachments/assets/6b204267-0b92-4b7b-b51f-2136a9e67c26)
 
+</details>
+
 # Hierarchical vs Flat Synthesis
 
-## Consider an example of multiple modules
+<details>
+<summary>multiple modules</summary>
+<br>
 
 ```
 module sub_module2 (input a, input b, output y);
@@ -154,9 +161,12 @@ module sub_module2(a, b, y);
 endmodule
 
 ```
+</details>
 
-# flatten command: To write flat netlist
-
+<details>
+<summary>flatten command</summary>
+<br>
+	
 ![image](https://github.com/user-attachments/assets/d2b939ab-68e3-42e7-9e47-8400b1000eae)
 
 ### write_verilog -noattr multiple_modules_flat.v
@@ -165,7 +175,11 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/9103fbdc-371e-4900-b516-cf7346792084)
 
-## Difference between hierarchical and flat
+</details>
+
+<details>
+<summary>Difference between hierarchical and flat</summary>
+<br> 
 
 ### In gvim type :vsp multiple_modules_hier.v
 
@@ -200,7 +214,10 @@ show
 
 ![image](https://github.com/user-attachments/assets/ed765405-9b4b-425b-9390-844ae30d45a9)
 
-## Various Flop Coding Styles and Optimization
+</details>
+
+<details>
+<summary>Various Flop Coding Styles and Optimization</summary>
 
 ### Why Flops and Flop Coding Styles?
 
@@ -221,10 +238,10 @@ show
 
 ![image](https://github.com/user-attachments/assets/6d4a6478-54e3-4035-bad7-240bbc51431d)
 
-
-# Lab Steps: flop synthesis simulations
-
-
+<details>
+<summary>flop synthesis simulations</summary>
+<br>
+	
 ## Consider an example of Asynchronous Reset
 
 ### Step 1:
@@ -238,8 +255,11 @@ show
 
 ![image](https://github.com/user-attachments/assets/d46c05a6-3dcf-4e52-898f-6704f2284961)
 
+</details>
 
-## Consider an example of Asynchronous set
+<details>
+<summary>example of Asynchronous set</summary>
+<br> 
 
 ### Step 1:
 
@@ -253,9 +273,12 @@ show
 ![image](https://github.com/user-attachments/assets/29b95b75-85b1-42fe-a230-51baea8890c2)
 ![image](https://github.com/user-attachments/assets/a921f31a-eb60-453b-af98-e63e250c966d)
 
+</details>
 
-## Consider an example of synchronous reset
-
+<details>
+<summary>example of synchronous reset</summary>
+<br>
+	
 ### Step 1:
 ![image](https://github.com/user-attachments/assets/f3d07edb-976f-41fd-9685-9c9aa1cd32be)
 
@@ -266,9 +289,12 @@ show
 
 ![image](https://github.com/user-attachments/assets/4a379fb1-0191-404a-ab74-085c7296af1a)
 
+</details>
 
-# Synthesis of Asynchronous reset/set and Synchronous Set using yosys
-
+<details>
+<summary>Synthesis of Asynchronous reset/set and Synchronous Set using yosys</summary>
+<br>
+	
 + ### Step 1: read_liberty -lib /home/comp/sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
 + ### Step 2: read_verilog /home/comp/sky130RTLDesignAndSynthesisWorkshop/verilog_files/dff_asyncres.v
@@ -292,6 +318,12 @@ show
   
 ![image](https://github.com/user-attachments/assets/1e512cf4-e666-4d41-923e-bc1ec49bfaaf)
 
+</details>
+
+<details>
+<summary>D flip-flop</summary>
+<br>
+	
 ## Similar Steps can be followed for D flip-flop asynchronous set
 
 ![image](https://github.com/user-attachments/assets/d9b542b3-98d6-4edf-8d76-5b4b6c234d36)
@@ -301,6 +333,12 @@ show
 ![image](https://github.com/user-attachments/assets/f5dbf6ae-c3ab-4144-a9bf-3b950c214fe3)
 
 ![image](https://github.com/user-attachments/assets/1172facc-efaf-4b52-b0f0-02f3e51f0504)
+
+</details>
+
+<details>
+<summary>interesting optimisations</summary>
+<br>
 
 # Consider an example of mult_2.v to understand interesting optimisations
 
@@ -347,6 +385,8 @@ endmodule
 
 
 ![image](https://github.com/user-attachments/assets/2f8f1db0-8d35-4fbb-abbf-19f33af11549)
+
+</details>
 
 
 
