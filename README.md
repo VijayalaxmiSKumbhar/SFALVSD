@@ -108,7 +108,7 @@
 
 | Day  | Folder  |Activity  |
 | ------------ | ------------ | ------------ |
-|[Day 1](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%201 "Day 1") | Day 1  |  Tools Installation |
+|[Day 1](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%201 "Day 1") | Day 1  |  Tools Setup |
 
 
  
