@@ -1,9 +1,11 @@
+# Tools Installation
 
-# Day 1: Tools Installation
 
+<details>
+<summary>yosys</summary>
+<br>
 
-***
-## Yosys
+##### Steps
 ```
 $ sudo apt-get update
 $ git clone https://github.com/YosysHQ/yosys.git
@@ -20,11 +22,13 @@ $ sudo make install
 
 ![yosys](https://github.com/user-attachments/assets/5d02e3c8-1915-4843-8b31-253f72423556)  
 
----
+</details>
 
-# Iverilog
-## Steps to install iverilog
-
+<details>
+<summary>iverilog</summary>
+<br>
+    
+#### Steps
 
 ```
 sudo apt-get update
@@ -33,13 +37,13 @@ sudo apt-get install iverilog
 
 ![iverilog](https://github.com/user-attachments/assets/512b794e-c63a-423a-8caa-252b191db63e)
 
+</details>
 
----
+<details>
+<summary>gtkwave</summary> 
+<br>
 
-# gtkwave
-
-## Steps to install gtkwave
-
+##### Steps
 
 ```
 sudo apt-get update
@@ -49,6 +53,7 @@ sudo apt install gtkwave
 
 ![gtkwave](https://github.com/user-attachments/assets/a3b185f9-e798-4742-a72c-387be8f40abb)
 
+</details>
 
 # Day 1: Introduction to Verilog RTL design and Synthesis
 
