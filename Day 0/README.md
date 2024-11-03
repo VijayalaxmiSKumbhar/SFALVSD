@@ -1,5 +1,4 @@
-
-
+# Welcome to the SFALVSD repository! This repository is designed to 
 # Summary of Digital VLSI SoC Design and Planning
 
 <details>
