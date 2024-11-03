@@ -8,7 +8,7 @@
 </details>
 
 <details>
-<summary>Labs</summary>
+<summary>Lab: Check_timing, Check_design, Set_max_capacitance, HFN </summary>
 <br>
 
 
