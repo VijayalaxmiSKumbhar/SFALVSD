@@ -2,7 +2,7 @@
 
 ## Introduction to Course
 
-## Agenda 
+< ## Agenda >
 
 ![image](https://github.com/user-attachments/assets/465e7ccd-0e4f-49a3-8499-9ac8be780f3b)
 
