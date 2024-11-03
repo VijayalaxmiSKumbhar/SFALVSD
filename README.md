@@ -1,5 +1,5 @@
 # Welcome to the SFAL-VSD SoC Design Program Repository 
-###### This repository documents a semiconductor design basics, including floorplanning, placement, clock tree synthesis (CTS), routing, optimization, and verification organized by VSD.
+#### This repository documents a semiconductor design basics, including floorplanning, placement, clock tree synthesis (CTS), routing, optimization, and verification organized by VSD.
 
 
 # Summary of Digital VLSI SoC Design and Planning
