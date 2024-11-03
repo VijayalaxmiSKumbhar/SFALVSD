@@ -36,11 +36,16 @@ Delay = function (load capacitance)
 #### Combinational Cell
 
 + Delay information from every input pin to every output pin which it can control is present in timing arcs
- 
++ Example
+![image](https://github.com/user-attachments/assets/0918f0f6-9d08-4c3a-b5b0-e71a6b485a74)
 
+#### Sequential Cell [D flip-flop, D latch]
 
+![image](https://github.com/user-attachments/assets/2476ba4f-85bb-45bf-9a55-b4fa435cbed5)
 
+![image](https://github.com/user-attachments/assets/9780917c-2140-4326-ae93-3ebc5e54675b)
 
+![image](https://github.com/user-attachments/assets/2951cb01-67ca-49c6-8e0d-9b24cd9e20f3)
 
 </details>
 
