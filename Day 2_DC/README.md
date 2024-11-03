@@ -62,12 +62,19 @@ Delay = function (load capacitance)
 
 ![image](https://github.com/user-attachments/assets/b78223ce-93cb-44ae-a385-79c638b52fef)
 
+##### Timing Paths Summary
+
+![image](https://github.com/user-attachments/assets/e4d68547-4f3e-4d92-8ea3-8735dc7582af)
+
 
 #### Constrainig the Design- Why Constraints?
 
-##### Example
+##### Example 1
 ![image](https://github.com/user-attachments/assets/2308f304-3aa5-45f3-82e7-ff566530c558)
 
+###### Example 2
+
+![image](https://github.com/user-attachments/assets/d42e3127-eece-41f8-a625-e3aa6d1eaa52)
 
 
 </details>
