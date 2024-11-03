@@ -169,6 +169,11 @@
 ##### for loop
 ![image](https://github.com/user-attachments/assets/4fdf1c9a-e2b0-44bb-b88d-fc55369b44e6)
 
+##### foreach: General TCL statement/command
+![image](https://github.com/user-attachments/assets/6a4840c8-a710-41b0-8866-dd93a90f1385)
+
+##### DC specific command
+![image](https://github.com/user-attachments/assets/318fb6c8-32ee-408c-b83b-64a1f3d0b33d)
 
 </details>
 
