@@ -49,6 +49,26 @@
 
 </details>
 
+<details>
+<summary>Lab 13: generated_clocks </summary>
+<br>
+
+
+</details>
+
+<details>
+<summary>Lab 15: Part 1 Set_Max_delay </summary>
+<br>
+
+
+</details>
+
+<details>
+<summary>Lab 15: Part 2 VCLK </summary>
+<br>
+
+
+</details>
 
 
 
