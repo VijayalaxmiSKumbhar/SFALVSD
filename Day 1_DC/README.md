@@ -127,7 +127,69 @@
 <summary>Lab 1: Invoking DC Basic Setup</summary>
 <br>
 
-## 
+## Understanding sky130_fd_sc_hd__tt_025c_1v80.lib
+![image](https://github.com/user-attachments/assets/e900066f-0dac-4371-90ad-7f820b422a13)
+
+## Invoke DC using the commands
+
+* csh
+* dc_shell
+
+![image](https://github.com/user-attachments/assets/61c0ae0f-ff85-419a-accf-af0c8afa4e07)
+
+![image](https://github.com/user-attachments/assets/8f44d2dd-5e77-4708-8a80-3aeeb07bd659)
+
+![image](https://github.com/user-attachments/assets/df5924af-1e57-4e8d-8339-5ac1ef458f01)
+
+## Example
+
+```
+module lab1_flop_with_en ( input res , input clk , input d , input en , output reg q);
+always @ (posedge clk , posedge res)
+begin
+	if(res)
+		q <= 1'b0;
+	else if(en)
+		q <= d;	
+end
+endmodule
+
+![image](https://github.com/user-attachments/assets/53a0aea5-5ec6-4129-8bda-e7e073fdf8a5)
+
+
+```
+read_verilog
+![image](https://github.com/user-attachments/assets/11473abd-6c3e-4dfa-b3db-5b5a99026130)
+
+write_verilog: write -f verilog -out lab1_net.v
+
+![image](https://github.com/user-attachments/assets/a4d0db8f-a370-482b-840e-c3fafce2c2e0)
+
+gtech library: Virtual library in DC to understand the design
+
+![image](https://github.com/user-attachments/assets/be1f077a-d9d0-46a5-8a64-d1c10ce0ed3e)
+
+read the library as: read_db sky130RTLDesignAndSynthesisWorkshop/DC_Workshop/lib/sky130_fd_sc_hd__tt_025c_1v80.db
+
+![image](https://github.com/user-attachments/assets/6317961b-0820-46e7-8827-8b2b1845d5bb)
+
+set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db
+
+set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db} (here * signifies libraries in DC memory)
+
+Syntax to link library 
+
+![image](https://github.com/user-attachments/assets/81f2005c-1cbf-4943-bff8-43adf9c9a411)
+
+link
+
+![image](https://github.com/user-attachments/assets/7261fce0-050d-4b4b-863a-5eabc838a743)
+
+compile
+
+![image](https://github.com/user-attachments/assets/5fe5c24e-d4a1-49cd-bdf4-4f41612b4852)
+
+
 
 </details>
 
