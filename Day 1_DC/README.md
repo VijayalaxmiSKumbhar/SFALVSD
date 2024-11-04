@@ -343,6 +343,8 @@ set i [expr $i+1];
 * source myscript.tcl
 ![image](https://github.com/user-attachments/assets/3ae818fa-7b37-4214-82ca-1644c356643c)
 
+#### Note: Printing with curly braces is a collection and without curly braces is a list
+
 </details>
 
 
