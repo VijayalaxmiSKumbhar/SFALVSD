@@ -200,7 +200,31 @@ write -f verilog -out lab1_net_with_sky130.v
 <summary>Lab 2: ddc gui with design_vision</summary>
 <br>
 
-## 
+## To launch design_vision type
+
+* csh
+* design_vision
+![image](https://github.com/user-attachments/assets/c689ac9f-04e3-4ec8-9abd-642ce3497dd4)
+
+write -f ddc -out lab1.ddc (write is the syntax to tell the tool to write the information in ddc format)
+![image](https://github.com/user-attachments/assets/8601b3d2-af84-4167-9355-6c5837a8b10e)
+
+command to start gui is 
+* start_gui
+* read_ddc lab1.ddc
+![image](https://github.com/user-attachments/assets/a9bdc1ef-49d0-4fb7-b9b8-2ef703a3a4bb)
+
+## Difference between read_verilog and read_ddc
+
+![image](https://github.com/user-attachments/assets/e17a0d77-8cee-4779-8ce7-38c53f2d5e01)
+
+## Schematic View
+
+![image](https://github.com/user-attachments/assets/a61937a9-a29c-4356-9124-3616f5c985cf)
+
+## Got the same design as per expectation
+
+![image](https://github.com/user-attachments/assets/8bbbb024-5a84-491f-9fc8-a7d84489df51)
 
 </details>
 
