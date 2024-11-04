@@ -128,6 +128,19 @@ Delay = function (load capacitance)
 <summary>Lab 6: Exploring dot libs part 1 </summary>
 <br>
 
+## Sequential timing arcs
+* CLK_N pin means active low clock and its attribute is 'TRUE' means it is clock
+* for D pin clock attribute is 'FALSE'
+![image](https://github.com/user-attachments/assets/eac8a866-2088-4f96-a5fe-370f3ebed833)
+* CLK_N is non_unate because Q may be rising or falling depending on the clock.
+![image](https://github.com/user-attachments/assets/7dd14784-fe4d-4156-9429-2d17fc15d1f4)
+
+* echo $target_library
+* command to look for library cells: get_lib_cells * -filter "is_sequential == true "
+* get_lib_cells */* -filter "is_sequential == true"
+![image](https://github.com/user-attachments/assets/451af0b3-3347-47c4-bd44-054f2d2ae3d8)
+
+  
 
 </details>
 
