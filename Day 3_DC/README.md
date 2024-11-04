@@ -32,6 +32,18 @@
 <summary>SDC Part 2 IO Delays </summary>
 <br>
 
+## How to Constraint the design in DC
+
+![image](https://github.com/user-attachments/assets/b033d2ef-c601-48a2-b82f-12b9cd35cb69)
+
+## getting the ports in DC
+
+![image](https://github.com/user-attachments/assets/a2df36af-334b-446d-b546-125be8224099)
+
+## getting the clocks in DC
+
+![image](https://github.com/user-attachments/assets/82fc0db8-31b7-4da3-9bec-b9633ec1c26b)
+
 
 </details>
 
