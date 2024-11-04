@@ -101,9 +101,25 @@ Delay = function (load capacitance)
 <summary>Lab 5: Timing dot libs </summary>
 <br>
 
+## Details about sky130_fd_sc_hd__tt_025c_1v80.lib
+
 #### Max capacitance limit in lib is 1.5 pF because of the following reasons
 
 ![image](https://github.com/user-attachments/assets/5da1668e-06e3-40dc-ba38-80d48eec72bf)
+
+#### Delay Model: Look up table
+
+![image](https://github.com/user-attachments/assets/d3902f10-8156-439a-9d24-dbc8e1527712)
+
+* similarly power consumed by the cell is alo LUT (look up table)
+* .lib has information about power pins
+* max transistion allowed per pin
+* For every pin direction is mentioned
+* clok pin attribute is true for flops
+* functionality is mentioned
+* The tool uses unateness information to propagate the transistion
+  ![image](https://github.com/user-attachments/assets/44f3bb67-8bf4-4a80-8468-ab4cd9b68db6)
+
 
 </details>
 
