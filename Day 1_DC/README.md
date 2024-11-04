@@ -243,8 +243,11 @@ command to start gui is
 ![image](https://github.com/user-attachments/assets/f6b07c50-cbec-4a86-b071-2587dad73802)
 
 gvim .synopsys_dc.setup
-![image](https://github.com/user-attachments/assets/245b4b24-f152-49e0-bffb-b30dc8e58998)
+![image](https://github.com/user-attachments/assets/8afc601e-cef8-41ec-ade7-1ebb59599711)
 
+Invoke dc again
+after that type the command: echo $target_library
+![image](https://github.com/user-attachments/assets/072b034c-9ac0-43e9-a56d-acb1eae71f52)
 
 
 </details>
