@@ -243,7 +243,8 @@ command to start gui is
 ![image](https://github.com/user-attachments/assets/f6b07c50-cbec-4a86-b071-2587dad73802)
 
 gvim .synopsys_dc.setup
-![image](https://github.com/user-attachments/assets/8afc601e-cef8-41ec-ade7-1ebb59599711)
+![image](https://github.com/user-attachments/assets/b8f51c5c-d5c6-4118-bdd6-1c7bbf8236e1)
+
 
 Invoke dc again
 after that type the command: echo $target_library
@@ -321,7 +322,27 @@ set i [expr $i+1];
   
 ![image](https://github.com/user-attachments/assets/22db2fef-56bf-48ec-a2ab-1f2540b417e1)
 
-get_lib_cells */*and*
+## get_lib_cells */*and*
+![image](https://github.com/user-attachments/assets/d913e163-6d64-4e39-b229-0d30b8cab96a)
+
+* foreach_in_collection my_var [get_lib_cells */*and*] {
+  set my_var_name [get_object_name $my_var]; echo $my_var_name;
+  }
+
+  ![image](https://github.com/user-attachments/assets/45f97984-3595-4dd1-81ab-d7beb8ea4065)
+
+## To launch gvim within the tcl command is
+* sh gvim &
+![image](https://github.com/user-attachments/assets/1a333dc2-dd7a-4555-9cd5-62260fee6057)
+
+#### mycript.tcl
+![image](https://github.com/user-attachments/assets/cf773a38-0ed4-4bed-a6ca-1b874ca0e016)
+
+#### Program is corrected
+
+* source myscript.tcl
+![image](https://github.com/user-attachments/assets/3ae818fa-7b37-4214-82ca-1644c356643c)
+
 </details>
 
 
