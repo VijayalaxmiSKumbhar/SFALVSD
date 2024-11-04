@@ -155,8 +155,37 @@ Delay = function (load capacitance)
 
 ![image](https://github.com/user-attachments/assets/165c933d-f728-461f-8a51-1be5f839e19a)
 
+## To display the cells one by one
+* foreach_in_collection my_lib_cell [get_lib_cells */*and*] { 
+set my_lib_cell_name [get_object_name $my_lib_cell]; echo $my_lib_cell_name; 
+}
+![image](https://github.com/user-attachments/assets/cea88f16-8db8-4677-a5bc-aa91c1523a67)
 
+* To see what are all the pins in particular cell: get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/*
+![image](https://github.com/user-attachments/assets/b73cedec-36f7-4812-8b78-48d9000baeff)
 
+* Script to display the direction of pin
+* foreach_in_collection my_pins [get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/*] {
+  set my_pin_name [get_object_name $my_pins];
+  set pin_dir [get_lib_attribute $my_pin_name direction];
+  echo $my_pin_name $pin_dir
+  }
+![image](https://github.com/user-attachments/assets/c686c1aa-f28d-4333-8839-a17f0bb19993)
+
+*command to check the functionality: get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/X function
+
+![image](https://github.com/user-attachments/assets/46d5a09d-6d3e-4b92-be8c-214202f6bc14)
+* Similarly we can check for nand gate
+![image](https://github.com/user-attachments/assets/81ec3e9c-4041-445e-92ae-e6481a5397d3)
+
+* get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4_1/*
+* foreach_in_collection my_pins [get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4_1/*] {
+  set my_pin_name [get_object_name $my_pins];
+  set pin_dir [get_lib_attribute $my_pin_name direction];
+  echo $my_pin_name $pin_dir
+  }
+
+  ![image](https://github.com/user-attachments/assets/84e1e8ca-bacb-49ba-b924-1b958c486960)
 
 
 </details>
