@@ -223,20 +223,49 @@ sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4_4 \
 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_1 \
 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2]
 
+#For each cell in the list, find the output pin name and its functionality
 
-# For each cell in the list, find output pin name and its functionality
 foreach my_cell $my_list {
-        foreach_in_collection my_lib_pin [get_lib_pins {$my_cell}/*]; {
-                 set my_lib_pin_name [get_object_name $my_lib_pin];   
-                 set a [get_lib_attribute $my_lib_pin_name direction];
-        if {$a == 2} {
-                  set fn [get_attribute $my_lib_pin_name function];
-                  echo $my_lib_pin_name $a $fn;
-}
-}
+  foreach_in_collection my_lib_pin [get_lib_pins ${my_cell}/*] {
+    set my_lib_pin_name [get_object_name $my_lib_pin];
+    set a [get_lib_attribute $my_lib_pin_name direction];
+    if { $a > 1 } {
+      set fn [get_lib_attribute $my_lib_pin_name function];
+      echo $my_lib_pin_name $a $fn;
+    }
+  }
 }
 
 ```
+
+![image](https://github.com/user-attachments/assets/79132f47-c584-40df-bc56-03b9c07bf2e6)
+![image](https://github.com/user-attachments/assets/ba52503a-96fc-4337-8b6a-854283b13b06)
+
+# To find Area of cell sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/
+* get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/ area
+![image](https://github.com/user-attachments/assets/0d7adb1d-fbac-4393-bc44-ab68b9578858)
+
+# To find pin capacitance sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/B
+* get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/B capacitance
+![image](https://github.com/user-attachments/assets/5d4e262e-e8cf-47ba-b1b5-5e62b89fa952)
+
+# To check clock pin or not
+* get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/B clock
+![image](https://github.com/user-attachments/assets/a12ca096-18ab-446f-9401-dd8accc4c2b9)
+
+
+# To get all the cells which are sequential
+* get_lib_cells */* -filter "is_sequential == true"
+![image](https://github.com/user-attachments/assets/0650252b-a242-4dbd-a918-41f1b526fd28)
+
+# Various Attributes of sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbbn_2/
+![image](https://github.com/user-attachments/assets/1b3eab2d-6f7a-4cc4-af0d-b27a7e84396b)
+
+# list_attributes -app (lists all the attributes)
+![image](https://github.com/user-attachments/assets/a9c7532d-5efb-465d-870a-cdaa83422072)
+
+# To see the details of particular attribute 
+![image](https://github.com/user-attachments/assets/8bce8188-94a8-4c9f-b85d-5269f6caa815)
 
 </details>
 
