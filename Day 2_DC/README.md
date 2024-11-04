@@ -209,5 +209,34 @@ set my_lib_cell_name [get_object_name $my_lib_cell]; echo $my_lib_cell_name;
 
 ![image](https://github.com/user-attachments/assets/264dd125-1aaf-4b47-9751-3d75aeaf20f9)
 
+## Let us write a small script to list five cells
+
+*sh gvim my_script.tcl
+
+```
+set my_list [list sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand3b_1 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand3b_2 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand3b_4 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4_1 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4_2 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4_4 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_1 \
+sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2]
+
+
+# For each cell in the list, find output pin name and its functionality
+foreach my_cell $my_list {
+        foreach_in_collection my_lib_pin [get_lib_pins {$my_cell}/*]; {
+                 set my_lib_pin_name [get_object_name $my_lib_pin];   
+                 set a [get_lib_attribute $my_lib_pin_name direction];
+        if {$a == 2} {
+                  set fn [get_attribute $my_lib_pin_name function];
+                  echo $my_lib_pin_name $a $fn;
+}
+}
+}
+
+```
+
 </details>
 
