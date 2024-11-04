@@ -141,13 +141,22 @@ Delay = function (load capacitance)
 ![image](https://github.com/user-attachments/assets/451af0b3-3347-47c4-bd44-054f2d2ae3d8)
 
   
-
 </details>
 
 
 <details>
 <summary>Lab 7: Exploring dot libs part 2 </summary>
 <br>
+
+* list_lib shows the library that is already loaded
+![image](https://github.com/user-attachments/assets/81b12b70-ffd0-4555-83ae-bc7b9a9a0c4a)
+
+* command to see the AND gates available in library: get_lib_cells */*and*
+
+![image](https://github.com/user-attachments/assets/165c933d-f728-461f-8a51-1be5f839e19a)
+
+
+
 
 
 </details>
