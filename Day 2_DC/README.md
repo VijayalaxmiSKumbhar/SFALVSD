@@ -198,6 +198,16 @@ set my_lib_cell_name [get_object_name $my_lib_cell]; echo $my_lib_cell_name;
   
 ![image](https://github.com/user-attachments/assets/7bde1731-9d0d-424c-84c2-61a5b16b5b8a)
 
-  
+## Let see what is sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and4bb_1
+* get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and4bb_1/*
+* foreach_in_collection my_pins [get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and4bb_1/*] {
+  set my_pin_name [get_object_name $my_pins];
+  set pin_dir [get_lib_attribute $my_pin_name direction];
+  echo $my_pin_name $pin_dir
+  }
+* get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and4bb_1/X function
+
+![image](https://github.com/user-attachments/assets/264dd125-1aaf-4b47-9751-3d75aeaf20f9)
+
 </details>
 
