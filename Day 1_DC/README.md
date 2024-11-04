@@ -286,8 +286,42 @@ after that type the command: echo $target_library
 <summary>Lab 4: tcl scripting</summary>
 <br>
 
-## 
+# How to create a variable
++ set i 0
++ echo $i
++ incr i
++ echo $i
++ for {set i 0} {$i < 12 } {incr i} {
+  echo $i
+  }
+![image](https://github.com/user-attachments/assets/fab689a1-e3c1-4925-8e68-45916a501057)
 
+## while statement
++ set i 0
++ while {$i < 11} {
+  echo $i;
+  incr i;
+  }
+![image](https://github.com/user-attachments/assets/ab1bd659-d85e-49bd-ba1c-a7e82cb1ec51)
+
+* set i 0
+* while {$i < 11} {
+echo $i;
+set i [expr $i+1];
+}
+
+![image](https://github.com/user-attachments/assets/a1a79d66-a695-43db-b424-001698145802)
+
+## Creating a list
+* set mylist [list a b c d e];
+* echo $mylist
+* foreach my_var $mylist {
+  echo $my_var;
+  }
+  
+![image](https://github.com/user-attachments/assets/22db2fef-56bf-48ec-a2ab-1f2540b417e1)
+
+get_lib_cells */*and*
 </details>
 
 
