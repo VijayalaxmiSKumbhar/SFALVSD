@@ -44,6 +44,36 @@
 
 ![image](https://github.com/user-attachments/assets/82fc0db8-31b7-4da3-9bec-b9633ec1c26b)
 
+## Querying the cells in design
+
+![image](https://github.com/user-attachments/assets/566d82fb-46af-4c59-ba94-a0d1a5be0293)
+
+## Command to Create Clock
+
+![image](https://github.com/user-attachments/assets/63862391-87d9-4166-952b-bcd4ad35b6cf)
+
+## Practicalities of Clock Network
+
+* ### Latency
+* ### Uncertainity
+
+![image](https://github.com/user-attachments/assets/52502fbc-5b23-4464-8740-dcf69a4e0d0f)
+
+## Clocks-Waveform
+
+![image](https://github.com/user-attachments/assets/503c3bd4-2147-4404-b343-47d6c08840f9)
+
+## How to constraint the Input Path?
+
+![image](https://github.com/user-attachments/assets/718a3076-f15a-4151-af79-c6e8c603dfcc)
+
+## How to constraint the Output Path?
+
+![image](https://github.com/user-attachments/assets/3f5df8f9-ec63-4908-ba93-02d0ef52b1ef)
+
+## Summary of SDC Commands
+
+![image](https://github.com/user-attachments/assets/5f8467b7-e588-4d34-829c-ff72978076c9)
 
 </details>
 
