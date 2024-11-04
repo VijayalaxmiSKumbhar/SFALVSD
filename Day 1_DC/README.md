@@ -232,7 +232,20 @@ command to start gui is
 <summary>Lab 3: dc synopsys dc setup</summary>
 <br>
 
-## 
+* csh
+* dc_shell
+* echo $target_library
+* echo $link_library
+* Every time while loading the dc perform the command
+  -- set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db
+  -- set link_library {* $target_library}
+* Instead of performing repetitative tasks, the solution is to invoke synopsys dc setup
+![image](https://github.com/user-attachments/assets/f6b07c50-cbec-4a86-b071-2587dad73802)
+
+gvim .synopsys_dc.setup
+![image](https://github.com/user-attachments/assets/245b4b24-f152-49e0-bffb-b30dc8e58998)
+
+
 
 </details>
 
