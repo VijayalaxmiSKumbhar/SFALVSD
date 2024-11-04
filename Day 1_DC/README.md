@@ -189,6 +189,8 @@ compile
 
 ![image](https://github.com/user-attachments/assets/5fe5c24e-d4a1-49cd-bdf4-4f41612b4852)
 
+write -f verilog -out lab1_net_with_sky130.v
+![image](https://github.com/user-attachments/assets/edb1cdc6-b97d-44a6-87ab-e5527a98ed42)
 
 
 </details>
