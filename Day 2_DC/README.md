@@ -101,6 +101,9 @@ Delay = function (load capacitance)
 <summary>Lab 5: Timing dot libs </summary>
 <br>
 
+#### Max capacitance limit in lib is 1.5 pF because of the following reasons
+
+![image](https://github.com/user-attachments/assets/5da1668e-06e3-40dc-ba38-80d48eec72bf)
 
 </details>
 
