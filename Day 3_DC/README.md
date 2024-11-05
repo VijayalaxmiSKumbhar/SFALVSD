@@ -399,6 +399,20 @@ echo $my_port_name $dir;
 
 ![image](https://github.com/user-attachments/assets/25d0ea5c-f9a8-4626-a228-5b26eab51d3d)
 
+#### report_port -verbose
+
+![image](https://github.com/user-attachments/assets/8bea7625-4115-448c-96b6-cebd83a11859)
+
+![image](https://github.com/user-attachments/assets/1569d5d7-4ad1-40ca-aad8-57d3f5c48900)
+
+#### report_timing -from IN_A
+
+![image](https://github.com/user-attachments/assets/4ccbae47-4b45-436f-8a0e-5017061e43ac)
+
+* reg-reg paths are constrained
+* Input paths are not constrained, therefore IN_A path is unconstrained.
+
+
 </details>
 
 <details>
