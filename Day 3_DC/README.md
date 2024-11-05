@@ -594,6 +594,11 @@ endmodule
 
 *sh gvim lab8_cons.tcl
 
+![image](https://github.com/user-attachments/assets/6713f087-1a69-4d6b-9ecf-85bea56a40cb)
+
+
+
+
 
 
 
