@@ -190,6 +190,16 @@ echo $my_port_name $dir;
 * design_vision
 * read_ddc lab8_circuit.ddc
 ![image](https://github.com/user-attachments/assets/8fdb8769-c1d7-4149-b728-2719ec6b3fff)
+![image](https://github.com/user-attachments/assets/cb1617ff-72d8-4bf5-99f4-64ffafdd717e)
+
+* Implementation of the circuit in the above image is
+![image](https://github.com/user-attachments/assets/bc95b127-90ad-49b8-8087-6c7017fce3cb)
+
+#### To get information about nets
+* get_nets *
+* To know what nets are connected command is : all_connected N1
+![image](https://github.com/user-attachments/assets/d4c0163d-4371-4f1f-af3d-bd66bb24fc54)
+
 
 
 
