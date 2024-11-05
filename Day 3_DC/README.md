@@ -190,15 +190,19 @@ echo $my_port_name $dir;
 * csh
 * design_vision
 * read_ddc lab8_circuit.ddc
+  
 ![image](https://github.com/user-attachments/assets/8fdb8769-c1d7-4149-b728-2719ec6b3fff)
+
 ![image](https://github.com/user-attachments/assets/cb1617ff-72d8-4bf5-99f4-64ffafdd717e)
 
 * Implementation of the circuit in the above image is
+  
 ![image](https://github.com/user-attachments/assets/bc95b127-90ad-49b8-8087-6c7017fce3cb)
 
 #### To get information about nets
 * get_nets *
 * To know what nets are connected command is : all_connected N1
+  
 ![image](https://github.com/user-attachments/assets/d4c0163d-4371-4f1f-af3d-bd66bb24fc54)
 
 ## Net can have only one driver in digital design
@@ -206,6 +210,7 @@ echo $my_port_name $dir;
 ![image](https://github.com/user-attachments/assets/a8142c4a-8bf2-4646-91c1-b3718970c591)
 
 * all_connected n5
+  
 ![image](https://github.com/user-attachments/assets/9505283e-a73e-444b-a24c-62b897f15b8f)
 
 * foreach_in_collection my_pin [all_connected n5] {
@@ -223,7 +228,7 @@ echo $my_port_name $dir;
 <br>
 
 * get_pins *
-* 
+  
 # To list all the pins
 
 * foreach_in_collection my_pin [get_pins *] {
@@ -248,6 +253,7 @@ echo $my_port_name $dir;
   set dir [get_attribute [get_pins $my_pin_name] direction];
   echo $my_pin_name $dir;
   }
+  
 ![image](https://github.com/user-attachments/assets/accf9c08-dd2b-40a8-84bf-c9ddab03efb0)
 
 * foreach_in_collection my_pin [get_pins *] {
@@ -259,9 +265,11 @@ echo $my_port_name $dir;
   }
   }
   }
+  
   ![image](https://github.com/user-attachments/assets/26fe4f4a-2d39-4739-ac17-31ae28e66301)
   
 * Output: showing all the clock pins
+  
 ![image](https://github.com/user-attachments/assets/8f9f5223-2ba6-4358-8253-e7b21f49c289)
 
 # Difference between clock and clocks
@@ -374,6 +382,7 @@ echo $my_port_name $dir;
 
 * report_timing
 * It is saying path is uncontrained
+  
 ![image](https://github.com/user-attachments/assets/dc73fdae-7e7b-484e-b300-bef483fd9e04)
 
 * report_timing -to REGC_reg/D
@@ -425,9 +434,10 @@ echo $my_port_name $dir;
 
 * As show here all the register to register paths are constrained
 * Input and output paths are unconstrained
+  
 ![image](https://github.com/user-attachments/assets/a812b4a6-df39-4b26-a09b-1c80268419d8)
 
-```
+
 * report_timing -from IN_A
 Path is unconstained
 
@@ -441,8 +451,6 @@ Path is unconsrained
 
 ![image](https://github.com/user-attachments/assets/64f581db-cba8-4c75-89a3-fde10812a315)
 
-
-```
 
 ## Modelling of Inputs
 * set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports IN_A]
@@ -496,7 +504,7 @@ Path is unconsrained
 ## Modelling of load
 * set_load -max 0.4 [get_ports OUT_Y]
 * report_timing -to OUT_Y -cap -trans -nosplit
-* 
+  
   ![image](https://github.com/user-attachments/assets/9cff154c-ebcb-46cc-be2c-a7e1fad1d0b7)
   
 * report_timing -to OUT_Y -cap -trans -nosplit > out_load
