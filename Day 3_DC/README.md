@@ -650,9 +650,21 @@ set_load -min 0.1 [get_ports OUT_Y];
 <summary> SDC Part 4 Vclk, max_latency, rise_fall, IO Delays </summary>
 <br>
 
-# Input Delay
+## Input Delay
 
 ![image](https://github.com/user-attachments/assets/5597049b-1c70-44d7-962f-d5fbf8436eca)
+
+## Output Delay
+
+![image](https://github.com/user-attachments/assets/d443896a-05a7-4e41-b2f8-f2aeb648d63e)
+
+## set_max_latency is used to constrain the pur combinational forms
+
+![image](https://github.com/user-attachments/assets/d5f75295-f902-44bc-a266-69b7ebaa7fb1)
+
+## One more way of constraining the path is by using VIRTUAL CLOCK
+
+![image](https://github.com/user-attachments/assets/e531f8e9-c9da-444d-87ad-ed507dce1897)
 
 
 
