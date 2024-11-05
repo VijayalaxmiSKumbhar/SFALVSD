@@ -81,6 +81,50 @@
 <summary>Lab 8: Loading design get_cells, get_ports, get_nets </summary>
 <br>
 
+## Example: Implementation of the circuit
+
+![image](https://github.com/user-attachments/assets/71d2547d-607e-4a7d-a99e-3ea45a94662d)
+
+
+* Verilog Code
+
+```
+module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk);
+reg REGA , REGB , REGC ; 
+
+always @ (posedge clk , posedge rst)
+begin
+	if(rst)
+	begin
+		REGA <= 1'b0;
+		REGB <= 1'b0;
+		REGC <= 1'b0;
+	end
+	else
+	begin
+		REGA <= IN_A | IN_B;
+		REGB <= IN_A ^ IN_B;
+		REGC <= !(REGA & REGB); 
+	end
+end
+
+assign OUT_Y = ~REGC;
+
+assign out_clk = clk;
+
+endmodule
+
+```
+
+* csh
+* dc_shell
+* echo $target_library
+* echo $link_library
+* read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_circuit.v
+![image](https://github.com/user-attachments/assets/9fd48c84-0b5e-401a-9f89-6d3134d1617f)
+*link
+*compile_ultra
+
 
 </details>
 
