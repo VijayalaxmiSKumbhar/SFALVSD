@@ -650,6 +650,11 @@ set_load -min 0.1 [get_ports OUT_Y];
 <summary> SDC Part 4 Vclk, max_latency, rise_fall, IO Delays </summary>
 <br>
 
+# Input Delay
+
+![image](https://github.com/user-attachments/assets/5597049b-1c70-44d7-962f-d5fbf8436eca)
+
+
 
 </details>
 
