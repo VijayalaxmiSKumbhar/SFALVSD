@@ -122,8 +122,33 @@ endmodule
 * echo $link_library
 * read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_circuit.v
 ![image](https://github.com/user-attachments/assets/9fd48c84-0b5e-401a-9f89-6d3134d1617f)
+
 *link
+
 *compile_ultra
+
+![image](https://github.com/user-attachments/assets/cf351e9f-9f59-47b9-8342-ab78c0b1eebb)
+
+* get_ports
+* foreach_in_collection my_port [get_ports *] {
+  set my_port_name [get_object_name $my_port] ; echo $my_port_name; }
+
+![image](https://github.com/user-attachments/assets/b21a1a88-20e8-48bc-a98d-999d1cc57d06)
+
+# To know the direction of ports
+* get_ports rst
+* get_attribute [get_ports rst] direction
+
+![image](https://github.com/user-attachments/assets/c8d29256-af66-45a0-8f6d-1287c68a7fae)
+
+# Script to print direction of all ports
+* foreach_in_collection my_port [get_ports *] {
+set my_port_name [get_object_name $my_port] ;
+set dir [get_attribute [get_ports $my_port_name] direction]
+echo $my_port_name $dir;
+}
+
+![image](https://github.com/user-attachments/assets/bf5e5710-dfa4-4c7e-a25d-6a315fdff7ad)
 
 
 </details>
