@@ -599,6 +599,8 @@ assign out_clk = clk;
 endmodule
 
 ```
+
+
 * reset_design
 * read_verilog lab8_circuit_modified.v
 
