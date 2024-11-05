@@ -394,7 +394,8 @@ echo $my_port_name $dir;
 * set_clock_uncertainty -setup 0.5  [get_clocks MYCLK]
 * set_clock_uncertainty -setup 0.1  [get_clocks MYCLK]
 ![image](https://github.com/user-attachments/assets/bb921422-d9c5-4f63-87e5-129168db168a)
-
+* The above calculations are according to the equations given here
+![image](https://github.com/user-attachments/assets/26dbb45d-34c0-450a-84b0-a1af53322bd3)
 
 
 
