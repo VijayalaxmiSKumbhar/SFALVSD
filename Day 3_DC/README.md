@@ -221,6 +221,58 @@ echo $my_port_name $dir;
 <summary>Lab 9: get_pins, get_clocks, querying_clocks </summary>
 <br>
 
+* get_pins *
+* 
+# To list all the pins
+
+* foreach_in_collection my_pin [get_pins *] {
+  set pin_name [get_object_name $my_pin];
+  echo $pin_name;
+  }
+
+![image](https://github.com/user-attachments/assets/b27f6fe1-ec80-4495-bc70-9486ede53896)
+
+## To check some attributes
+* get_attribute [get_pins REGC_reg/RESET_B] direction
+* get_attribute [get_pins REGC_reg/RESET_B] clock
+* get_attribute [get_pins REGC_reg/CLK] clock
+
+![image](https://github.com/user-attachments/assets/0f9f5376-f0ec-4a31-af2f-1eb5f7e72e88)
+
+## To know what all pins are the clock pins in my design
+*The attribute clock is defined on input pins
+#### Script for finding the direction of pins
+* foreach_in_collection my_pin [get_pins *] {
+  set my_pin_name [get_object_name $my_pin];
+  set dir [get_attribute [get_pins $my_pin_name] direction];
+  echo $my_pin_name $dir;
+  }
+![image](https://github.com/user-attachments/assets/accf9c08-dd2b-40a8-84bf-c9ddab03efb0)
+
+* foreach_in_collection my_pin [get_pins *] {
+  set my_pin_name [get_object_name $my_pin];
+  set dir [get_attribute [get_pins $my_pin_name] direction];
+  if { [regexp $dir in] } {
+  if { [get_attribute [get_pins $my_pin_name] clock] } {
+  echo $my_pin_name;
+  }
+  }
+  }
+  ![image](https://github.com/user-attachments/assets/26fe4f4a-2d39-4739-ac17-31ae28e66301)
+  
+* Output: showing all the clock pins
+![image](https://github.com/user-attachments/assets/8f9f5223-2ba6-4358-8253-e7b21f49c289)
+
+# Difference between clock and clocks
+
+![image](https://github.com/user-attachments/assets/71db9d97-010d-48e4-aa6d-1b8432ff97dc)
+
+![image](https://github.com/user-attachments/assets/8140d80f-5123-4a93-a441-92da13a038ab)
+
+* get_clocks * (it tells what are the clocks in design)
+
+![image](https://github.com/user-attachments/assets/34378469-1aff-44b2-989d-d3a6fd4b2aaa)
+
 
 </details>
 
