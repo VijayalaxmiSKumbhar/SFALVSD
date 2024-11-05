@@ -491,13 +491,17 @@ Path is unconsrained
   
 ## Modelling of load
 * set_load -max 0.4 [get_ports OUT_Y]
+* report_timing -to OUT_Y -cap -trans -nosplit
+* 
+  ![image](https://github.com/user-attachments/assets/9cff154c-ebcb-46cc-be2c-a7e1fad1d0b7)
+  
 * report_timing -to OUT_Y -cap -trans -nosplit > out_load
 * sh gvim out_load &
   
 ![image](https://github.com/user-attachments/assets/385ce8e0-5f08-4d64-bf9c-dab7ef536bdd)
 
 
-![image](https://github.com/user-attachments/assets/9cff154c-ebcb-46cc-be2c-a7e1fad1d0b7)
+
 
 </details>
 
