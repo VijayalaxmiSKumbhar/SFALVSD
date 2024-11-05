@@ -121,6 +121,7 @@ endmodule
 * echo $target_library
 * echo $link_library
 * read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_circuit.v
+  
 ![image](https://github.com/user-attachments/assets/9fd48c84-0b5e-401a-9f89-6d3134d1617f)
 
 *link
@@ -393,8 +394,11 @@ echo $my_port_name $dir;
 * set_clock_latency  2 [get_clocks MYCLK]
 * set_clock_uncertainty -setup 0.5  [get_clocks MYCLK]
 * set_clock_uncertainty -setup 0.1  [get_clocks MYCLK]
+* 
 ![image](https://github.com/user-attachments/assets/bb921422-d9c5-4f63-87e5-129168db168a)
+
 * The above calculations are according to the equations given here
+  
 ![image](https://github.com/user-attachments/assets/26dbb45d-34c0-450a-84b0-a1af53322bd3)
 
 ![image](https://github.com/user-attachments/assets/25d0ea5c-f9a8-4626-a228-5b26eab51d3d)
