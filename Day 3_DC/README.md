@@ -525,6 +525,18 @@ Path is unconsrained
 <summary>Lab 13: generated_clocks </summary>
 <br>
 
+## Example to understand what is generated_clock and why it is required?
+
+![image](https://github.com/user-attachments/assets/12f1d0d8-c739-4a61-b363-85154fe0c60f)
+
+* create_generated_clock -name MYGEN_CLK -master MYCLK -source [get_ports clk] -div 1 [get_ports out_clk]
+* report_clocks *
+
+![image](https://github.com/user-attachments/assets/d37a3782-a668-4e2e-9340-c3509ff1274f)
+
+
+
+
 
 </details>
 
