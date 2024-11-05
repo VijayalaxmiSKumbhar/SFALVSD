@@ -534,6 +534,66 @@ Path is unconsrained
 
 ![image](https://github.com/user-attachments/assets/d37a3782-a668-4e2e-9340-c3509ff1274f)
 
+* get_attribute [get_clocks MYGEN_CLK] is _generated
+* get_attribute [get_clocks MYCLK] is _generated
+
+![image](https://github.com/user-attachments/assets/f34c3536-f3b0-4aa1-a1b2-ac659bf53924)
+
+* report_port -verbose
+
+![image](https://github.com/user-attachments/assets/66ecf027-3a32-413c-842f-6a4ead61ece8)
+
+* report_timing -to OUT_Y
+
+![image](https://github.com/user-attachments/assets/a8060ba1-40cc-4525-b57d-3fa18c19ca95)
+
+#### Modelling of MYGEN_CLK
+* set_clock_latency -max 1 [get_clocks MYGEN_CLK]
+* set_output_delay -max 5 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y]
+* set_output_delay -min 1 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y]
+* report_timing -to OUT_Y
+
+![image](https://github.com/user-attachments/assets/ae09371b-e5dc-4d75-a00f-4af825872ea2)
+
+#### Example lab8_circuit_modified.
+
+```
+
+module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk , output reg out_div_clk);
+reg REGA , REGB , REGC ; 
+
+always @ (posedge clk , posedge rst)
+begin
+	if(rst)
+	begin
+		REGA <= 1'b0;
+		REGB <= 1'b0;
+		REGC <= 1'b0;
+		out_div_clk <= 1'b0;
+	end
+	else
+	begin
+		REGA <= IN_A | IN_B;
+		REGB <= IN_A ^ IN_B;
+		REGC <= !(REGA & REGB);
+		out_div_clk <= ~out_div_clk; 
+	end
+end
+
+assign OUT_Y = ~REGC;
+
+assign out_clk = clk;
+
+endmodule
+
+```
+* reset_design
+* read_verilog lab8_circuit_modified.v
+
+![image](https://github.com/user-attachments/assets/52150569-2e31-4836-9301-aa1cd1118aa4)
+
+*sh gvim lab8_cons.tcl
+
 
 
 
