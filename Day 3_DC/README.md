@@ -419,6 +419,85 @@ echo $my_port_name $dir;
 <summary>Lab 12: IO Delays </summary>
 <br>
 
+* As show here all the register to register paths are constrained
+* Input and output paths are unconstrained
+![image](https://github.com/user-attachments/assets/a812b4a6-df39-4b26-a09b-1c80268419d8)
+
+```
+* report_timing -from IN_A
+Path is unconstained
+
+![image](https://github.com/user-attachments/assets/4ccbae47-4b45-436f-8a0e-5017061e43ac)
+
+* report_timing -to OUT_Y
+Path is unconsrained
+![image](https://github.com/user-attachments/assets/4b19fc9f-527b-4479-b8fc-69b91654656e)
+
+* report_port -verbose: tell all the details like direction, transition, load etc
+
+![image](https://github.com/user-attachments/assets/64f581db-cba8-4c75-89a3-fde10812a315)
+
+
+```
+
+## Modelling of Inputs
+* set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports IN_A]
+* set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports IN_B]
+* report_port -verbose
+
+![image](https://github.com/user-attachments/assets/7c2c24a1-cf02-48cf-b2e4-337c3bf0ddf1)
+
+* report_timing -from IN_A
+* Now path is constrained
+![image](https://github.com/user-attachments/assets/3dfa9a26-5d62-4c6e-9cb7-46cd43e0c41d)
+
+* report_timing -from IN_A -trans -net -cap -nosplit -delay_type min
+* Path is unconstrained because min delay is not modelled
+  
+![image](https://github.com/user-attachments/assets/42761f62-d371-4662-b732-31d3877efd40)
+
+#### Modelling of min delay
+
+* report_timing -from IN_A -trans -net -cap -nosplit -delay_type min
+* Now Path is constrained because min delay is modelled
+
+![image](https://github.com/user-attachments/assets/2167155e-c3ba-4ee1-b966-7ca91de67121)
+
+* report_timing -from IN_A -trans -net -cap -nosplit > a
+* sh gvim a &
+  
+![image](https://github.com/user-attachments/assets/3d7e9d9e-33bd-4dce-9435-d35dde4309ed)
+
+## Modelling Input Transistion
+
+* set_input_transition -max 0.3 [get_ports IN_A]
+* set_input_transition -max 0.3 [get_ports IN_B]
+* set_input_transition -min 0.1 [get_ports IN_A]
+* set_input_transition -min 0.1 [get_ports IN_B]
+
+![image](https://github.com/user-attachments/assets/c60dd94e-548e-4852-ad46-a366e70429da)
+
+![image](https://github.com/user-attachments/assets/434e910c-635c-409d-8823-f8e12eddac67)
+
+## Model the output delay
+
+* set_output_delay -max 5 -clock [get_clocks MYCLK] [get_ports OUT_Y]
+* set_output_delay -min 1 -clock [get_clocks MYCLK] [get_ports OUT_Y]
+* report_timing -to OUT_Y
+
+  ![image](https://github.com/user-attachments/assets/498f3437-9668-4c12-a4f7-c520a461b4c1)
+
+* report_timing -to OUT_Y -cap -trans -nosplit
+  
+## Modelling of load
+* set_load -max 0.4 [get_ports OUT_Y]
+* report_timing -to OUT_Y -cap -trans -nosplit > out_load
+* sh gvim out_load &
+  
+![image](https://github.com/user-attachments/assets/385ce8e0-5f08-4d64-bf9c-dab7ef536bdd)
+
+
+![image](https://github.com/user-attachments/assets/9cff154c-ebcb-46cc-be2c-a7e1fad1d0b7)
 
 </details>
 
