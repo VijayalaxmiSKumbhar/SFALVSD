@@ -570,7 +570,6 @@ Path is unconsrained
 #### Example lab8_circuit_modified.
 
 ```
-
 module lab8_circuit (input rst, input clk , input IN_A , input IN_B , output OUT_Y , output out_clk , output reg out_div_clk);
 reg REGA , REGB , REGC ; 
 
@@ -597,7 +596,6 @@ assign OUT_Y = ~REGC;
 assign out_clk = clk;
 
 endmodule
-
 ```
 
 
@@ -606,7 +604,7 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/52150569-2e31-4836-9301-aa1cd1118aa4)
 
-*sh gvim lab8_cons.tcl
+* sh gvim lab8_cons.tcl
 
 ![image](https://github.com/user-attachments/assets/6713f087-1a69-4d6b-9ecf-85bea56a40cb)
 
