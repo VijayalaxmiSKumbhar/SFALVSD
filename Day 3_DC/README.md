@@ -600,18 +600,47 @@ endmodule
 
 
 * reset_design
-* read_verilog lab8_circuit_modified.v
+* read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_circuit_modified.v
 
 ![image](https://github.com/user-attachments/assets/52150569-2e31-4836-9301-aa1cd1118aa4)
 
 * sh gvim lab8_cons.tcl
 
-![image](https://github.com/user-attachments/assets/6713f087-1a69-4d6b-9ecf-85bea56a40cb)
+```
+create_clock -name MYCLK -per 10 [get_ports clk];
+set_clock_latency -source 2 [get_clocks MYCLK];
+set_clock_latency 1 [get_clocks MYCLK];
+set_clock_uncertainty -setup 0.5 [get_clocks MYCLK];
+set_clock_uncertainty -hold 0.1 [get_clocks MYCLK];
+set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports IN_A];
+set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports IN_B];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports IN_A];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports IN_B];
+set_input_transition -max 0.4 [get_ports IN_A];
+set_input_transition -max 0.4 [get_ports IN_B];
+set_input_transition -min 0.1 [get_ports IN_A];
+set_input_transition -min 0.1 [get_ports IN_B];
+create_generated_clock -name MYGEN_CLK -master MYCLK -source [get_ports clk] -div 1 [get_ports out_clk];
+create_generated_clock -name MYGEN_DIV_CLK -master MYCLK -source [get_ports clk] -div 2 [get_ports out_div_clk]; 
+set_output_delay -max 5 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y];
+set_output_delay -min 1 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y];
+set_load -max 0.4 [get_ports OUT_Y];
+set_load -min 0.1 [get_ports OUT_Y];
 
+```
 
+* source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_cons.tcl
+* report_clocks
 
+![image](https://github.com/user-attachments/assets/d2cabcbc-ce3c-4717-b7a3-7914157f2cbb)
 
+* get_generated_clocks
 
+![image](https://github.com/user-attachments/assets/17bb7ab3-52c2-432f-818c-87fd0e228ab5)
+
+* report_port -verbose
+
+![image](https://github.com/user-attachments/assets/5929c20d-a72e-4dcd-bad2-9fe8edd00dbe)
 
 
 
