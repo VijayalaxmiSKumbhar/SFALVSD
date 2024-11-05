@@ -280,6 +280,35 @@ echo $my_port_name $dir;
 <summary>Lab 10: create_clock waveform </summary>
 <br>
 
+#### current_design tells name of top module
+
+![image](https://github.com/user-attachments/assets/f015c834-03ac-4395-8f81-d85ed1897eeb)
+
+![image](https://github.com/user-attachments/assets/afbc2f23-23c0-4bda-bec4-ecd90d6190df)
+
+#### Command to create the clock is
+* create_clock -name MYCLK -per 10 [get_ports clk]
+
+![image](https://github.com/user-attachments/assets/25f043b7-0458-47e7-8474-a6211311e4c5)
+
+* report_clocks * (lists all clocks in my design)
+![image](https://github.com/user-attachments/assets/a9568c7a-ac8a-4e6d-bfb9-627f869f7ca9)
+
+* get_attribute [get_pins REGA_reg/CLK] clocks
+* get_attribute [get_ports out_clk] clocks
+
+![image](https://github.com/user-attachments/assets/336a7eec-e2b7-4425-8fe3-7f8fc0a6f957)
+
+![image](https://github.com/user-attachments/assets/1cf36f25-0a5c-4e94-b776-d6ad29363f04)
+
+## Script
+*sh gvim query_clock_pin.tcl &
+
+![image](https://github.com/user-attachments/assets/bf465acb-f087-40a7-b585-793ed9986b99)
+
+* source gvim query_clock_pin.tcl
+
+![image](https://github.com/user-attachments/assets/60bc1c4e-653b-49a7-a440-b9e943abda11)
 
 </details>
 
