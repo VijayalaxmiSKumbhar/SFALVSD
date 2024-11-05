@@ -150,6 +150,19 @@ echo $my_port_name $dir;
 
 ![image](https://github.com/user-attachments/assets/bf5e5710-dfa4-4c7e-a25d-6a315fdff7ad)
 
+# To know whether the cells are logical or physical
+
+* get_cells *
+* get_attribute [get_cells U9] is_hierarchical
+* get_attribute [get_cells U12] is_hierarchical
+* get_attribute [get_cells REGA_reg] is_hierarchical
+* get_cells * -hier -filter "is_hierarchical == false"
+* get_cells * -hier -filter "is_hierarchical == true"
+
+![image](https://github.com/user-attachments/assets/c343d169-b030-467e-9770-9bb9dc71a992)
+
+
+
 
 </details>
 
