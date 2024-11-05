@@ -161,7 +161,25 @@ echo $my_port_name $dir;
 
 ![image](https://github.com/user-attachments/assets/c343d169-b030-467e-9770-9bb9dc71a992)
 
+* Example illustrating logical/phyiscal cells
+![image](https://github.com/user-attachments/assets/7e10e33a-b057-4193-bceb-649dfeedb340)
 
+* ref_name: name of physical cell in .lib
+* Difference between instance and reference name
+  
+![image](https://github.com/user-attachments/assets/671dbf6e-1ff1-4833-be69-9782154b5d07)
+
+# To find the reference name
+* get_attribute [get_cells REGA_reg] ref_name
+![image](https://github.com/user-attachments/assets/d7fd193c-8f09-478c-8e76-c1f217071d4c)
+
+# To know the reference name of all cells
+* foreach_in_collection my_cell [get_cells * -hier] {
+  set my_cell_name [get_object_name $my_cell];
+  set rname [get_attribute [get_cells $my_cell_name] ref_name]
+  echo $my_cell_name $rname
+  }
+![image](https://github.com/user-attachments/assets/d4cb0fe4-c3ec-4e07-b013-d923f5fcf072)
 
 
 </details>
