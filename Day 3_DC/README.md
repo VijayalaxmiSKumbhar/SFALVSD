@@ -500,6 +500,22 @@ Path is unconsrained
   
 ![image](https://github.com/user-attachments/assets/385ce8e0-5f08-4d64-bf9c-dab7ef536bdd)
 
+</details>
+
+<details>
+<summary> SDC Part 3 generated_clocks </summary>
+<br>
+
+#### Example
+
+![image](https://github.com/user-attachments/assets/af8b97ff-b05e-4e07-8628-028393175735)
+
+#### The solution to above problem is generated clock
+![image](https://github.com/user-attachments/assets/949b7d82-49d8-411e-9c68-b8d73215a3a2)
+
+#### Constraining the design
+![image](https://github.com/user-attachments/assets/b94f48e0-f6c6-4748-a867-8f34e3b1c3e4)
+
 
 
 
