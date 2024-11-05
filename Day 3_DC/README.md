@@ -310,6 +310,37 @@ echo $my_port_name $dir;
 
 ![image](https://github.com/user-attachments/assets/60bc1c4e-653b-49a7-a440-b9e943abda11)
 
+# Let us create BAD_CLK 
+
+![image](https://github.com/user-attachments/assets/ad055e64-add7-4fc6-a3a1-211c806d843f)
+
+# command to remove the wrong clock is
+* remove_clock BAD_CLK
+
+![image](https://github.com/user-attachments/assets/2f13ea0b-f178-443d-8f8f-91f08cb3b5e5)
+
+# Creating Waveform
+
+![image](https://github.com/user-attachments/assets/bcf1837c-f812-4865-bd21-a4962cd97300)
+
+* create_clock -name MY_CLK -per 10 [get_ports clk] -wave {5 10}
+
+![image](https://github.com/user-attachments/assets/3d5f252b-8812-407a-a954-23fdbdf72db2)
+
+#### To create 25% duty cycle clock
+
+* create_clock -name MY_CLK -per 10 [get_ports clk] -wave {0 2.5} (here if we change the order tool will create waveform)
+
+![image](https://github.com/user-attachments/assets/a74e77ed-6427-4a66-aecc-cc685e00fccb)
+
+* 10 ns Clock with first rising edge at 15 ns
+  
+![image](https://github.com/user-attachments/assets/294ca7b6-c4cc-45a7-a737-3b7fdd0e708e)
+
+
+
+
+  
 </details>
 
 <details>
