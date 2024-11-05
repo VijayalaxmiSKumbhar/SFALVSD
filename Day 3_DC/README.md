@@ -347,6 +347,58 @@ echo $my_port_name $dir;
 <summary>Lab 11: Clock Network Modelling - Uncertainity, report_timing </summary>
 <br>
 
+## Clock Network Modelling
+
+#### Clock Network Attributes
+* Source Latency
+* Network Latency
+* Clock Skew
+* Clock Jitter
+
+![image](https://github.com/user-attachments/assets/aab76170-2b02-424c-91ea-f8137ab7eaad)
+
+
+# Modelling Source latency, network latency (without source), Uncertainity
+
+* set_clock_latency -source 1 [get_clocks MY_CLK]
+* set_clock_latency 1 [get_clocks MY_CLK]
+* set_clock_uncertainty 0.5  [get_clocks MY_CLK] (for max delay)
+* set_clock_uncertainty -hold 0.1  [get_clocks MY_CLK] (for min delay)
+
+![image](https://github.com/user-attachments/assets/17e64a15-7d22-4b2b-9251-8c2688558dfc)
+
+## How the above parameters affect the design?
+
+#### command to check timing is
+
+* report_timing
+* It is saying path is uncontrained
+![image](https://github.com/user-attachments/assets/dc73fdae-7e7b-484e-b300-bef483fd9e04)
+
+* report_timing -to REGC_reg/D
+  
+![image](https://github.com/user-attachments/assets/798388f3-c92d-4dc9-b347-3430cd31bc59)
+
+* create_clock -name MYCLK -per 10 [get_ports clk]
+* report_timing -to REGC_reg/D
+
+![image](https://github.com/user-attachments/assets/ac298fde-57f5-4ec8-bca2-67dceb3a0cff)
+
+# Arrival & required time
+
+![image](https://github.com/user-attachments/assets/a50843ae-c2f7-4c92-892f-68923e9e4ec9)
+
+#### Clock behavior model
+* set_clock_latency -source 2 [get_clocks MYCLK]
+* set_clock_latency  2 [get_clocks MYCLK]
+* set_clock_uncertainty -setup 0.5  [get_clocks MYCLK]
+* set_clock_uncertainty -setup 0.1  [get_clocks MYCLK]
+![image](https://github.com/user-attachments/assets/bb921422-d9c5-4f63-87e5-129168db168a)
+
+
+
+
+
 
 </details>
 
