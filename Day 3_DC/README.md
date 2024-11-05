@@ -672,12 +672,9 @@ set_load -min 0.1 [get_ports OUT_Y];
 
 ![image](https://github.com/user-attachments/assets/1538f878-0d70-4cdf-b522-3ede90ba424b)
 
-## set_driving_cell
+## set_driving_cell: Recommended for module level IO
 
-
-
-
-
+![image](https://github.com/user-attachments/assets/b664fcbb-61e0-43e3-b310-90cf3156fd60)
 
 </details>
 
