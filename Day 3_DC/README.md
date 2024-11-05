@@ -200,8 +200,20 @@ echo $my_port_name $dir;
 * To know what nets are connected command is : all_connected N1
 ![image](https://github.com/user-attachments/assets/d4c0163d-4371-4f1f-af3d-bd66bb24fc54)
 
+## Net can have only one driver in digital design
 
+![image](https://github.com/user-attachments/assets/a8142c4a-8bf2-4646-91c1-b3718970c591)
 
+* all_connected n5
+![image](https://github.com/user-attachments/assets/9505283e-a73e-444b-a24c-62b897f15b8f)
+
+* foreach_in_collection my_pin [all_connected n5] {
+  set pin_name [get_object_name $my_pin];
+  set dir [get_attribute [get_pins $pin_name] direction];
+  echo $pin_name $dir;
+  }
+
+![image](https://github.com/user-attachments/assets/03c5bec2-8d59-421c-9178-8853f5d62dc1)
 
 </details>
 
