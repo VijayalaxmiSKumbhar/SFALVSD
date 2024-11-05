@@ -658,13 +658,24 @@ set_load -min 0.1 [get_ports OUT_Y];
 
 ![image](https://github.com/user-attachments/assets/d443896a-05a7-4e41-b2f8-f2aeb648d63e)
 
-## set_max_latency is used to constrain the pur combinational forms
+## set_max_latency is used to constrain the pure combinational forms
 
 ![image](https://github.com/user-attachments/assets/d5f75295-f902-44bc-a266-69b7ebaa7fb1)
 
 ## One more way of constraining the path is by using VIRTUAL CLOCK
 
 ![image](https://github.com/user-attachments/assets/e531f8e9-c9da-444d-87ad-ed507dce1897)
+
+## IO Constraints
+
+![image](https://github.com/user-attachments/assets/bcd42f22-d48a-4c5e-bb7d-986fc362f87a)
+
+![image](https://github.com/user-attachments/assets/1538f878-0d70-4cdf-b522-3ede90ba424b)
+
+## set_driving_cell
+
+
+
 
 
 
