@@ -181,6 +181,17 @@ echo $my_port_name $dir;
   }
 ![image](https://github.com/user-attachments/assets/d4cb0fe4-c3ec-4e07-b013-d923f5fcf072)
 
+#### Command to write ddc file
+* write -f ddc -out lab8_circuit.ddc
+![image](https://github.com/user-attachments/assets/9300eb36-1314-42d9-9134-b8e7ecf274ce)
+
+#### Launch design vision
+* csh
+* design_vision
+* read_ddc lab8_circuit.ddc
+![image](https://github.com/user-attachments/assets/8fdb8769-c1d7-4149-b728-2719ec6b3fff)
+
+
 
 </details>
 
