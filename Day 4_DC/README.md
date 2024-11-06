@@ -69,6 +69,10 @@
 
 ![image](https://github.com/user-attachments/assets/68ff42ec-28d0-44b6-9357-46a24948adf4)
 
+#### Controlling Sequential Optimizations in DC
+
+![image](https://github.com/user-attachments/assets/f2da94c2-689a-426e-9486-b0aa34bea781)
+
 
 </details>
 
