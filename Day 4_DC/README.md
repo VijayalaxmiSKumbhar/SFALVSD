@@ -98,6 +98,20 @@
 </details>
 
 <details>
+<summary> Special optimizations </summary>
+<br>
+
+
+</details>
+
+<details>
+<summary>How Paths are timed MCP?</summary>
+<br>
+
+
+</details>
+
+<details>
 <summary>Lab 18: Boundary optimizations </summary>
 <br>
 
