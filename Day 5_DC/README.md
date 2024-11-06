@@ -1,4 +1,6 @@
-# Quality Checks
+# Generating Timing Reports and Analyzing QoR
+
+#### Quality Checks
 
 <details>
 <summary>Report Timing </summary>
