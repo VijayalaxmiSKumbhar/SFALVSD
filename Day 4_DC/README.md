@@ -39,6 +39,36 @@
 <summary>Sequential Optimizations </summary>
 <br>
 
+## Sequential Logic Optimisations
+
+![image](https://github.com/user-attachments/assets/74069174-b6ce-4640-af78-935cd3e3a5af)
+
+#### Case-I (Sequential constant)
+
+![image](https://github.com/user-attachments/assets/8ebdaca2-f613-4150-9990-26b568ebe76c)
+
+#### Case-II (Sequential constant)
+
+![image](https://github.com/user-attachments/assets/74ee4723-aa13-4432-b2fb-d7db5ba1da32)
+
+#### case-III (Not a Sequential constant)
+
+* As the circuit is retained as it is, it will not be optimized.
+
+![image](https://github.com/user-attachments/assets/efe3d221-8f84-4361-a81b-5bb2f1278d6e)
+
+#### Case-IV (Not a sequential constant)
+
+![image](https://github.com/user-attachments/assets/444c9df8-e8fb-4b44-a691-8150eec73718)
+
+#### Example of sequential optimization with sequential constant and constant propogation
+
+![image](https://github.com/user-attachments/assets/61ecad4f-bbda-48ba-bbce-2250525abbf6)
+
+#### Optimization of Unloaded Outputs
+
+![image](https://github.com/user-attachments/assets/68ff42ec-28d0-44b6-9357-46a24948adf4)
+
 
 </details>
 
