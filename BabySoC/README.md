@@ -54,8 +54,11 @@ This project aims to develop a compact, open-source System on Chip (SoC) that in
 6. __Multimedia Features:__ Snapdragon chips support high-definition audio and video codecs, enabling high-quality media playback and recording capabilities.
 7. __Power Efficiency:__ Qualcomm designs its SoCs to maximize performance while minimizing power consumption, which is crucial for extending battery life in mobile devices.
 8. __Ecosystem:__ Snapdragon SoCs are commonly used across various devices and support a wide range of software, including Android and other operating systems.
+<
+  <div align="center">
+    <![image](https://github.com/user-attachments/assets/ae10e112-4959-4e75-a6fb-ee40b544ebe7)>
+</div>
 
-![image](https://github.com/user-attachments/assets/ae10e112-4959-4e75-a6fb-ee40b544ebe7)
 
 __SoCs__ are a foundational technology driving the advancement of modern electronics, providing a compact, efficient, and powerful solution for a wide variety of applications. They play a crucial role in the ongoing evolution of devices we use daily, impacting everything from consumer gadgets to complex industrial and automotive systems.
 
