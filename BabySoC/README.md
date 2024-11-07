@@ -13,7 +13,7 @@ This project aims to develop a compact, open-source System on Chip (SoC) that in
 * SoC with equivalent functionality will have increased performance and reduced power consumption as well as a smaller semiconductor die area.
 ```
 
-##### Advantages of SoC
+##### Advantages of SoCs
 1. __Integration:__ Combines multiple functions into a single chip, reducing the need for separate components.
 2. __Size and Portability:__ Smaller form factor allows for compact designs in devices like smartphones, tablets, and wearables.
 3. __Power Efficiency:__ Optimized for low power consumption, making them suitable for battery-powered devices.
@@ -46,14 +46,14 @@ This project aims to develop a compact, open-source System on Chip (SoC) that in
 
 * Some key features and components associated with Snapdragon SoCs:
 
-1. CPU Architecture: Snapdragon SoCs often incorporate Qualcomm's custom CPU cores, such as the Kryo series, alongside standard ARM Cortex cores. The architecture is designed to optimize performance and energy efficiency.
-2. GPU: Snapdragon processors include Adreno GPUs for enhanced graphics performance, which is beneficial for gaming, video playback, and other graphically intensive tasks.
-3. Modem: Many Snapdragon chips come with integrated modems supporting various connectivity standards, including 4G LTE and 5G. They provide capabilities for high-speed mobile data and voice over LTE (VoLTE).
-4. AI Capabilities: Recent Snapdragon SoCs feature dedicated AI processing units (APUs), which enhance performance for AI-related tasks, including image recognition and voice processing.
-5. Camera Support: Snapdragon SoCs typically integrate advanced image signal processors (ISPs) that support high-resolution camera sensors, multiple camera setups, and features like HDR and video recording.
-6. Multimedia Features: Snapdragon chips support high-definition audio and video codecs, enabling high-quality media playback and recording capabilities.
-7. Power Efficiency: Qualcomm designs its SoCs to maximize performance while minimizing power consumption, which is crucial for extending battery life in mobile devices.
-8. Ecosystem: Snapdragon SoCs are commonly used across various devices and support a wide range of software, including Android and other operating systems.
+1. __CPU Architecture:__ Snapdragon SoCs often incorporate Qualcomm's custom CPU cores, such as the Kryo series, alongside standard ARM Cortex cores. The architecture is designed to optimize performance and energy efficiency.
+2. __GPU:__ Snapdragon processors include Adreno GPUs for enhanced graphics performance, which is beneficial for gaming, video playback, and other graphically intensive tasks.
+3. __Modem:__ Many Snapdragon chips come with integrated modems supporting various connectivity standards, including 4G LTE and 5G. They provide capabilities for high-speed mobile data and voice over LTE (VoLTE).
+4. __AI Capabilities:__ Recent Snapdragon SoCs feature dedicated AI processing units (APUs), which enhance performance for AI-related tasks, including image recognition and voice processing.
+5. __Camera Support:__ Snapdragon SoCs typically integrate advanced image signal processors (ISPs) that support high-resolution camera sensors, multiple camera setups, and features like HDR and video recording.
+6. __Multimedia Features:__ Snapdragon chips support high-definition audio and video codecs, enabling high-quality media playback and recording capabilities.
+7. __Power Efficiency:__ Qualcomm designs its SoCs to maximize performance while minimizing power consumption, which is crucial for extending battery life in mobile devices.
+8. __Ecosystem:__ Snapdragon SoCs are commonly used across various devices and support a wide range of software, including Android and other operating systems.
 
 ![image](https://github.com/user-attachments/assets/ae10e112-4959-4e75-a6fb-ee40b544ebe7)
 
