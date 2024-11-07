@@ -127,9 +127,21 @@
 
 ![image](https://github.com/user-attachments/assets/93645bc3-99a7-41ea-b73f-3de29878282d)
 
+#### False Paths
 
+![image](https://github.com/user-attachments/assets/8516cb62-e8d8-429d-b50f-368472486052)
 
-</details>
+#### External Load Vs Internal Loads
+
+* Example Illustration
+  
+![image](https://github.com/user-attachments/assets/74a474c8-0982-44b3-a490-63092d048291)
+
+* Solution is set_isolate_ports
+
+![image](https://github.com/user-attachments/assets/a89b0a51-2dca-4703-89fd-992f39eb4e8a)
+
+ </details>
 
 <details>
 <summary>How Paths are timed MCP?</summary>
