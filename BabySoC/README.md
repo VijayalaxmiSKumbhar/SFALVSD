@@ -61,3 +61,13 @@ __SoCs__ are a foundational technology driving the advancement of modern electro
 
 </details>
 
+<details>
+<summary>Types of SoC</summary>
+
+* SoCs built around a microcontroller
+* SoCs built around a microprocessor, often found in cell phones.
+* Specialized application-specific integrated circuit SoCs, designed for specific applications.
+    Examples: Google’s Tensor Processing Units (TPUs) for machine learning, Bitcoin ASIC miners.
+  
+</details>
+
