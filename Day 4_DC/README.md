@@ -101,6 +101,21 @@
 <summary> Special optimizations </summary>
 <br>
 
+#### Example for illustration
+
+![image](https://github.com/user-attachments/assets/76a8a5c7-d584-41f2-8d00-246d239e1d95)
+
+#### Let us see how to improve the frequency of above circuit
+
+* The solution to improvise the frequency is retiming.
+* By reducing the critical path delay frequency can be improved.
+
+![image](https://github.com/user-attachments/assets/1d1de245-e699-4ed0-b4fc-1bb30331f31b)
+
+* The total criticalpath delay of 48 ns is divided into 3 parts and frequency is improved. Earlier it was 20 MHz, after register retiming frequency is increased to 50 MHz.
+
+![image](https://github.com/user-attachments/assets/06f9f8db-e965-4f57-9164-0da8f6334545)
+
 
 </details>
 
