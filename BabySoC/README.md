@@ -71,3 +71,25 @@ __SoCs__ are a foundational technology driving the advancement of modern electro
   
 </details>
 
+<details>
+<summary>SoC Design Flow</summary>
+
+* __System Specifications:__ Defining and creating the specifications of the design. For example in 4 * 4 array multiplier, the specifications are nothing but two 4-bit inputs and the result is 8-bit output.
+* __Architecture Design:__ It inculdes deciding the blocks and hierarchy.
+* __Basic Logic Design:__ This is basically a schematic design.
+* __Logic Verification:__ Veriifcation of functionality. This is done using simulation tools.
+* __Physical Design:__ Translation of schematic design into layout
+* __Physical Verification:__ DRC will check for any design rule violations.
+* __Chip Fabrication__
+  
+![image](https://github.com/user-attachments/assets/413967bd-5e00-4eb6-9481-146ad6a9a7eb)
+
+  
+</details>
+
+<details>
+<summary>Introduction to VSDBabySoC</summary>
+
+
+  
+</details>
