@@ -147,6 +147,23 @@
 <summary>How Paths are timed MCP?</summary>
 <br>
 
+#### How DC/STA tool checks timing?
+
+* Example 1: Single Cycle Paths
+
+![image](https://github.com/user-attachments/assets/8bf221bb-66e8-4149-bb15-ef8fadc9eb69)
+
+* Half Cycle Paths: Only half cycle of the clock is involved.
+
+ ![image](https://github.com/user-attachments/assets/3ccf3b6d-c845-4bbf-8286-1ce5e854557a)
+
+ * Multi cycle path for setup
+
+![image](https://github.com/user-attachments/assets/76915c48-030e-4692-83a5-ec21973d2490)
+
+![image](https://github.com/user-attachments/assets/caa7ccff-5318-4619-bf49-0efb2f0a65a7)
+
+![image](https://github.com/user-attachments/assets/06d7fa6a-db6e-4b9a-9163-936e18b3f3bc)
 
 </details>
 
