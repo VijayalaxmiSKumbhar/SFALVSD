@@ -125,6 +125,9 @@
 
 #### Multi-cycle Paths
 
+![image](https://github.com/user-attachments/assets/93645bc3-99a7-41ea-b73f-3de29878282d)
+
+
 
 </details>
 
