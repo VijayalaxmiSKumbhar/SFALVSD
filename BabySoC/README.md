@@ -101,30 +101,37 @@ __SoCs__ are a foundational technology driving the advancement of modern electro
   * __DAC (Digital to Analog Converter):__ It is a system that converts a digital signal into an analog signal. DACs are widely used in modern communication systems enabling the generation of digitally-defined transmission signals.
      
 ##### Phase-Locked Loop (PLL)
-* The primary purpose of a  PLL is to align the output oscillator signal with a reference signal. Even if both signals have identical frequencies, their peaks and troughs might not align perfectly. In other words, they don't reach corresponding points on the waveform simultaneously. This misalignment is referred to as the phase difference, represented as the angle between the two signals. For signals that fluctuate in frequency, the phase difference will constantly change, causing one signal to either lag or lead the other by a varying degree.
-* A PLL minimizes phase discrepancies between output and input frequencies. When the phase difference between these signals is zero, the system is considered to be "locked." This locking mechanism relies on the PLL’s capability to deliver negative feedback, which involves sending the output signal back to the phase detector.
-* Besides aligning the output and input frequencies, a PLL also assists in defining the phase relationship between them to produce the necessary control voltage. As a result, it facilitates both frequency and phase locking within a circuit.
+* PLL is an electronic circuit with a voltage or voltage driven oscillator that constantly adjusts to match the frequency of an input signal.
+* PLLs are used to generate, stabilize, modulate, demodulate etc.
 
-![image](https://github.com/user-attachments/assets/f30a8063-b74b-485a-9e20-cccbef923a62)
+![image](https://github.com/user-attachments/assets/143cff7e-c1ad-4012-8aab-5e372a167d20)
+
 
 ###### Key components of a phase-locked loop
 1. __Phase detector (also known as a phase comparator or mixer):__ It compares the phases of two signals, and generates a voltage according to the phase difference. It multiplies the reference input and the voltage-controlled oscillator output.
 2. __Voltage-controlled oscillator:__ Generates a sinusoidal signal, whose frequency closely matches the center frequency provided by the low-pass filter.
 3. __Low-pass filter:__ A kind of loop filter that attenuates the high-frequency alternating current (AC) component of the input signal to smoothen and flatten the signal to make it more DC-like.
+4. __Frequency Divider__
 
-##### A Digital-to-Analog Converter (DAC) 
+##### Digital-to-Analog Converter (DAC) 
 
-* It is an electronic device that converts digital signals (usually in binary format) into analog signals. The primary role of a DAC is to take discrete digital data—often representing audio, video, or other types of data—and produce a continuous analog signal that can be used for further processing, playback, or transmission.
+* It converts digital input signal into analog output signal.
+* The diggital signal is reprsented with a binary code, which is a combination of bits 0 and 1. A DAC consists of number of binary inputs and a single output.
+* In general number of binary inputs of DAC will be power of two.
+* There are two types of DAC
+  * Weighted Rsistor DAC
+  * R-2R Ladder DAC
+    
+__Weighted Rsistor DAC (Binary Weighted Resistor DAC)__
+It produces an analog output which is almost equal to digital input by using binary weighted resistors in the inverting adder circuit. 
 
-* Key Functions and Features of a DAC:
-1. __Signal Conversion:__ It translates binary numbers into corresponding voltage or current levels that represent the original signal.
-2. __Applications:__ DACs are used in various applications, including audio equipment (e.g., converting digital audio files to sound waves), video devices (e.g., converting digital video signals to display), telecommunications, and many control systems.
-3. __Types of DACs:__ There are several types of DACs, such as:
-   Resistor Ladder (R-2R) DAC: Based on a network of resistors to create various voltage levels.
-   Delta-Sigma DAC: Utilizes oversampling and noise shaping techniques for high precision.
-   Pulse Width Modulation (PWM) DAC: Converts digital signals to an analog signal by varying the width of pulses.
-4. __Performance Metrics:__ Key characteristics to consider in DACs include resolution (measured in bits), sampling rate, linearity, and total harmonic distortion (THD), which determine the quality and fidelity of the output signal.
-  
+![image](https://github.com/user-attachments/assets/1636454b-5c01-4d8f-ae42-517ede8500f7)
+
+__R-2R Ladder DAC__
+It overcomes the disadvantages of Binary Weighted Resistor DAC. It produces an analog output which is almost equal to digital input by using R-2R ladder network in the inverting adder circuit. 
+
+![image](https://github.com/user-attachments/assets/dc1c78f5-89bc-4f33-950b-093b946bf71a)
+
 </details>
 
 <details>
