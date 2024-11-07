@@ -92,13 +92,47 @@ __SoCs__ are a foundational technology driving the advancement of modern electro
 <summary>Introduction to VSDBabySoC</summary>
 
 * __VSDBabySOC__ is small yet powerfull RISC-V based SoC. The main purpose of this SoC is to test IP cores. The IP cores used here are __RVMYTH__, __PLL__ and __DAC__.
+
+![image](https://github.com/user-attachments/assets/2434c5ce-52c8-47ac-bf72-2427ac9b5079)
+
 * __VSDBaby SoC Componets__
   * __RVMYTH :__ It is a simple RISC-V based CPU.
   * __PLL (Phase Locked Loop):__ It is a control system that generates an output signal whose phase is related to the phase of an input signal. PLLs are widely used for synchronization purposes, including clock generation and disribution.
   * __DAC (Digital to Analog Converter):__ It is a system that converts a digital signal into an analog signal. DACs are widely used in modern communication systems enabling the generation of digitally-defined transmission signals.
      
-![image](https://github.com/user-attachments/assets/2434c5ce-52c8-47ac-bf72-2427ac9b5079)
+##### Phase-Locked Loop (PLL)
+* The primary purpose of a  PLL is to align the output oscillator signal with a reference signal. Even if both signals have identical frequencies, their peaks and troughs might not align perfectly. In other words, they don't reach corresponding points on the waveform simultaneously. This misalignment is referred to as the phase difference, represented as the angle between the two signals. For signals that fluctuate in frequency, the phase difference will constantly change, causing one signal to either lag or lead the other by a varying degree.
+* A PLL minimizes phase discrepancies between output and input frequencies. When the phase difference between these signals is zero, the system is considered to be "locked." This locking mechanism relies on the PLL’s capability to deliver negative feedback, which involves sending the output signal back to the phase detector.
+* Besides aligning the output and input frequencies, a PLL also assists in defining the phase relationship between them to produce the necessary control voltage. As a result, it facilitates both frequency and phase locking within a circuit.
 
+![image](https://github.com/user-attachments/assets/f30a8063-b74b-485a-9e20-cccbef923a62)
 
+###### Key components of a phase-locked loop
+1. __Phase detector (also known as a phase comparator or mixer):__ It compares the phases of two signals, and generates a voltage according to the phase difference. It multiplies the reference input and the voltage-controlled oscillator output.
+2. __Voltage-controlled oscillator:__ Generates a sinusoidal signal, whose frequency closely matches the center frequency provided by the low-pass filter.
+3. __Low-pass filter:__ A kind of loop filter that attenuates the high-frequency alternating current (AC) component of the input signal to smoothen and flatten the signal to make it more DC-like.
+
+##### A Digital-to-Analog Converter (DAC) 
+
+* It is an electronic device that converts digital signals (usually in binary format) into analog signals. The primary role of a DAC is to take discrete digital data—often representing audio, video, or other types of data—and produce a continuous analog signal that can be used for further processing, playback, or transmission.
+
+* Key Functions and Features of a DAC:
+1. __Signal Conversion:__ It translates binary numbers into corresponding voltage or current levels that represent the original signal.
+2. __Applications:__ DACs are used in various applications, including audio equipment (e.g., converting digital audio files to sound waves), video devices (e.g., converting digital video signals to display), telecommunications, and many control systems.
+3. __Types of DACs:__ There are several types of DACs, such as:
+   Resistor Ladder (R-2R) DAC: Based on a network of resistors to create various voltage levels.
+   Delta-Sigma DAC: Utilizes oversampling and noise shaping techniques for high precision.
+   Pulse Width Modulation (PWM) DAC: Converts digital signals to an analog signal by varying the width of pulses.
+4. __Performance Metrics:__ Key characteristics to consider in DACs include resolution (measured in bits), sampling rate, linearity, and total harmonic distortion (THD), which determine the quality and fidelity of the output signal.
+  
+</details>
+
+<details>
+<summary> Introduction to Modelling </summary>
+
+* Some initial input signals will be fed into BabySoC module that make the PLL start generating proper clock for the circuit.
+* The clock signal will make the rvmyth to execute instructions in its imem. As a result the register r17 will be filled with some values cycle by cycle.
+* These values are used by DAC core to provide final ouput signal named as OUT.
+* So, there are 3 IP cores RVMYTH, PLL, DAC and also a testbench module.
   
 </details>
