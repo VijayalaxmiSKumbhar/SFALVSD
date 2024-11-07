@@ -144,7 +144,7 @@
  </details>
 
 <details>
-<summary>How Paths are timed MCP?</summary>
+<summary>How Paths are timed Multi Cycle Path (MCP)?</summary>
 <br>
 
 #### How DC/STA tool checks timing?
