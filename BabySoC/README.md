@@ -79,7 +79,7 @@ __SoCs__ are a foundational technology driving the advancement of modern electro
 * __Basic Logic Design:__ This is basically a schematic design.
 * __Logic Verification:__ Veriifcation of functionality. This is done using simulation tools.
 * __Physical Design:__ Translation of schematic design into layout
-* __Physical Verification:__ DRC will check for any design rule violations.
+* __Physical Verification:__ DRC will check for any design rule violations for example metal spacing etc
 * __Chip Fabrication__
   
 ![image](https://github.com/user-attachments/assets/413967bd-5e00-4eb6-9481-146ad6a9a7eb)
@@ -89,6 +89,14 @@ __SoCs__ are a foundational technology driving the advancement of modern electro
 
 <details>
 <summary>Introduction to VSDBabySoC</summary>
+
+* __VSDBabySOC__ is small yet powerfull RISC-V based SoC. The main purpose of this SoC is to test IP cores. The IP cores used here are __RVMYTH__, __PLL__ and __DAC__.
+* __VSDBaby SoC Componets__
+  * __RVMYTH :__ It is a simple RISC-V based CPU.
+  * __PLL (Phase Locked Loop):__ It is a control system that generates an output signal whose phase is related to the phase of an input signal. PLLs are widely used for synchronization purposes, including clock generation and disribution.
+  * __DAC (Digital to Analog Converter):__ It is a system that converts a digital signal into an analog signal. DACs are widely used in modern communication systems enabling the generation of digitally-defined transmission signals.
+     
+![image](https://github.com/user-attachments/assets/2434c5ce-52c8-47ac-bf72-2427ac9b5079)
 
 
   
