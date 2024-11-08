@@ -9,7 +9,7 @@ VSDBabySoC contains three IP cores `RVMYTH (RISC-V based CPU)`, `PLL` and `DAC` 
 
 ##### VSDBabySoC Modules
 1. VSDBabySoC.v
-   This is the primary module that combines the rvmyth, pll, and dac modules. (https://github.com/manili/VSDBabySoC?tab=readme-ov-file#vsdbabysoc-modeling)
+This is the primary module that combines the rvmyth, pll, and dac modules. (https://github.com/manili/VSDBabySoC?tab=readme-ov-file#vsdbabysoc-modeling)
 * Inputs
   `reset:` This signal is used to reset the core processor of the SoC. When activated, it initializes or clears the state of the system.
   `VCO_IN:` This is the input signal for the Voltage-Controlled Oscillator (VCO), which plays a critical role in generating clock signals.
