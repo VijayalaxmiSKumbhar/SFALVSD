@@ -17,7 +17,7 @@ VSDBabySoC Project/
 │ ├── avsdpll.v                   # Phase-locked loop module
 │ └── avsddac.v                   # Digital-to-analog converter module
 ├── sim/
-│ ├── testbench_vsdbabysoc.v # Testbench
+│ ├── testbench_vsdbabysoc.v      # Testbench
 │ └── scripts/
 │ └── run_simulation
 ├── Output/
@@ -81,6 +81,7 @@ It is a RISC-V based IP core. That gives 10-bit digital as the output `(OUT)`
     This is a Phase-Locked Loop (PLL) designed to synchronize its output frequency with a reference frequency. 
 
 * Inputs
+  
   `VCO_IN(VCO_IN):' This input is connected to the Voltage-Controlled Oscillator (VCO) input, allowing the PLL to adjust the output frequency.
   
   `ENb_CP(ENb_CP):` This is the enable (or disable) signal for the Charge Pump (CP) inside the PLL. When low, it enables the Charge Pump.
@@ -109,4 +110,11 @@ It is a RISC-V based IP core. That gives 10-bit digital as the output `(OUT)`
   
   `OUT:` This is the output of the DAC, which provides the resulting analog voltage based on the digital input.
 
+
+
+`testbench_vsdbabysoc.v`
+
+
+
+It is a simulation environment for the `VSDBabySoC` module. It initializes the necessary signals, instantiates the Device Under Test `(DUT)`, manages waveform dumping for analysis, and generates a sequence of input signals to observe the response of the SoC design under test. This produces pre-synthesis and post-synthesis simulations through conditional compilation.
 
