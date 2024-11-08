@@ -17,8 +17,7 @@ VSDBabySoC Project/
 │ ├── avsdpll.v                   # Phase-locked loop module
 │ └── avsddac.v                   # Digital-to-analog converter module
 ├── sim/
-│ ├── testbench_vsdbabysoc.v      # Testbench
-│ └── scripts/
+│ ├── testbench.v                 # Testbench
 │ └── run_simulation
 ├── Output/
 
