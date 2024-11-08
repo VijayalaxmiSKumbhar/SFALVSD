@@ -26,7 +26,7 @@ VSDBabySoC Project/
 
     
 
-##### VSDBabySoC Modules
+##### VSDBabySoC Module Descriptions
 
 -----
 
