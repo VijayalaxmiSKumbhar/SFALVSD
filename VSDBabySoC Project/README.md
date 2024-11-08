@@ -120,12 +120,10 @@ It is a simulation environment for the `VSDBabySoC` module. It initializes the n
 
 #### Simulation Steps
 
-​```
-
 1. git clone https://github.com/manili/VSDBabySoC.git
 2. cd VSDBabySoC
-3. rvmyth.v file () is added to VSDBabySoC/src/module
-4. rvmyth_gen.v file () is added to VSDBabySoC/src/include
+3. rvmyth.v file (https://github.com/Devipriya1921/VSDBabySoC_ICC2) is added to VSDBabySoC/src/module
+4. rvmyth_gen.v file (https://github.com/Devipriya1921/VSDBabySoC_ICC2) is added to VSDBabySoC/src/include
 5. mkdir -p output/pre_synth_sim
 6. iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I src/include -I src/module src/module/testbench.v
 7. cd output/pre_synth_sim
@@ -133,8 +131,6 @@ It is a simulation environment for the `VSDBabySoC` module. It initializes the n
 9. gtkwave pre_synth_sim.vcd
 
     
-```
-
 ![image](https://github.com/user-attachments/assets/b8fd67c0-c37b-4c97-9f3d-0a00489d4ad9)
 
 
