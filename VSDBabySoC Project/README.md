@@ -8,23 +8,29 @@ VSDBabySoC contains three IP cores `RVMYTH (RISC-V based CPU)`, `PLL` and `DAC` 
 -----
 
 #### Steps
+```
 VSDBabySoC Project/
 ├── README.md
 ├── src/
-│   ├── vsdbabysoc.v
-│   ├── rvmyth.v
-│   ├── avsdpll.v
-│   └── avsddac.v
+│ ├── vsdbabysoc.v                # Top-level module
+│ ├── rvmyth.v                    # RISC-V based core module
+│ ├── avsdpll.v                   # Phase-locked loop module
+│ └── avsddac.v                   # Digital-to-analog converter module
 ├── sim/
-│   ├── testbench_vsdbabysoc.v
-│   └── scripts/
-│       └── run_simulation
+│ ├── testbench_vsdbabysoc.v # Testbench
+│ └── scripts/
+│ └── run_simulation
 ├── Output/
+
+```
 
     
 
 ##### VSDBabySoC Modules
-1. VSDBabySoC.v
+
+-----
+
+1. `VSDBabySoC.v`
 This is the primary module that combines the rvmyth, pll, and dac modules. (https://github.com/manili/VSDBabySoC?tab=readme-ov-file#vsdbabysoc-modeling)
 * Inputs
   
@@ -50,5 +56,57 @@ This is the primary module that combines the rvmyth, pll, and dac modules. (http
   
   `RV_TO_DAC:`This is a 10-bit wide signal that connects the output signals from a RISC-V core to the input of the DAC. The width suggests that it can carry values 
    ranging from 0 to 1023 (in decimal), allowing for 1024 different values to be sent to the DAC.
+
+-----
+
   
-    
+2. `rvmyth.v`
+It is a RISC-V based IP core. That gives 10-bit digital as the output `(OUT)`
+
+* Inputs
+
+  `CLK:` rvmyth accepts a clock signal called CLK. This clock signal is important for synchronizing operations within the module.
+
+  `reset:' rvmyth takes an external reset signal named reset. When asserted, this signal resets the state of the rvmyth module back to its initial conditions, 
+   which is a common feature in digital systems to manage states safely.
+
+* Output 
+  `OUT(RV_TO_DAC):` The output of the rvmyth module is connected to the RV_TO_DAC wire defined in the parent module. The RV_TO_DAC wire is 10 bits wide, indicating 
+   that the output from this module contains digital data that can be directed to a DAC (Digital-to-Analog Converter).
+
+------
+
+
+3. `avsdpll.v`
+    This is a Phase-Locked Loop (PLL) designed to synchronize its output frequency with a reference frequency. 
+
+* Inputs
+  `VCO_IN(VCO_IN):' This input is connected to the Voltage-Controlled Oscillator (VCO) input, allowing the PLL to adjust the output frequency.
+  
+  `ENb_CP(ENb_CP):` This is the enable (or disable) signal for the Charge Pump (CP) inside the PLL. When low, it enables the Charge Pump.
+  
+  `ENb_VCO(ENb_VCO):` This is the enable (or disable) signal for the VCO. It controls whether the VCO operates or is disabled.
+  
+  `REF(REF):` This is the reference signal that the PLL aims to lock onto. It provides the frequency or timing reference for the PLL operation.
+
+* Outputs
+  
+  `CLK(CLK):` This is the primary clock input for the PLL. It provides timing for operations within the PLL.
+
+
+------
+
+4. `avsddac.v`
+   This module is a Digital-to-Analog Converter (DAC) that translates digital signals into corresponding analog voltages. T
+
+* Inputs
+  `RV_TO_DAC:` This input represents the digital value to be converted to an analog signal. It is typically a binary signal that defines the output voltage level.
+
+  `VREFH(VREFH):` This is the high reference voltage for the DAC. It establishes the range of output voltages by providing a reference against which the digital 
+   values are converted.
+
+* Ouputs
+  
+  `OUT:` This is the output of the DAC, which provides the resulting analog voltage based on the digital input.
+
+
