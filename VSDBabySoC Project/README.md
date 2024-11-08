@@ -118,3 +118,20 @@ It is a RISC-V based IP core. That gives 10-bit digital as the output `(OUT)`
 
 It is a simulation environment for the `VSDBabySoC` module. It initializes the necessary signals, instantiates the Device Under Test `(DUT)`, manages waveform dumping for analysis, and generates a sequence of input signals to observe the response of the SoC design under test. This produces pre-synthesis and post-synthesis simulations through conditional compilation.
 
+#### Simulation Steps
+
+```
+1. git clone https://github.com/manili/VSDBabySoC.git
+2. cd VSDBabySoC
+3. rvmyth.v file () is added to VSDBabySoC/src/module
+4. rvmyth_gen.v file () is added to VSDBabySoC/src/include
+5. mkdir -p output/pre_synth_sim
+6. iverilog -o output/pre_synth_sim/pre_synth_sim.out -DPRE_SYNTH_SIM -I src/include -I src/module src/module/testbench.v
+7. cd output/pre_synth_sim
+8. /pre_synth_sim.out
+9. gtkwave pre_synth_sim.vcd
+
+![image](https://github.com/user-attachments/assets/5ee133b6-6f73-4f45-8348-ff11be1d4529)
+
+```
+
