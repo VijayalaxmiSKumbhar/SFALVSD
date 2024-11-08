@@ -120,6 +120,9 @@ It is a simulation environment for the `VSDBabySoC` module. It initializes the n
 
 #### Simulation Steps
 
+
+* Pre-synthesis Simulation
+  
 1. git clone https://github.com/manili/VSDBabySoC.git
 2. cd VSDBabySoC
 3. rvmyth.v file (https://github.com/Devipriya1921/VSDBabySoC_ICC2) is added to VSDBabySoC/src/module
@@ -132,5 +135,14 @@ It is a simulation environment for the `VSDBabySoC` module. It initializes the n
 
     
 ![image](https://github.com/user-attachments/assets/b8fd67c0-c37b-4c97-9f3d-0a00489d4ad9)
+
+* To view the waveform in gtkwave give the following command
+  
+  `gtkwave pre_synth_sim.vcd`
+
+* Drag and drop the signals CLK, reset, OUT(DAC) (select the format as `analog step`), RV TO DAC [9:0]
+
+![image](https://github.com/user-attachments/assets/b55a67d5-ca03-4823-b56b-d417c670d4c7)
+
 
 
