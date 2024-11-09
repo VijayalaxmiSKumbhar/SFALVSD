@@ -1,6 +1,7 @@
 # Post-Synthesis Simulation
 
 <details>
+  
 <summarry> Introduction </summarry>
 * Post-synthesis simulation is essential for validating the functionality, performance, and reliability of the designs before they are fabricated.
 * Purpose of Post-synthesis simulation
@@ -18,6 +19,7 @@
 
 
 <details>
+  
 <summary>Why do Pre-synthesis? Why not just do post-synthesis?</summary>
 
 * Pre-synthesis simulation done according to the logic designed -----> It only checks the functionality
