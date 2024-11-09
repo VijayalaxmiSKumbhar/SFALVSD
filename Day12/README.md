@@ -1,6 +1,6 @@
 # Post-Synthesis Simulation
 
-<detail>
+<details>
   
 <summarry> Introduction </summarry>
 <br>
@@ -19,7 +19,7 @@
 </details>
 
 
-<detail>
+<details>
   
 <summary> Why do Pre-synthesis? Why not just do post-synthesis?</summary>
 <br>
