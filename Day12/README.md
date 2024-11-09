@@ -43,7 +43,7 @@
 </details>
 
 <details>
-<summary> Inrduction to GLS (Gate Level Simulation </summary>
+<summary> Inrduction to GLS (Gate Level Simulation) </summary>
 <br>
 
 * The term `gate level ` refers to netlist view of the circuit.
@@ -57,6 +57,24 @@
 * GLS can be zero delay also, but is more often used in unit delay or full timing mode.
 
 * GLS helps in verifying the dynamic behavior of the circuit, which cannot be verified accurately by static methods.
+
+
+</details>
+
+<details>
+<summary> Synthesis using Synopsys's DC Shell (Design Compiler) </summary>
+<br>
+
+#### Steps
+
+1. Invoke DC and read the verilog file ----> rvmyth_avsddac.v
+
+2. Read .db file and set target_lib -----> sky130_fd_sc_hd__tt_025c_1v80.lib
+
+#### Commands to convert .lib to .db
+
+1. 
+
 
 
 </details>
