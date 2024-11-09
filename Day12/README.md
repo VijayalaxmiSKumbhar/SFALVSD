@@ -73,7 +73,13 @@
 
 #### Commands to convert .lib to .db
 
-1. 
+1. lc_shell
+
+2. read_lib library.lib
+
+3. write_lib library -format db -output library.db
+
+4. quit
 
 
 
