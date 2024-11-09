@@ -3,6 +3,7 @@
 <detail>
   
 <summarry> Introduction </summarry>
+<br>
 * Post-synthesis simulation is essential for validating the functionality, performance, and reliability of the designs before they are fabricated.
 * Purpose of Post-synthesis simulation
   ---- Verification
@@ -21,6 +22,7 @@
 <detail>
   
 <summary> Why do Pre-synthesis? Why not just do post-synthesis?</summary>
+<br>
 
 * Pre-synthesis simulation done according to the logic designed -----> It only checks the functionality
 * Post-synthesis simulation/ `'Gate Level Simulation'` is done after synthesis considering each and every gate delays into account. Reports the violations both in functionality and timing.
