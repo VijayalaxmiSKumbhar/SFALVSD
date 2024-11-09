@@ -1,32 +1,32 @@
 # Post-Synthesis Simulation
 
-
-<summarry> Introduction </summarry>
+<details>
+<summary> Introduction </summary>
 <br>
 
 * Post-synthesis simulation is essential for validating the functionality, performance, and reliability of the designs before they are fabricated.
-* Purpose of Post-synthesis simulation
   
-  ---- Verification
+* Purpose of Post-synthesis simulation:
   
-  ---- Timing Analysis
+  1. Verification
   
-  ---- Power Analysis
+  2. Timing Analysis
   
-  ---- Functional Validation
+  3. Power Analysis
+  
+  4. Functional Validation
   
 * Stages of Post-Synthesis Simulation
   
-  ---- Gate-Level Simulation
+  1. Gate-Level Simulation
   
-  ---- Static Timing Analysis (STA)
+  2. Static Timing Analysis (STA)
   
-  ---- Dynamic Simulation
+  3. Dynamic Simulation
   
-  ---- Power Simulation
- 
-</details>
+  4. Power Simulation 
 
+</details>
 
 <details>
 <summary> Why do Pre-synthesis? Why not just do post-synthesis?</summary>
@@ -38,6 +38,6 @@
   
 * This also shows the mismatches that are due to wrong usage of operators and inference of latches.
   
-  ---- For example: Using `'X'` (Simulator terms/ synthesizer terms) - `"Unknown"/"Don't care"` 
+  For example: Using `'X'` (Simulator terms/ synthesizer terms) - `"Unknown"/"Don't care"` 
 
 </details>
