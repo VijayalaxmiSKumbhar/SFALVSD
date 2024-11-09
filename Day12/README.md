@@ -1,7 +1,6 @@
 # Post-Synthesis Simulation
 
 
-<details>
 <summarry> Introduction </summarry>
 <br>
 
