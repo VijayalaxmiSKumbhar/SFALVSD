@@ -81,6 +81,13 @@
 
 4. quit
 
+Launch lc_shell
+
+* csh
+
+* lc_shell
+
+![image](https://github.com/user-attachments/assets/eb199708-c581-4f35-9566-4283ce2f353c)
 
 
 </details>
