@@ -41,3 +41,22 @@
   For example: Using `'X'` (Simulator terms/ synthesizer terms) - `"Unknown"/"Don't care"` 
 
 </details>
+
+<details>
+<summary> Inrduction to GLS (Gate Level Simulation </summary>
+<br>
+
+* The term `gate level ` refers to netlist view of the circuit.
+
+* RTL simulation is pre-synthesis, GLS is post-synthesis.
+
+* The netlist view is complete connection list consisting of gates and IP models with full functional and timing behavior.
+
+* RTL Simulation is zero delay environment and events generally occur on active clock edge.
+
+* GLS can be zero delay also, but is more often used in unit delay or full timing mode.
+
+* GLS helps in verifying the dynamic behavior of the circuit, which cannot be verified accurately by static methods.
+
+
+</details>
