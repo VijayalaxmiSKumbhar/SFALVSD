@@ -143,5 +143,75 @@ It is a simulation environment for the `VSDBabySoC` module. It initializes the n
 
 ![image](https://github.com/user-attachments/assets/b55a67d5-ca03-4823-b56b-d417c670d4c7)
 
+##### yosys 
+
+`read_verilog /home/comp/VSDBabySoC/src/module/vsdbabysoc.v`
+
+![image](https://github.com/user-attachments/assets/cb2628d8-f471-41ef-a531-e4f81e4db681)
+
+`read_verilog -I /home/comp/VSDBabySoC/src/include  /home/comp/VSDBabySoC/output/compiled_tlv/rvmyth.v`
+
+![image](https://github.com/user-attachments/assets/1cc571cb-b21a-460c-ae96-236d94c2cfd1)
+
+`read_verilog -I /home/comp/VSDBabySoC/src/include  /home/comp/VSDBabySoC/src/module/clk_gate.v`
+
+![image](https://github.com/user-attachments/assets/c12ab4da-1730-4422-847a-21e14188875d)
+
+```
+read_liberty -lib /home/comp/VSDBabySoC/src/lib/avsdpll.lib
+read_liberty -lib /home/comp/VSDBabySoC/src/lib/avsddac.lib
+read_liberty -lib /home/comp/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+```
+
+![image](https://github.com/user-attachments/assets/c95f7c7a-0159-42a1-951f-ffaba8cb3f3a)
+
+
+`synth -top vsdbabysoc`
+
+![image](https://github.com/user-attachments/assets/e6ef0494-d6f7-4274-890b-089098cf09b5)
+![image](https://github.com/user-attachments/assets/e479f3c9-70bb-42b6-a2a2-597f80fcbdae)
+![image](https://github.com/user-attachments/assets/c5386d9c-a6fe-4e2a-96ed-36a1b115a065)
+![image](https://github.com/user-attachments/assets/65c878e5-c1bb-4ad8-b956-42f6f9cd7ddc)
+![image](https://github.com/user-attachments/assets/56adb6f5-11e6-4453-baf2-6b264d5faa15)
+
+
+`dfflibmap -liberty /home/comp/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`
+
+![image](https://github.com/user-attachments/assets/b4a5447f-ecc2-4a9f-9125-283d222a6e85)
+
+`opt`
+
+![image](https://github.com/user-attachments/assets/b4214304-562e-4b2a-bd1d-ed24ef3f83d4)
+
+`abc -liberty /home/comp/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.lib -script +strash;scorr;ifraig;retime;{D};strash;dch,-f;map,-M,1,{D}`
+
+![image](https://github.com/user-attachments/assets/b08126a3-4dc2-4e49-8fb5-11ff53c2e645)
+
+
+```
+
+flatten
+setundef -zero
+clean -purge
+rename -enumerate
+
+```
+
+![image](https://github.com/user-attachments/assets/c8ea3fb9-f405-43a3-84fb-94b30896b8b1)
+
+`stat`
+
+![image](https://github.com/user-attachments/assets/956efc75-2e69-458f-ad9b-f3e9ea02554a)
+![image](https://github.com/user-attachments/assets/a2e281d8-2bf2-424c-aa75-1668903742e6)
+![image](https://github.com/user-attachments/assets/7e089d64-5f7b-4a73-a868-dee495e6f1b9)
+
+
+`write_verilog -noattr /home/comp/VSDBabySoC/output/synth/vsdbabysoc.synth.v`
+
+![image](https://github.com/user-attachments/assets/85cc466c-f409-4df1-b49f-ea51a8904131)
+
+
+
 
 
