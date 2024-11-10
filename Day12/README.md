@@ -81,11 +81,11 @@
 
 ![image](https://github.com/user-attachments/assets/6f1faec7-ebe7-4c31-9365-9ef7c28c1417)
 
-* Reading avsddac library: read_lib avsddac.lib
+* Reading avsddac library: `read_lib avsddac.lib`
   
 ![image](https://github.com/user-attachments/assets/7e5fb172-86ba-421d-b80c-563ec724250a)
 
-* Writing .db file: write_lib avsddac -format db -output avsddac.db  
+* Writing .db file: `write_lib avsddac -format db -output avsddac.db`  
 
 ![image](https://github.com/user-attachments/assets/68b19d40-5077-42ee-b8e7-67a28b189636)
 
@@ -105,7 +105,7 @@
 
 ![image](https://github.com/user-attachments/assets/546a1001-8577-4bf8-b62b-693940a1c86d)
 
-* Reading avsdpll library: read_lib avsdpll.lib
+* Reading avsdpll library: `read_lib avsdpll.lib`
   
 After running the above command will get the errors, the corrected avsdpll.lib is as given here
 
@@ -181,10 +181,33 @@ library (avsdpll) {
 
 
 
-* Writing .db file: write_lib avsdpll -format db -output avsdpll.db  
+* Writing .db file: `write_lib avsdpll -format db -output avsdpll.db`  
 
 
 ![image](https://github.com/user-attachments/assets/e713e901-0f97-4fca-b1a1-ce4f857e68e3)
+
+###### converting `sky130_fd_sc_hd__tt_025C_1v80.lib` to `sky130_fd_sc_hd__tt_025C_1v80.db`
+
+* cd vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib
+
+![image](https://github.com/user-attachments/assets/82481af1-1254-4c88-ac13-9841b747d83c)
+
+* Launch lc_shell
+
+  1. csh
+    
+  2. lc_shell
+
+![image](https://github.com/user-attachments/assets/6f1faec7-ebe7-4c31-9365-9ef7c28c1417)
+
+* Reading sky130_fd_sc_hd__tt_025C_1v80 library: `read_lib sky130_fd_sc_hd__tt_025C_1v80.lib`
+  
+![image](https://github.com/user-attachments/assets/f278308c-249e-4ca6-b615-b1dd5f95c85d)
+
+
+* Writing .db file: `write_lib sky130_fd_sc_hd__tt_025C_1v80 -format db -output sky130_fd_sc_hd__tt_025C_1v80.db`  
+
+![image](https://github.com/user-attachments/assets/fea0bddb-18d3-4d6c-ba69-8d0c6ac162db)
 
 
 
