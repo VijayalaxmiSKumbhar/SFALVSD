@@ -186,11 +186,17 @@ library (avsdpll) {
 
 ![image](https://github.com/user-attachments/assets/e713e901-0f97-4fca-b1a1-ce4f857e68e3)
 
+
+
 ###### converting `sky130_fd_sc_hd__tt_025C_1v80.lib` to `sky130_fd_sc_hd__tt_025C_1v80.db`
 
+
+
 * cd vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib
+  
 
 ![image](https://github.com/user-attachments/assets/82481af1-1254-4c88-ac13-9841b747d83c)
+
 
 * Launch lc_shell
 
@@ -200,15 +206,62 @@ library (avsdpll) {
 
 ![image](https://github.com/user-attachments/assets/6f1faec7-ebe7-4c31-9365-9ef7c28c1417)
 
+
 * Reading sky130_fd_sc_hd__tt_025C_1v80 library: `read_lib sky130_fd_sc_hd__tt_025C_1v80.lib`
+  
   
 ![image](https://github.com/user-attachments/assets/f278308c-249e-4ca6-b615-b1dd5f95c85d)
 
 
-* Writing .db file: `write_lib sky130_fd_sc_hd__tt_025C_1v80 -format db -output sky130_fd_sc_hd__tt_025C_1v80.db`  
+* Writing .db file: `write_lib sky130_fd_sc_hd__tt_025C_1v80 -format db -output sky130_fd_sc_hd__tt_025C_1v80.db`
+  
 
 ![image](https://github.com/user-attachments/assets/fea0bddb-18d3-4d6c-ba69-8d0c6ac162db)
 
 
+#### Synthesis and Gate Level Simulation
+
+* cd vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib
+  
+
+![image](https://github.com/user-attachments/assets/82481af1-1254-4c88-ac13-9841b747d83c)
+
+
+* Launch dc_shell
+
+  1. csh
+    
+  2. dc_shell
+
+
+![image](https://github.com/user-attachments/assets/da1a09c3-5f01-4986-a723-5669cc877d04)
+
+
+* set target_library `/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+
+![image](https://github.com/user-attachments/assets/917a6483-5a53-44fc-9d89-c93113bbb9d2)
+
+* set link_library `{* /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db}`
+
+![image](https://github.com/user-attachments/assets/f46fa143-156d-4713-bf9f-d6611e9c0df9)
+
+set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/include /home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/module}
+
+![image](https://github.com/user-attachments/assets/3c2ea7c3-a322-4387-971f-edf58fa288ba)
+
+
+* read_file `{sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc`
+
+
+![image](https://github.com/user-attachments/assets/2ef06d19-4dcc-4ea7-9470-b8e2252fe0cb)
+
+![image](https://github.com/user-attachments/assets/685a3eae-7d95-4a0b-b783-42b31b2af961)
+
+* `link`
+
+![image](https://github.com/user-attachments/assets/6c350122-9812-4668-a532-2c40987e4be4)
+
+
+* `compile_ultra`
 
 </details>
