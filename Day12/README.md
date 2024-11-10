@@ -281,12 +281,22 @@ library (avsdpll) {
 
 ![image](https://github.com/user-attachments/assets/f2721970-1a85-424a-9175-244830c9366f)
 
+
+
 * `report_qor > report_qor.txt`
 
 
 ![image](https://github.com/user-attachments/assets/7d2d081d-f339-47b0-b593-f4037f467a91)
 ![image](https://github.com/user-attachments/assets/8646c7e6-da1d-4930-b44c-c4f07175c10b)
 ![image](https://github.com/user-attachments/assets/8e8f695c-bdc8-43cb-b5ac-40b60588d1b5)
+
+
+
+## Post-synthesis Simulation
+
+`iverilog -DFUNCTIONAL -DUNIT_DELAY=#1 -o ./output/post_synth_sim.out ./src/gls_model/primitives.v ./src/gls_model/sky130_fd_sc_hd.v ./output/vsdbabysoc_net.v ./src/module/avsdpll.v ./src/module/avsddac.v ./src/module/testbench.v`
+
+![image](https://github.com/user-attachments/assets/a548cd73-86ad-4b34-bcbd-aef938573cc5)
 
 
 </details>
