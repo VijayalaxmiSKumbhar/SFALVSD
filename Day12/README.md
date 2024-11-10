@@ -315,4 +315,7 @@ comment `VSSA, VDDA of avsddac in the vsdbabysoc_net.v file`
 ![image](https://github.com/user-attachments/assets/0fe1bffa-427a-49f5-aaac-4c27a996b22b)
 
 
+![image](https://github.com/user-attachments/assets/4cd9355e-5f99-4021-917e-14cc6e3fe99a)
+
+
 </details>
