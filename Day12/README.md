@@ -276,4 +276,10 @@ set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/include /home/vij
 
 ![image](https://github.com/user-attachments/assets/5006bebb-088b-47bb-be54-a5d2af29297c)
 
+
+* write_file -format verilog -hierarchy -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_net.v
+
+![image](https://github.com/user-attachments/assets/f2721970-1a85-424a-9175-244830c9366f)
+
+
 </details>
