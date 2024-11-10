@@ -65,29 +65,127 @@
 <summary> Synthesis using Synopsys's DC Shell (Design Compiler) </summary>
 <br>
 
-#### Steps
-
-1. Invoke DC and read the verilog file ----> rvmyth_avsddac.v
-
-2. Read .db file and set target_lib -----> sky130_fd_sc_hd__tt_025c_1v80.lib
-
 #### Commands to convert .lib to .db
 
-1. lc_shell
+###### converting `avsddac.lib` to `avsddac.db`
 
-2. read_lib library.lib
+* cd vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib
 
-3. write_lib library -format db -output library.db
+![image](https://github.com/user-attachments/assets/82481af1-1254-4c88-ac13-9841b747d83c)
 
-4. quit
+* Launch lc_shell
 
-Launch lc_shell
+  1. csh
+    
+  2. lc_shell
 
-* csh
+![image](https://github.com/user-attachments/assets/6f1faec7-ebe7-4c31-9365-9ef7c28c1417)
 
-* lc_shell
+* Reading avsddac library: read_lib avsddac.lib
+  
+![image](https://github.com/user-attachments/assets/7e5fb172-86ba-421d-b80c-563ec724250a)
 
-![image](https://github.com/user-attachments/assets/eb199708-c581-4f35-9566-4283ce2f353c)
+* Writing .db file: write_lib avsddac -format db -output avsddac.db  
+
+![image](https://github.com/user-attachments/assets/68b19d40-5077-42ee-b8e7-67a28b189636)
+
+###### converting `avsdpll.lib` to `avsdpll.db`
+
+* cd vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib
+
+![image](https://github.com/user-attachments/assets/7a5c2e22-ea6f-4145-ad9e-4e415aec10b0)
+
+
+
+* Launch lc_shell
+
+  1. csh
+    
+  2. lc_shell
+
+![image](https://github.com/user-attachments/assets/546a1001-8577-4bf8-b62b-693940a1c86d)
+
+* Reading avsdpll library: read_lib avsdpll.lib
+  
+After running the above command will get the errors, the corrected avsdpll.lib is as given here
+
+```
+library (avsdpll) {
+  time_unit : "1ns";
+  voltage_unit : "1V";
+  current_unit : "1uA";
+  pulling_resistance_unit : "1kohm";
+  leakage_power_unit : "1nW";
+  capacitive_load_unit(1, pf);
+
+  slew_lower_threshold_pct_fall : 20.000000000;
+  slew_lower_threshold_pct_rise : 20.000000000;
+  slew_upper_threshold_pct_fall :  80.00000000;
+  slew_upper_threshold_pct_rise :  80.00000000;
+  input_threshold_pct_fall : 50.000000000;
+  input_threshold_pct_rise : 50.000000000;
+  output_threshold_pct_fall : 50.000000000;
+  output_threshold_pct_rise : 50.000000000;
+
+  cell (avsdpll) {
+    pin(CLK) {
+      direction : output;
+      capacitance : 0.001;
+    }
+
+    pin (VCO_IN) {
+      direction : input;
+      max_transition : 2.5;
+      capacitance : 0.001;
+    }
+
+    pin (ENb_CP) {
+      direction : input;
+      max_transition : 2.5;
+      capacitance : 0.001;
+    }
+    
+	  pin (ENb_VCO) {
+      direction : input;
+      max_transition : 2.5;
+      capacitance : 0.001;
+    }
+
+    pin (REF) {
+      direction : input;
+      max_transition : 2.5;
+      capacitance : 0.001;
+    }
+
+    pin (GND) {
+      direction : input;
+      max_transition : 2.5;
+      capacitance : 0.001;
+    }
+
+    
+    pin (VDD) {
+      direction : input;
+      max_transition : 2.5;
+      capacitance : 0.001;
+    }
+    
+    
+  }
+}
+
+```
+
+
+![image](https://github.com/user-attachments/assets/5af6ee3f-1a38-4f3e-b3c1-1ecd6c0c7942)
+
+
+
+* Writing .db file: write_lib avsdpll -format db -output avsdpll.db  
+
+
+![image](https://github.com/user-attachments/assets/e713e901-0f97-4fca-b1a1-ce4f857e68e3)
+
 
 
 </details>
