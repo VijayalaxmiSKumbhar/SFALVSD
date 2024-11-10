@@ -264,4 +264,16 @@ set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/include /home/vij
 
 * `compile_ultra`
 
+![image](https://github.com/user-attachments/assets/736ddfc0-8019-4e0c-a124-0471dce06177)
+
+![image](https://github.com/user-attachments/assets/87922c90-6b3a-4c73-a995-d97ad4d8330f)
+
+![image](https://github.com/user-attachments/assets/43fe1c01-7b76-41d8-9110-7064e0586988)
+
+![image](https://github.com/user-attachments/assets/ebce9502-404f-4239-9e4b-9cb98b9a0f7b)
+
+![image](https://github.com/user-attachments/assets/134c0fa4-08e5-4975-b302-997b986fa5d2)
+
+![image](https://github.com/user-attachments/assets/5006bebb-088b-47bb-be54-a5d2af29297c)
+
 </details>
