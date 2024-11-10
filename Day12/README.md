@@ -298,7 +298,7 @@ library (avsdpll) {
 
 ![image](https://github.com/user-attachments/assets/a548cd73-86ad-4b34-bcbd-aef938573cc5)
 
-* Debug the the errors
+###### Debug the the errors
 
 * `cd VSDBabySoC/ouput`
 
@@ -321,11 +321,11 @@ library (avsdpll) {
 
 #### Errors in Synthesis 
 
-* Error: Undefined Ports avsdpll `(GND, VDD)`, avsddac `(VSSA, VDDA)`
+* Error in `vsdbabysoc_net.v` : undefined ports avsdpll `(GND, VDD)`, avsddac `(VSSA, VDDA)`
 
 Make sure that all required power and ground ports are specified in each module. Incorporate GND and VDD in the avsdpll module, and include VSSA and VDDA in the avsddac module.
 
-* Syntax issues in library Files such as `avsdpll.lib` and `sky130_fd_sc_hd__tt_025C_1v80.lib`
+* Syntax issues in library files such as `avsdpll.lib` and `sky130_fd_sc_hd__tt_025C_1v80.lib`
   
 Errors found in library files can disrupt the conversion to `.db format`. Open the file to identify and correct any problems.
 
