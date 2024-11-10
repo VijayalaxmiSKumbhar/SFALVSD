@@ -229,28 +229,28 @@ library (avsdpll) {
 
 * Launch dc_shell
 
-  1. csh
+  1. `csh`
     
-  2. dc_shell
+  2. `dc_shell`
 
 
 ![image](https://github.com/user-attachments/assets/da1a09c3-5f01-4986-a723-5669cc877d04)
 
 
-* set target_library `/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set target_library /home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
 
 ![image](https://github.com/user-attachments/assets/917a6483-5a53-44fc-9d89-c93113bbb9d2)
 
-* set link_library `{* /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db}`
+* `set link_library {* /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db}`
 
 ![image](https://github.com/user-attachments/assets/f46fa143-156d-4713-bf9f-d6611e9c0df9)
 
-set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/include /home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/module}
+`set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/include /home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/module}'
 
 ![image](https://github.com/user-attachments/assets/3c2ea7c3-a322-4387-971f-edf58fa288ba)
 
 
-* read_file `{sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc`
+* `read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc`
 
 
 ![image](https://github.com/user-attachments/assets/2ef06d19-4dcc-4ea7-9470-b8e2252fe0cb)
@@ -277,9 +277,16 @@ set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySOC/src/include /home/vij
 ![image](https://github.com/user-attachments/assets/5006bebb-088b-47bb-be54-a5d2af29297c)
 
 
-* write_file -format verilog -hierarchy -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_net.v
+* `write_file -format verilog -hierarchy -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_net.v`
 
 ![image](https://github.com/user-attachments/assets/f2721970-1a85-424a-9175-244830c9366f)
+
+* `report_qor > report_qor.txt`
+
+
+![image](https://github.com/user-attachments/assets/7d2d081d-f339-47b0-b593-f4037f467a91)
+![image](https://github.com/user-attachments/assets/8646c7e6-da1d-4930-b44c-c4f07175c10b)
+![image](https://github.com/user-attachments/assets/8e8f695c-bdc8-43cb-b5ac-40b60588d1b5)
 
 
 </details>
