@@ -212,6 +212,30 @@ rename -enumerate
 ![image](https://github.com/user-attachments/assets/85cc466c-f409-4df1-b49f-ea51a8904131)
 
 
+##### Post-Synthesis
+
+```
+
+* sudo make synth
+
+* sudo make post_synth_sim
+
+```
+
+![image](https://github.com/user-attachments/assets/49bc5d8d-df3c-487f-8feb-5a7c3f471d7e)
+
+
+##### To see the waveforms
+
+`gtkwave output/post_synth_sim/post_synth_sim.vcd`
+
+
+![image](https://github.com/user-attachments/assets/81488686-06f3-472c-9569-cbfc7a772038)
+
+
+##### Waveforms
+
+![image](https://github.com/user-attachments/assets/447f2281-f958-4f55-8fd4-dfcea3fcfc51)
 
 
 
