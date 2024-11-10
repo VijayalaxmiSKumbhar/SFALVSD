@@ -298,5 +298,21 @@ library (avsdpll) {
 
 ![image](https://github.com/user-attachments/assets/a548cd73-86ad-4b34-bcbd-aef938573cc5)
 
+* Remove the errors
+
+Comment `GND, VDD of avsdpll in the vsdbabysoc_net.v file`
+
+comment `VSSA, VDDA of avsddac in the vsdbabysoc_net.v file`
+
+* `cd VSDBabySoC/ouput`
+
+* `./post_synth_sim.out`
+
+![image](https://github.com/user-attachments/assets/add894e4-d464-426c-9be8-1977d6d0936d)
+
+* `gtkwave dump.vcd`
+
+![image](https://github.com/user-attachments/assets/0fe1bffa-427a-49f5-aaac-4c27a996b22b)
+
 
 </details>
