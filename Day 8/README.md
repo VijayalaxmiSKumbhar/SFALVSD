@@ -223,6 +223,34 @@ report_timing
 <summary>Lab 16: Part 2 resource sharing optimizations </summary>
 <br>
 
+#### Note : All the dc commands work in design_vision als
+
+* Launch the design_vision
+
+* `csh`
+* `design_vision`
+
+##### Example here is resource_sharing_mult_check.v
+
+![image](https://github.com/user-attachments/assets/c61658a9-aa5d-4539-9c1b-ab23125183b4)
+
+```
+* read_verilog resource_sharing_mult_check.v
+* link
+* compile_ultra
+
+```
+
+![image](https://github.com/user-attachments/assets/e548ece9-5566-4e1c-8c02-0fecd4af2686)
+
+* To know the area of design : `report_area`
+
+![image](https://github.com/user-attachments/assets/f770a72f-0cc9-4241-b479-5222991bc949)
+![image](https://github.com/user-attachments/assets/5d6f0866-fded-40ff-9a4e-d67089e9aa37)
+![image](https://github.com/user-attachments/assets/97de5c56-0f42-43cc-82ee-8d80b8a1c114)
+![image](https://github.com/user-attachments/assets/70e5eda2-65d5-4bbd-8fb2-11bf51e3850a)
+
+
 
 </details>
 
