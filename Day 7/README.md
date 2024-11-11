@@ -682,6 +682,34 @@ set_load -min 0.1 [get_ports OUT_Y];
 <summary>Lab 15: Part 1 Set_Max_delay </summary>
 <br>
 
+#### Example lab14_circuit.v
+
+![image](https://github.com/user-attachments/assets/f6f1528f-3319-45b9-9eb9-77363a30544d)
+
+
+* sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab14_circuit.v
+
+![image](https://github.com/user-attachments/assets/4101599a-a1cb-4357-aec7-afa17d043ce0)
+
+* read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab14_circuit.v
+
+![image](https://github.com/user-attachments/assets/046f7c7b-a4af-4d1a-ac56-0bf33c91faa6)
+
+* current_design
+
+* source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_cons.tcl 
+
+![image](https://github.com/user-attachments/assets/27bdcea6-3152-4e21-aec5-0fa138e503e9)
+
+* report_clocks
+
+![image](https://github.com/user-attachments/assets/683e0c62-3ad6-4673-87bb-c4f169023090)
+
+* link
+* compile_ultra
+
+
+
 
 </details>
 
