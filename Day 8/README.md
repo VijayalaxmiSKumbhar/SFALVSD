@@ -183,7 +183,40 @@
 ##### To optimize the design further
 
 * get_lib_cells */sky130_fd_sc_hd__xnor2*
-* 
+
+![image](https://github.com/user-attachments/assets/aa9b9dda-8088-4091-a046-506c3a894704)
+
+* `size_cell U3 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__xnor2_4` (`size_cell` is the command used to up size or down size the cell)
+  
+![image](https://github.com/user-attachments/assets/f91d9288-3885-419c-a8a5-5b360bc1c6a2)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/a33f2076-7328-481e-bbb9-85047a5e37d0)
+
+##### Commands used for executing `opt_check4.v`
+
+```
+
+csh
+design_vision
+read_verilog opt_check4.v
+link
+compile
+report_timing -to y
+set_max_delay 0.06 -from [all_inputs] -to [get_ports y]
+report_timing
+compile_ultra
+report_timing
+get_lib_cells */sky130_fd_sc_hd__xnor2*
+size_cell U4 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__xnor2_4
+size_cell U3 sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__xnor2_4
+report_timing
+compile_ultra
+report_timing
+
+```
+
 </details>
 
 <details>
