@@ -825,7 +825,66 @@ echo $my_pnt_name $my_cell_name;
 <summary>Lab 15: Part 2 VCLK </summary>
 <br>
 
+#### One more way of constraining the pathe is by using Virtual Clock `(VCLK)`, it is a clock that is created without a definition point.
 
+![image](https://github.com/user-attachments/assets/a514adde-a70a-4b39-93bb-34ed4ea598a2)
+
+* `create_clock -name MYCLK -per 10`
+
+![image](https://github.com/user-attachments/assets/b8efbd86-0ac2-4cea-ada0-fcc3ebe162c7)
+
+* reset_design
+* read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab14_circuit.v
+
+![image](https://github.com/user-attachments/assets/e7be4953-0040-4808-9bf5-7893a0d70cc8)
+
+* link
+* source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_cons.tcl 
+
+![image](https://github.com/user-attachments/assets/82e40915-2c16-41c2-820d-5315fb9ad760)
+
+* compile_ultra
+* report_clocks
+
+![image](https://github.com/user-attachments/assets/2bcc1c4e-403b-4715-aaae-a1ae03b0aaa6)
+
+* report_timing -to OUT_Z
+
+![image](https://github.com/user-attachments/assets/40fcb299-7894-41a0-a24c-2bc472c8bd35)
+
+* create-clock -name MYVCLK -per 10
+* report_clocks
+
+![image](https://github.com/user-attachments/assets/841e2371-e836-4a4e-b046-e4a95e83f35d)
+![image](https://github.com/user-attachments/assets/a01cf387-bc1c-49f7-8462-f37dc697eddd)
+
+* set_input_delay -max 5 [get_ports IN_C] -clock [get_clocks MYVCLK]
+* set_input_delay -max 5 [get_ports IN_D] -clock [get_clocks MYVCLK]
+* set_output_delay -max 5 [get_ports OUT_Z] -clock [get_clocks MYVCLK]
+
+![image](https://github.com/user-attachments/assets/2f58699d-bc3b-417e-bb6f-520bb6b985cb)
+
+* report_timing
+
+![image](https://github.com/user-attachments/assets/7b8b9089-ffac-4e93-9086-2b9a1453895f)
+
+* compile_ultra
+* report_timing -to OUT_Z -sig 4
+
+![image](https://github.com/user-attachments/assets/039e46ac-92af-46c3-936c-87959146fb8e)
+
+* report_port -verbose
+
+![image](https://github.com/user-attachments/assets/5e00f941-8da1-489e-9e7d-9d3ddb10d538)
+![image](https://github.com/user-attachments/assets/91faebe6-56b0-4798-8165-0c837c59fd97)
+
+##### Note
+
+* There are two ways of constraining the path
+  1. set_max_delay
+  2. Virtual Clock
+ 
+  
 </details>
 
 
