@@ -251,6 +251,15 @@ report_timing
 ![image](https://github.com/user-attachments/assets/70e5eda2-65d5-4bbd-8fb2-11bf51e3850a)
 
 
+* `set_max_delay -from [all_input] -to [all_outputs]`
+
+![image](https://github.com/user-attachments/assets/c6e314e3-ce04-475d-ab83-22dd1bcf6635)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/514f5326-aeb7-408e-9309-177be8e35ccf)
+
+
 
 </details>
 
