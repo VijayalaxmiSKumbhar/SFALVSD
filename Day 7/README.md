@@ -736,12 +736,39 @@ set_load -min 0.1 [get_ports OUT_Y];
 * all_clocks (lists all clocks)
 * all_registers (lists all registers)
 * all_registers -clock MYCLK (To know all registers that are clocked by particular clock such as MYCLK)
-* all_registers -clock MYGEN_DIV_CLK (To know all registers are clocked by particular clock such as MYGEN_DIV_CLK, in the diagram MYGEN_DIV_CLK is a out bound clock it is not connected to any of the register)
+* all_registers -clock MYGEN_DIV_CLK (To know all registers are clocked by particular clock such as MYGEN_DIV_CLK, in the diagram MYGEN_DIV_CLK is a out bound clock it is not connected to any of the register and similary MYGEN_CLK is not clocking any of the registers)
 
 ![image](https://github.com/user-attachments/assets/58a158fd-90a1-43ab-b01c-ff22b4ac6cc5)
 
+* report_timing -from IN_A -to OUT_Z
+* report_timing -from IN_B -to OUT_Z
+* report_timing -from IN_C -to OUT_Z
 
-* set_max_latency -from 
+![image](https://github.com/user-attachments/assets/f607c113-c2a4-4713-ac23-c32f3d843315)
+![image](https://github.com/user-attachments/assets/57081824-25cd-4ec2-b6fe-c1387ed215f2)
+![image](https://github.com/user-attachments/assets/79e81081-1082-4a46-a7f4-a2b472c6488b)
+
+* To know from where all path IN_A goes: ` all_fanout -flat -endpoints_only -from IN_A
+* ` all_fanout -from IN_A
+* Original circuit diagram showing the fanouts of A
+
+![image](https://github.com/user-attachments/assets/dd859661-16f3-4f95-ad96-1b094997a181)
+
+* Result from tool
+
+![image](https://github.com/user-attachments/assets/d73c684b-2e0b-4051-a23e-497a300faf27)
+
+```
+foreach_in_collection my_points [all_fanout -from IN_A] {
+set my_pnt_name [get_object_name $my_points];
+set my_cell_name [get_attribute [get_cells -of_objects [get_pins $my_pnt_name]] ref_name];
+echo $my_pnt_name $my_cell_name;
+}
+```
+
+![image](https://github.com/user-attachments/assets/9fa526d2-74f4-483a-9a62-cb8c4d1ca7b3)
+
+* To constrain the path command is: set_max_latency -from 
 </details>
 
 <details>
