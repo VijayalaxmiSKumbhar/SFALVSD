@@ -768,7 +768,57 @@ echo $my_pnt_name $my_cell_name;
 
 ![image](https://github.com/user-attachments/assets/9fa526d2-74f4-483a-9a62-cb8c4d1ca7b3)
 
-* To constrain the path command is: set_max_latency -from 
+* all_fanin -to  REGA_reg/D
+
+* all_fanin -to  REGA_reg/D -startpoints_only
+
+![image](https://github.com/user-attachments/assets/d631c825-0362-4308-9460-a94bc217be1e)
+
+
+
+* There are no pths from A to Z and B to Z, then to constrain the path command is: `set_max_delay 0.1 -from [all_inputs] -to [get_port OUT_Z]`
+
+![image](https://github.com/user-attachments/assets/62154f11-5e51-4f56-bb34-0c70ce63c45a)
+
+* `report_timing -to OUT_Z`
+
+![image](https://github.com/user-attachments/assets/0fcda65a-5502-4936-8550-c08462fe9f55)
+
+* `report_timing -to OUT_Z -sig 4`
+
+![image](https://github.com/user-attachments/assets/2d160a4a-0fbd-4412-832b-d8e1a6f13da5)
+
+
+#### This constraint is applied after `compile_ultra`. Now perform
+
+* `compile_ultra`
+* `report_timing -to OUT_Z -sig 4`
+* In the results we can see that slack is `MET`
+
+![image](https://github.com/user-attachments/assets/e7945006-b97f-4d61-83a6-6feaeb6564c7)
+
+* `write -f ddc -out lab14.ddc`
+
+![image](https://github.com/user-attachments/assets/8864a1f6-5e12-4f4d-8fb1-a136c5ca67db)
+
+* go to design_visison
+
+* `reset_design`
+*  `read_ddc lab14.ddc`
+*  start_gui
+
+![image](https://github.com/user-attachments/assets/854cad5d-5290-4182-8a88-9260a75afd7a)
+
+
+#### The following optimization is done by the tool
+
+![image](https://github.com/user-attachments/assets/5c6c844c-8c3c-448a-a42a-2efc475a734f)
+
+* `report_timing -from IN_C -to OUT_Z`
+
+![image](https://github.com/user-attachments/assets/c82ff6a7-d36a-4a40-868a-d48b6b0a4a95)
+
+  
 </details>
 
 <details>
