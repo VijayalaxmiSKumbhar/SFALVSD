@@ -706,11 +706,42 @@ set_load -min 0.1 [get_ports OUT_Y];
 ![image](https://github.com/user-attachments/assets/683e0c62-3ad6-4673-87bb-c4f169023090)
 
 * link
+
+![image](https://github.com/user-attachments/assets/4cfcce2a-7820-4e39-98af-38cf880f03ba)
+
 * compile_ultra
 
+![image](https://github.com/user-attachments/assets/2a4a376d-902a-407e-9dc5-d947ee0f3a2f)
+
+* report_timing
+
+![image](https://github.com/user-attachments/assets/d27fa3e1-b56c-4a11-b30e-db2b6a3f06f4)
+
+* get_ports *
+
+![image](https://github.com/user-attachments/assets/db70cf19-4d9e-43ae-8dd6-34780e975862)
+
+* reports_timimng -to OUT_Z
+
+![image](https://github.com/user-attachments/assets/6db996fd-3026-431c-a661-fbeb8981c3b0)
+
+* report_timing -from IN_C
+
+![image](https://github.com/user-attachments/assets/6d3685f1-b4d0-44f8-931a-b67b65fba600)
+
+#### Let us see how to constrain the paths
+
+* all_inputs (lists all inputs)
+* all_outpus (lists all outputs)
+* all_clocks (lists all clocks)
+* all_registers
+* all_registers -clock MYCLK
+* all_registers -clock MYGEN_DIV_CLK
+
+![image](https://github.com/user-attachments/assets/58a158fd-90a1-43ab-b01c-ff22b4ac6cc5)
 
 
-
+* set_max_latency -from 
 </details>
 
 <details>
