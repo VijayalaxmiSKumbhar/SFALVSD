@@ -112,6 +112,74 @@
 ![image](https://github.com/user-attachments/assets/a85d035c-5ae5-47a7-87a1-379499c8709c)
 ![image](https://github.com/user-attachments/assets/d25aa38e-7d1b-48e5-9297-d4f741bfd493)
 
+* Launch design_vision
+
+![image](https://github.com/user-attachments/assets/0c2ebe6f-bb5c-4f4e-827d-d5121943796e)
+
+* in dc_shell: `write -f ddc -out opt_check.ddc`
+
+![image](https://github.com/user-attachments/assets/1db117e7-fbd4-4f20-9c47-d98148d6be8a)
+
+* in design_vision: `read_ddc opt_check.ddc`
+
+![image](https://github.com/user-attachments/assets/92a85710-046a-46d8-bb14-04600d9137d7)
+
+##### y1 = a.b and y2 = c bar
+
+![image](https://github.com/user-attachments/assets/c9bb4038-1f30-41f2-94d6-801b5077e368)
+
+* To load the other designs `reset_design` in dc_shell as well design_vision
+
+* The functionalities implemented by opt_check2.v, opt_check3.v and opt_check4.v are as follows
+
+![image](https://github.com/user-attachments/assets/2cb3f5a9-c7b6-4aa7-bb59-4a331a2ad167)
+
+##### In design_vision give the following commands
+
+* `read_verilog opt_check2.v`
+
+![image](https://github.com/user-attachments/assets/27c37063-b2d5-4a8b-8bb5-c3f4d6332215)
+
+* `link`
+* `compile`
+
+![image](https://github.com/user-attachments/assets/32083478-9e38-4740-8d37-c65b18f66481)
+![image](https://github.com/user-attachments/assets/1a15d8ae-bc15-4804-88a2-0fe16aace093)
+
+#### Similarly for opt_check3.v
+
+* `read_verilog opt_check3.v`
+* `link`
+* `compile`
+
+![image](https://github.com/user-attachments/assets/1f184984-03d9-4a0e-a616-330e84617ed9)
+
+#### Similarly for opt_check4.v
+
+* `read_verilog opt_check4.v`
+* `link`
+* `compile
+
+![image](https://github.com/user-attachments/assets/af6c6f94-b4ca-41e8-9118-2ea5d4aa802e)
+
+* `report_timing -to y`
+
+![image](https://github.com/user-attachments/assets/347c19c8-7cd1-473d-bcc3-82b15477067b)
+
+* `set_max_delay 0.06 -from [all_inputs] -to [get_ports y]`
+
+![image](https://github.com/user-attachments/assets/c1115a48-3a98-4f44-ab65-bd0458e007cf)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/d908476a-4325-4c4a-a782-c400bad61424)
+
+* `compile_ultra`
+* `report_timing`
+* In the result still SLACK is Violated means further optimization is not done
+  
+![image](https://github.com/user-attachments/assets/2f36e74b-9bcf-4ecb-84de-091554b4f5ee)
+
 
 </details>
 
