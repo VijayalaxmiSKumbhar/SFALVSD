@@ -158,7 +158,7 @@
 
 * `read_verilog opt_check4.v`
 * `link`
-* `compile
+* `compile`
 
 ![image](https://github.com/user-attachments/assets/af6c6f94-b4ca-41e8-9118-2ea5d4aa802e)
 
@@ -180,7 +180,10 @@
   
 ![image](https://github.com/user-attachments/assets/2f36e74b-9bcf-4ecb-84de-091554b4f5ee)
 
+##### To optimize the design further
 
+* get_lib_cells */sky130_fd_sc_hd__xnor2*
+* 
 </details>
 
 <details>
