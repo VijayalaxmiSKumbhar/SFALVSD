@@ -80,6 +80,24 @@
 <summary>Lab 16: Part 1 Combinational_optimizations </summary>
 <br>
 
+* `sh gvim opt_check*.v -o`
+
+![image](https://github.com/user-attachments/assets/6f4ab869-8298-4f42-9097-803e81ee25ac)
+
+* `opt_check.v` functionality is
+
+![image](https://github.com/user-attachments/assets/7fb8f0ed-e776-4a41-9667-3934355c2a34)
+
+* `read_verilog opt_check.v`
+
+![image](https://github.com/user-attachments/assets/aabd2c2e-5aa7-43f0-884b-505f44f62cfa)
+![image](https://github.com/user-attachments/assets/85034c06-5a4d-44b2-851d-594192cba763)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/be9213be-3b9d-4453-ad54-d1f8e9031382)
+
+
 
 </details>
 
