@@ -734,9 +734,9 @@ set_load -min 0.1 [get_ports OUT_Y];
 * all_inputs (lists all inputs)
 * all_outpus (lists all outputs)
 * all_clocks (lists all clocks)
-* all_registers
-* all_registers -clock MYCLK
-* all_registers -clock MYGEN_DIV_CLK
+* all_registers (lists all registers)
+* all_registers -clock MYCLK (To know all registers that are clocked by particular clock such as MYCLK)
+* all_registers -clock MYGEN_DIV_CLK (To know all registers are clocked by particular clock such as MYGEN_DIV_CLK, in the diagram MYGEN_DIV_CLK is a out bound clock it is not connected to any of the register)
 
 ![image](https://github.com/user-attachments/assets/58a158fd-90a1-43ab-b01c-ff22b4ac6cc5)
 
