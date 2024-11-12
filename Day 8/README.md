@@ -302,6 +302,8 @@ report_timing
 
 ![image](https://github.com/user-attachments/assets/a067c2ed-3cd9-491c-97b3-83b92d844a81)
 ![image](https://github.com/user-attachments/assets/f9bb3896-f797-4f77-a361-5365a8b715f5)
+![image](https://github.com/user-attachments/assets/8a725af2-90d8-415d-aaed-c118e2c9d4c3)
+
 
 ##### Summary of results
 
@@ -314,7 +316,51 @@ report_timing
 <summary>Lab 17: Sequential optimizations </summary>
 <br>
 
+##### Examples used for sequential optimization are:
 
+![image](https://github.com/user-attachments/assets/c3a8ff0b-6e44-447a-90be-02d9917d4398)
+
+##### Launch dc_shell
+
+* `csh`
+* `dc_shell`
+
+* `read_verilog dff_const1.v`
+
+![image](https://github.com/user-attachments/assets/958e3c1c-62cc-4614-ac4f-c7f2c7f2cc32)
+
+* `link`
+* `compile`
+* `get_cells`
+
+![image](https://github.com/user-attachments/assets/fc04c89e-893a-446b-a8ed-74d743b372c5)
+
+* ` foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    echo $cell_name;
+    } `
+
+![image](https://github.com/user-attachments/assets/d8562abd-aea8-473f-b562-c81edeb94aae)
+
+* ` foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    set rn [get_attribute [get_cells $cell_name] ref_name];
+    echo $cell_name $rn;
+    } `
+
+![image](https://github.com/user-attachments/assets/97209f43-1e8e-4be1-92a2-f3d910d1af16)
+
+##### Now launch design_vision
+
+* `csh`
+* `design_vision`
+
+* `read_verilog dff_const1.v`
+
+![image](https://github.com/user-attachments/assets/ea04f7b7-ffd8-4edd-8504-ec9a596684b2)
+
+
+  
 </details>
 
 <details>
