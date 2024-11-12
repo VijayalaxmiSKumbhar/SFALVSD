@@ -305,7 +305,8 @@ report_timing
 
 ##### Summary of results
 
-![image](https://github.com/user-attachments/assets/b5edaca8-99ed-476a-9c16-885b85f18b50)
+![image](https://github.com/user-attachments/assets/c00ef366-410a-4722-bf0d-81ffa88e10ca)
+
 
 </details>
 
