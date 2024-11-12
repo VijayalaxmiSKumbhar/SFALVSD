@@ -259,6 +259,47 @@ report_timing
 
 ![image](https://github.com/user-attachments/assets/514f5326-aeb7-408e-9309-177be8e35ccf)
 
+* `compile_ultra`
+* `report_timing`
+* `report_area`
+
+![image](https://github.com/user-attachments/assets/88f3fca8-be32-4c40-9691-d2a938bdb456)
+![image](https://github.com/user-attachments/assets/c88f55b0-a749-4c46-b4b4-ac866dca71f7)
+![image](https://github.com/user-attachments/assets/7078672f-5b18-4238-9f3d-cf48f8117a77)
+
+##### The following delays are given to further improve the area
+
+![image](https://github.com/user-attachments/assets/7d23c20f-4af1-47c9-a0ee-65b2665cfa4b)
+
+* ` set_max_delay -from sel -to [all_outputs] 0.1'
+
+![image](https://github.com/user-attachments/assets/321421d6-8fcf-4503-a585-b06f38955dff)
+
+* `report_timing`
+![image](https://github.com/user-attachments/assets/0ca705df-4fd7-41f1-add2-86544807e10f)
+![image](https://github.com/user-attachments/assets/6fcdd6c6-5ceb-4ed7-9fe6-8b9721eac4af)
+
+* `compile_ultra`
+* `report_area`
+
+![image](https://github.com/user-attachments/assets/6deab9ab-a4c9-4553-a3f5-59ddf5826696)
+![image](https://github.com/user-attachments/assets/828a9927-0a84-4302-a9e0-2c6ca25ceadd)
+
+##### After executing the above commands the tool is pushing the 2:1 mux towards output
+
+![image](https://github.com/user-attachments/assets/103806a2-3df8-479d-bc93-c6a2efc5b569)
+
+* `report_timing -sig 4`
+
+![image](https://github.com/user-attachments/assets/22f66cfe-a17a-408e-880a-9fb72c008eec)
+
+* command to constrain the area is: `set_max_area 800`
+
+![image](https://github.com/user-attachments/assets/60e9dd4c-ed4e-4e65-a568-ab47a4120b01)
+
+* `compile_ultra`
+* `report_area`
+
 
 
 </details>
