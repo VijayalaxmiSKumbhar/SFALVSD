@@ -300,7 +300,12 @@ report_timing
 * `compile_ultra`
 * `report_area`
 
+![image](https://github.com/user-attachments/assets/a067c2ed-3cd9-491c-97b3-83b92d844a81)
+![image](https://github.com/user-attachments/assets/f9bb3896-f797-4f77-a361-5365a8b715f5)
 
+##### Summary of results
+
+![image](https://github.com/user-attachments/assets/b5edaca8-99ed-476a-9c16-885b85f18b50)
 
 </details>
 
