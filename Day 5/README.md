@@ -295,6 +295,7 @@ after that type the command: echo $target_library
 + for {set i 0} {$i < 12 } {incr i} {
   echo $i
   }
+  
 ![image](https://github.com/user-attachments/assets/fab689a1-e3c1-4925-8e68-45916a501057)
 
 ## while statement
@@ -303,6 +304,7 @@ after that type the command: echo $target_library
   echo $i;
   incr i;
   }
+  
 ![image](https://github.com/user-attachments/assets/ab1bd659-d85e-49bd-ba1c-a7e82cb1ec51)
 
 * set i 0
@@ -323,6 +325,7 @@ set i [expr $i+1];
 ![image](https://github.com/user-attachments/assets/22db2fef-56bf-48ec-a2ab-1f2540b417e1)
 
 ## get_lib_cells */*and*
+
 ![image](https://github.com/user-attachments/assets/d913e163-6d64-4e39-b229-0d30b8cab96a)
 
 * foreach_in_collection my_var [get_lib_cells */*and*] {
@@ -333,14 +336,17 @@ set i [expr $i+1];
 
 ## To launch gvim within the tcl command is
 * sh gvim &
+  
 ![image](https://github.com/user-attachments/assets/1a333dc2-dd7a-4555-9cd5-62260fee6057)
 
 #### mycript.tcl
+
 ![image](https://github.com/user-attachments/assets/cf773a38-0ed4-4bed-a6ca-1b874ca0e016)
 
 #### Program is corrected
 
 * source myscript.tcl
+  
 ![image](https://github.com/user-attachments/assets/3ae818fa-7b37-4214-82ca-1644c356643c)
 
 #### Note: Printing with curly braces is a collection and without curly braces is a list
