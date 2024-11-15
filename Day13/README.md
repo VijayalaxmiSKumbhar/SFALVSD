@@ -19,7 +19,29 @@
 <br>
 
 * In order to make our chip to work after fabrication in all the possible conditions, we simulate it at different corners of process, voltage and temperature.
-
-* These conditions are called corners. All these three parameters directly affect the delay of the cell.
   
+* These conditions are called corners. All these three parameters directly affect the delay of the cell.
+
+  * `Transistor corners (fast, typical, slow)`
+ 
+  * `Voltage`
+ 
+  * `Temperature`
+
+##### PVT Corner details
+
+| Name         |Process {PMOS, NMOS}|  Voltage (V) |  Temperature (°C) | Lib file (.lib) |
+| ------------  | ------------ | ------------ | ------------ | ------------ |
+|`tt_025c_1v80` |   {T, T}|1.8   |25°C   |sky130_fd_sc_hd__tt_025c_1v80.lib (Typical)   |
+| `ss_100c_1v60` |   {S, S}|1.6   |100°C   |sky130_fd_sc_hd__ss_100c_1v60.lib (Slow)  |  
+|   `ff_n40c_1v95` |   {F, F}|1.95   |-40°C   |sky130_fd_sc_hd__ff_n40c_1v95.lib (Fast) |   
+  
+</details>
+
+<details>
+  <summary> PVT Graphs </summary>
+  <br>
+
+  ![image](https://github.com/user-attachments/assets/1696ea53-ecee-4069-b4ac-1a9e9463e705)
+
 </details>
