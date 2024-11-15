@@ -5,6 +5,7 @@
 <br>
 
 ##### Max Delay Constraint
+
 ![image](https://github.com/user-attachments/assets/8aa430b2-ce66-4d64-9ed0-eb3a897e0372)
 
 ##### Min Delay Constraint
@@ -14,6 +15,7 @@
 
 ##### Why Delay: Water Bucket Analogy
 ###### Example 1
+
 ![image](https://github.com/user-attachments/assets/f037b92f-3b0f-427e-b35e-8eafe105b42f)
 
 + Delay is a function of Inflow
@@ -37,6 +39,7 @@ Delay = function (load capacitance)
 
 + Delay information from every input pin to every output pin which it can control is present in timing arcs
 + Example
+  
 ![image](https://github.com/user-attachments/assets/0918f0f6-9d08-4c3a-b5b0-e71a6b485a74)
 
 #### Sequential Cell [D flip-flop, D latch]
@@ -56,6 +59,7 @@ Delay = function (load capacitance)
 #### What are timing paths and how it affects design?
 
 ###### Example
+
 ![image](https://github.com/user-attachments/assets/562cc8c4-3298-408c-9b63-7433c5b74097)
 
 ###### Start and End points of timing paths
@@ -70,6 +74,7 @@ Delay = function (load capacitance)
 #### Constrainig the Design- Why Constraints?
 
 ##### Example 1
+
 ![image](https://github.com/user-attachments/assets/2308f304-3aa5-45f3-82e7-ff566530c558)
 
 ###### Example 2
@@ -92,6 +97,7 @@ Delay = function (load capacitance)
 + Note: 70:30 rule that is 70% (External Delay) and 30% (Internal Delay)
 
 ### Summary
+
 ![image](https://github.com/user-attachments/assets/8dfd992f-f574-406f-9dcc-478ce064b410)
 
 
@@ -118,6 +124,7 @@ Delay = function (load capacitance)
 * clok pin attribute is true for flops
 * functionality is mentioned
 * The tool uses unateness information to propagate the transistion
+  
   ![image](https://github.com/user-attachments/assets/44f3bb67-8bf4-4a80-8468-ab4cd9b68db6)
 
 
@@ -131,13 +138,17 @@ Delay = function (load capacitance)
 ## Sequential timing arcs
 * CLK_N pin means active low clock and its attribute is 'TRUE' means it is clock
 * for D pin clock attribute is 'FALSE'
+* 
 ![image](https://github.com/user-attachments/assets/eac8a866-2088-4f96-a5fe-370f3ebed833)
+
 * CLK_N is non_unate because Q may be rising or falling depending on the clock.
+  
 ![image](https://github.com/user-attachments/assets/7dd14784-fe4d-4156-9429-2d17fc15d1f4)
 
 * echo $target_library
 * command to look for library cells: get_lib_cells * -filter "is_sequential == true "
 * get_lib_cells */* -filter "is_sequential == true"
+  
 ![image](https://github.com/user-attachments/assets/451af0b3-3347-47c4-bd44-054f2d2ae3d8)
 
   
@@ -149,6 +160,7 @@ Delay = function (load capacitance)
 <br>
 
 * list_lib shows the library that is already loaded
+  
 ![image](https://github.com/user-attachments/assets/81b12b70-ffd0-4555-83ae-bc7b9a9a0c4a)
 
 * command to see the AND gates available in library: get_lib_cells */*and*
@@ -159,9 +171,11 @@ Delay = function (load capacitance)
 * foreach_in_collection my_lib_cell [get_lib_cells */*and*] { 
 set my_lib_cell_name [get_object_name $my_lib_cell]; echo $my_lib_cell_name; 
 }
+
 ![image](https://github.com/user-attachments/assets/cea88f16-8db8-4677-a5bc-aa91c1523a67)
 
 * To see what are all the pins in particular cell: get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/*
+  
 ![image](https://github.com/user-attachments/assets/b73cedec-36f7-4812-8b78-48d9000baeff)
 
 * Script to display the direction of pin
@@ -170,11 +184,13 @@ set my_lib_cell_name [get_object_name $my_lib_cell]; echo $my_lib_cell_name;
   set pin_dir [get_lib_attribute $my_pin_name direction];
   echo $my_pin_name $pin_dir
   }
+  
 ![image](https://github.com/user-attachments/assets/c686c1aa-f28d-4333-8839-a17f0bb19993)
 
 *command to check the functionality: get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/X function
 
 ![image](https://github.com/user-attachments/assets/46d5a09d-6d3e-4b92-be8c-214202f6bc14)
+
 * Similarly we can check for nand gate
 ![image](https://github.com/user-attachments/assets/81ec3e9c-4041-445e-92ae-e6481a5397d3)
 
@@ -243,28 +259,35 @@ foreach my_cell $my_list {
 
 # To find Area of cell sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/
 * get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/ area
+  
 ![image](https://github.com/user-attachments/assets/0d7adb1d-fbac-4393-bc44-ab68b9578858)
 
 # To find pin capacitance sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/B
 * get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/B capacitance
+  
 ![image](https://github.com/user-attachments/assets/5d4e262e-e8cf-47ba-b1b5-5e62b89fa952)
 
 # To check clock pin or not
 * get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__nand4b_2/B clock
+  
 ![image](https://github.com/user-attachments/assets/a12ca096-18ab-446f-9401-dd8accc4c2b9)
 
 
 # To get all the cells which are sequential
 * get_lib_cells */* -filter "is_sequential == true"
+  
 ![image](https://github.com/user-attachments/assets/0650252b-a242-4dbd-a918-41f1b526fd28)
 
 # Various Attributes of sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbbn_2/
+
 ![image](https://github.com/user-attachments/assets/1b3eab2d-6f7a-4cc4-af0d-b27a7e84396b)
 
 # list_attributes -app (lists all the attributes)
+
 ![image](https://github.com/user-attachments/assets/a9c7532d-5efb-465d-870a-cdaa83422072)
 
 # To see the details of particular attribute 
+
 ![image](https://github.com/user-attachments/assets/8bce8188-94a8-4c9f-b85d-5269f6caa815)
 
 </details>
