@@ -45,3 +45,20 @@
   ![image](https://github.com/user-attachments/assets/1696ea53-ecee-4069-b4ac-1a9e9463e705)
 
 </details>
+
+<details>
+  <summary> PVT Analysis </summary>
+  <br>
+
+#### In this analysis SKY130PDK PVT Libs are used
+
+* Download the libraries from `https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing'
+
+* convert .lib files to .db format using synopsys `LC` shell
+
+* TCL script to convert .lib file to .db format
+
+
+
+</details>
+
