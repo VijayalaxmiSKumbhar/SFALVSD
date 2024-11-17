@@ -85,6 +85,53 @@ exit
 
 ![image](https://github.com/user-attachments/assets/2ff4d9f6-7ca1-423e-b8f1-eeab2cc4589c)
 
+#### To synthesize the VSDBabySoC for different PVT corners follow the steps
+
+* create a `multi_pvt_corners.tcl` file
+  
+* copy the following code into the above file
+
+```
+
+set m1 ""
+   set pvt ""
+   set FH [open report_timing.rpt w] ;# create timing report file
+   puts $FH "PVT_Corner\tWNS\tWHS"
+   
+   set lib_files [glob -directory /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/timinglibs/ -type f *.db]
+   
+   foreach lib_file_paths $lib_files {
+   
+   regexp {.*\/sky130_fd_sc_hd__(.*)\.db$} $lib_file_paths m1 pvt
+   
+   set timing_report_fast_mode true
+   
+   
+   set target_library $lib_file_paths
+   set link_library {* /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db}
+   lappend link_library $target_library
+   set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/include /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/module}
+   read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc
+   source /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/sdc/vsdbabysoc_synthesis.sdc
+   link
+   compile_ultra ;# to synthesize the design using currently set target PVT corner
+   
+   set wns [get_attribute [get_timing_paths -delay_type max -max_paths 1] slack] ;# Determine worst negative slack (setup) for current pvt corner
+   set whs [get_attribute [get_timing_paths -delay_type min -max_paths 1] slack] ;# Determine worst hold slack of current pvt corner.
+   
+   puts $FH "$pvt\t$wns\t$whs" ;# Write out pvt and their corresponding wns and whs in the timing report
+   
+   reset_design
+   }
+   
+   close $FH
+
+```
+
+* Invoke `dc_shell`
+
+* source `/home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/multi_pvt_corners.tcl`
+
 
 
 </details>
