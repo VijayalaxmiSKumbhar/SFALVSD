@@ -156,7 +156,15 @@ set m1 ""
 | tt_025C_1v80  |  0.0324135 | 0.31604  |
 |tt_100C_1v80   | 0.0135527  |  0.31977 |
 
+##### Note
 
+* `WNS` : Which points to the path having maximum negative slack.
+
+* `WNS` and `WHS` tells the designer the difference between design and timing requirement.
+
+* `Positive` value indicates that the timing requirements can be met.
+
+* `Negative` value indicates that the timing requirements can not be met
 
 #### Graphs
 
@@ -168,7 +176,7 @@ set m1 ""
 
 -----
 
-##### Worst Hold Slack
+##### Worst Hold Slack (WHS)
 
 ![image](https://github.com/user-attachments/assets/7355c7bf-240d-4195-a703-2b67b021f118)
 
