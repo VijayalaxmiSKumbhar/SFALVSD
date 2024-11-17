@@ -132,6 +132,31 @@ set m1 ""
 
 * source `/home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/multi_pvt_corners.tcl`
 
+* open the report_timing.rpt text file from the present working directory to get the information about WNS and WHS for different PVT corners
+
+##### Table showing the Worst Negative Slack (WNS) and Worst Hold Slack (WHS) for different PVT corners available in SKY130PDK for synthesized VSDBabySoC design
+
+
+| PVT_Corner| WNS  | WHS  |
+| ------------ | ------------ | ------------ |
+| ff_100C_1v65 |  0.0865402|  0.255021|
+| ff_100C_1v95  | 1.73898  | 0.201382  |
+| ff_n40C_1v56  |0.0162086   |  0.298206 |
+|  ff_n40C_1v65 |  0.0113392 | 0.26137  |
+|  ff_n40C_1v76 |1.19031   | 0.230204  |
+| ff_n40C_1v95  | 1.74468  |  0.192912 |
+| ss_100C_1v40  |0.00199986   | 0.895194  |
+| ss_100C_1v60  |3.20255   | 0.64934  |
+|ss_n40C_1v28   |  -0.966409 | 1.7782  |
+|ss_n40C_1v35   |0.000314713   | 1.30867  |
+| ss_n40C_1v40  | 0.000483513  | 1.13354  |
+| ss_n40C_1v44  | 0.00174999  |  0.973081 |
+|  ss_n40C_1v60 | 0.00452137  |0.669568   |
+| ss_n40C_1v76  | 0.00879574  | 0.510206  |
+| tt_025C_1v80  |  0.0324135 | 0.31604  |
+|tt_100C_1v80   | 0.0135527  |  0.31977 |
+
+
 
 
 </details>
