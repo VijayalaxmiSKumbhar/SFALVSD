@@ -52,11 +52,38 @@
 
 #### In this analysis SKY130PDK PVT Libs are used
 
-* Download the libraries from `https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing'
+* Download the libraries from `[https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing](https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd.git)'
 
 * convert .lib files to .db format using synopsys `LC` shell
 
 * TCL script to convert .lib file to .db format
+
+```
+# convert_lib_to_db.tcl
+set lib_files_dir "/home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/skywater-pdk-libs-sky130_fd_sc_hd/timing";
+set db_output_dir "/home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/timinglibs";
+foreach lib_file [glob -nocomplain $lib_files_dir/*.lib] {
+set base_name [file rootname [file tail $lib_file]]
+set db_file "$db_output_dir/${base_name}.db"
+
+if {[llength [list_libs]] > 0} {
+    remove_lib [lindex [list_libs] 0]
+}
+
+read_lib $lib_file
+
+write_lib $base_name -format db -output $db_file
+
+if {[llength [list_libs]] > 0} {
+    remove_lib [lindex [list_libs] 0]
+}
+}
+exit
+
+```
+.db files
+
+![image](https://github.com/user-attachments/assets/2ff4d9f6-7ca1-423e-b8f1-eeab2cc4589c)
 
 
 
