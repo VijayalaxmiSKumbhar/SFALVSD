@@ -158,6 +158,22 @@ set m1 ""
 
 
 
+#### Graphs
+
+----
+##### Worst Negative Slack (WNS)
+
+
+![image](https://github.com/user-attachments/assets/35c650db-8622-4da2-8d01-5c17bfa4609d)
+
+-----
+
+##### Worst Hold Slack
+
+![image](https://github.com/user-attachments/assets/7355c7bf-240d-4195-a703-2b67b021f118)
+
+-----
+
 
 </details>
 
