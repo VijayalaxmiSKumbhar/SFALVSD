@@ -52,7 +52,7 @@
 
 #### In this analysis SKY130PDK PVT Libs are used
 
-* Download the libraries from `[https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd/tree/master/timing](https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd.git)'
+* Download the libraries from `(https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd.git)`
 
 * convert .lib files to .db format using synopsys `LC` shell
 
