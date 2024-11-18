@@ -197,7 +197,11 @@
    
   ![image](https://github.com/user-attachments/assets/adb2349b-976c-4572-9c18-0beb51b6d327)
 
+* There are two solutions to overcome this
+  * Bridging attaches hiher layer intermediary
+  * Add antenna diode cell to leak away charges (Antenna diodes are provided by SCL)
 
+![image](https://github.com/user-attachments/assets/d2d4e746-379c-4d77-ba5d-bdc5ed38ac41)
 
 
 </details>
