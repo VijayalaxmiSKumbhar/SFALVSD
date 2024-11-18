@@ -188,4 +188,16 @@
   * Post placement optimization
   * Clock Tree Synthesis (CTS)
   * Routing: Global and Detailed.
+ 
+* Dealing with Antenna Rule Violations
+
+  * When a metal wire segment is fabricated, it can act as antenna.
+    * Reactive ion etching causes charge to accumulate on the wire
+    * Transistor gates can be damaged during fabrication
+   
+  ![image](https://github.com/user-attachments/assets/adb2349b-976c-4572-9c18-0beb51b6d327)
+
+
+
+
 </details>
