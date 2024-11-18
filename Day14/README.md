@@ -104,6 +104,28 @@
  
     ![image](https://github.com/user-attachments/assets/a807d6cd-9d90-4482-9c2f-b99d81a9b26f)
 
+    * Placement is done in 2 steps, Global placement followed by Detailed.
+
+     ![image](https://github.com/user-attachments/assets/366c5aa1-a222-4d0b-a773-cbf2c05b640a)
+
+  * Step-4: Clock Tree Synthesis (CTS): `To create clock distribution network`
+ 
+    ![image](https://github.com/user-attachments/assets/53beda13-7b9d-43a4-93ed-14268b7da579)
+
+* Step-5: Routing: `Implement the interconnect using available metal layers`
+
+  ![image](https://github.com/user-attachments/assets/3dc6af6e-cb4f-4d6f-a36b-7d81c9162025)
+  ![image](https://github.com/user-attachments/assets/9ed17b92-a15b-44b8-be6c-1e4873bd9afe)
+
+* Step-6: Sign off: It consists
+
+  * Physical Verifications
+    * Design Rules Checking (DRC)
+    * Layout Vs Schematic (LVS)
+
+  * Timing verification
+    * Static Timing Analysis (STA) : To verify that all the timing constraints are met.
+
 
 
   
