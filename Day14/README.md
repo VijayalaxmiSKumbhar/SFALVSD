@@ -127,6 +127,65 @@
     * Static Timing Analysis (STA) : To verify that all the timing constraints are met.
 
 
+#### Introduction to OpenLANE and Strive Chipsets
 
-  
+* Started as Open-Source Flow for a True Open-Source Tape-out Experiment
+* striVe is a family of `open everything` SoC's
+  * Open PDK, Open EDA, Open RTL
+ 
+![image](https://github.com/user-attachments/assets/d10342b2-6e41-452b-b021-bb0e7a6c7469)
+
+* Members of striVe SoC family
+
+  ![image](https://github.com/user-attachments/assets/1120ad0b-0fc7-43fb-aa8b-0258478534b5)
+
+* Features of OpenLANE
+  * Tuned for SkyWater 130nm Open PDK
+  * Containerized
+    * Functional out of the box
+    * Instructions to build and run natively will follow
+  * Can be used harden Macros and chips.
+  * It has two modes of operation
+    * Autonomous or Interactive
+  * It has Design Space Exploration
+    * Find the best set of flow configurations
+  * OpenLANE comes with large number of design examples
+    * 43 designs with their best configurations
+    * More will be added soon
+   
+#### OpenLANE ASIC flow
+
+![image](https://github.com/user-attachments/assets/50a8029a-f548-4c38-a3c9-ae956d5186b3)
+
+* OpenLANE is based on several opensource projects
+
+![image](https://github.com/user-attachments/assets/400a4025-1f81-4bd7-b46b-63b2ce0a3719)
+
+* `Synthesis Exploration`: It generates the reports that shows how the delay and area are affected by synthesis strategy.
+
+  ![image](https://github.com/user-attachments/assets/3d548d7e-7bc7-4181-a611-55d6185576d5)
+
+* `Design Exploration`: Used to sweep design configurations. It generates the reports as given here. This report shows different design metrics.
+* `Design Exploraion` is also used for regression testing (CI)
+* We run OpenLANE on ~70 designs and compare the results to best known ones.
+
+![image](https://github.com/user-attachments/assets/8f27244a-f446-4ad2-acb5-6b4279d45499)
+![image](https://github.com/user-attachments/assets/307b3bb9-0b2d-42d9-88e3-76000d83fd8c)
+
+* `Design for Test (DFT)`:
+  * Scan Insertion
+  * Automatic Test Pattern Generation (ATPG)
+  * Test Patterns Compaction
+  * Fault Coverage
+  * Fault Simulation
+
+![image](https://github.com/user-attachments/assets/3f66061a-1efd-4991-a579-8b552fab96c0)
+
+* `Physical Implementation (also called automated PnR Place and Route)`
+  * Floor/Power Planning
+  * End Decoupling capacitors and tap cells insertion
+  * Placement: Global and Detailed
+  * Post placement optimization
+  * Clock Tree Synthesis (CTS)
+  * Routing: Global and Detailed.
 </details>
