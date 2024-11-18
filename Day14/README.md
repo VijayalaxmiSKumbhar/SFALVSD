@@ -14,4 +14,8 @@
 
 ![image](https://github.com/user-attachments/assets/85490fab-021d-47db-9529-27754bae2c25)
 
+* This is how the chip is connected in package to communicate with outside world
+
+![image](https://github.com/user-attachments/assets/82f5d98e-818b-497e-818c-5e13724fc5d5)
+
 </details>
