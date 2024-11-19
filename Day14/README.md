@@ -254,6 +254,10 @@
 ![libs](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/e0d718bf-fb9a-4c3c-adf4-b39538f1029e)
 
 * sky130_fd_sc_hd
+  * `sky130': Process
+  *  `fd`: Abbreviated foundary name. It is skywater foundary
+  *  `sc`: standard cell library
+  *  `hd`: high density
 
 ![sc](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/371b3f31-fc41-466e-a0f1-13aa1b433bfb)
 
