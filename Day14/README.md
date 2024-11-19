@@ -198,10 +198,27 @@
   ![image](https://github.com/user-attachments/assets/adb2349b-976c-4572-9c18-0beb51b6d327)
 
 * There are two solutions to overcome this
-  * Bridging attaches hiher layer intermediary
+  * Bridging attaches higher layer intermediary
   * Add antenna diode cell to leak away charges (Antenna diodes are provided by SCL)
 
 ![image](https://github.com/user-attachments/assets/d2d4e746-379c-4d77-ba5d-bdc5ed38ac41)
 
+* A preventive approach
+  * Add a `Fake antenna diode` next to every cell input after placement
+  * Run the antenna checker `(Magic)` o the routed layout.
+  * If the checker reports a violation on the cell input pin, replace the `Fake diode cell` by real one.
+ 
+![image](https://github.com/user-attachments/assets/05e1b56d-0432-4cf6-a990-199e9e4aef61)
+
+* Static Timing Analysis
+ 
+![image](https://github.com/user-attachments/assets/52dffdd4-a2bc-4975-9625-2bcff8237a34)
+
+* Physical Verification involves `DRC` and `LVS`
+  * Magic is used for Design Rules Checking and SPICE extraction from Layout.
+  * Magic and Netgen are used for LVS
+    * Extractec SPICE by Magic Vs. Verilog Netlist.
+   
+  ![image](https://github.com/user-attachments/assets/2b758f1d-b0b8-4bf7-8f75-70200d5ea3e9)
 
 </details>
