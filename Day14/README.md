@@ -303,72 +303,73 @@ less config.tcl contains all the information
 
 ![config](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/b96eec9a-2f3b-4fb3-b0f3-841cc905029a)
 
-Design Preparation steps
+* `prep -design picorv32a`
+  * step 1: `mergeLef.py` -----> It combines two files into one
 
 ![designprep](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/0afd49ae-0dce-45e3-bd30-abf0a46f76c3)
 
-runs directory is created
+* `runs directory is created`
 
 ![image](https://github.com/user-attachments/assets/4f42fd2f-da7f-4ceb-9204-0797654ef11e)
 
-folder structure required for openlane
+* `folder structure required for openLane`
 
 ![image](https://github.com/user-attachments/assets/ec9d0422-17ba-4f23-9f23-ee25b37a75d9)
 
 
-cd tmp
+* `cd tmp`
 
 ![image](https://github.com/user-attachments/assets/aa92a1a7-376c-4bb7-902b-6705fef9ed3c)
 
 
-less merged.lef
+* `less merged.lef`
 
 ![merged](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/9695e7dc-e993-42b7-9800-28e9de3539ef)
 
-cd runs
+* `cd runs`
 
-cd results
+* `cd results`
 
-cd synthesis
+* `cd synthesis`
 
 ![image](https://github.com/user-attachments/assets/1d0d297c-0f0a-4cbd-93a8-0c32ff13a2d3)
 
 
-cd reports
+* `cd reports`
 
 ![image](https://github.com/user-attachments/assets/a08e67c5-d40f-4d3e-8525-ad173780451d)
 
-less config.tcl: it shows the default parameters taken by run
+* `less config.tcl`: it shows the default parameters taken by run
 
 ![configtcl](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/2f878d07-9a84-4b6f-99f7-cf421c88303d)
 
-run_synthesis
+* `run_synthesis`
 
 ![synthesis](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/45f0224d-1e11-428e-a314-e597a21e876e)
 
-cd results/synthesis: shows the verilog file of design
+* `cd results/synthesis` : shows the verilog file of design
 
 ![image](https://github.com/user-attachments/assets/301ecbdb-dc2e-455c-bcfa-ff04fc01e920)
 
 
-cd reports/synthesis
+* `cd reports/synthesis`
 
 ![image](https://github.com/user-attachments/assets/fecc4c51-56cd-47db-9868-2bea9ae4e28c)
 
-Actual synthesis statics report from this we calculate the flop ratio
+* Actual synthesis statics report from this we calculate the flop ratio
 
-command to get the synthesis reports
+* command to get the synthesis reports
 
 ![image](https://github.com/user-attachments/assets/3e5d2653-f380-4c3c-8145-b6f345dddb2d)
 
 
 ![image](https://github.com/user-attachments/assets/11931170-4ca0-446a-81e7-1ad6169b035c)
 
-Flop ratio
+* Flop ratio
 
 ![flopratio](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/8bb0301f-90e1-4417-93ae-c62e774f75ee)
 
-sta timing report
+* sta timing report
 
 ![image](https://github.com/user-attachments/assets/e1d15e6c-8c47-4905-908c-f912011c604b)
 
