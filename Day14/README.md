@@ -267,5 +267,110 @@
 
 ![openlane](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/ff642715-c5eb-4d00-ba6d-6e265974a857)
 
+## Design Preparation Steps
+
+* `package require openlane 0.9`
+* `prep -design picorv32a`
+
+![image](https://github.com/user-attachments/assets/81ac7fd4-eab3-466a-b63c-c21972e30519)
+
+* Various designs in openlane: It has around 40 designs
+
+![image](https://github.com/user-attachments/assets/5247ca15-3106-41f6-9d2e-ac08518d29a3)
+
+* picorv32a contains 3 files
+
+ * `src`: stands for source 
+
+ * `sky130A_sky130_fc_sc_hd_config.tcl`: pdk specific configuration file
+ 
+ * `config.tcl` file
+
+
+![picorv32a](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/d2a79fd2-80bd-48c0-a2ce-f5774ba23fa5)
+
+less config.tcl contains all the information
+
+* `design environment`
+
+* `verilog file`
+
+* `sdc file`
+
+* `clock period`
+
+* `setting of the file`
+
+![config](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/b96eec9a-2f3b-4fb3-b0f3-841cc905029a)
+
+Design Preparation steps
+
+![designprep](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/0afd49ae-0dce-45e3-bd30-abf0a46f76c3)
+
+runs directory is created
+
+![image](https://github.com/user-attachments/assets/4f42fd2f-da7f-4ceb-9204-0797654ef11e)
+
+folder structure required for openlane
+
+![image](https://github.com/user-attachments/assets/ec9d0422-17ba-4f23-9f23-ee25b37a75d9)
+
+
+cd tmp
+
+![image](https://github.com/user-attachments/assets/aa92a1a7-376c-4bb7-902b-6705fef9ed3c)
+
+
+less merged.lef
+
+![merged](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/9695e7dc-e993-42b7-9800-28e9de3539ef)
+
+cd runs
+
+cd results
+
+cd synthesis
+
+![image](https://github.com/user-attachments/assets/1d0d297c-0f0a-4cbd-93a8-0c32ff13a2d3)
+
+
+cd reports
+
+![image](https://github.com/user-attachments/assets/a08e67c5-d40f-4d3e-8525-ad173780451d)
+
+less config.tcl: it shows the default parameters taken by run
+
+![configtcl](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/2f878d07-9a84-4b6f-99f7-cf421c88303d)
+
+run_synthesis
+
+![synthesis](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/45f0224d-1e11-428e-a314-e597a21e876e)
+
+cd results/synthesis: shows the verilog file of design
+
+![image](https://github.com/user-attachments/assets/301ecbdb-dc2e-455c-bcfa-ff04fc01e920)
+
+
+cd reports/synthesis
+
+![image](https://github.com/user-attachments/assets/fecc4c51-56cd-47db-9868-2bea9ae4e28c)
+
+Actual synthesis statics report from this we calculate the flop ratio
+
+command to get the synthesis reports
+
+![image](https://github.com/user-attachments/assets/3e5d2653-f380-4c3c-8145-b6f345dddb2d)
+
+
+![image](https://github.com/user-attachments/assets/11931170-4ca0-446a-81e7-1ad6169b035c)
+
+Flop ratio
+
+![flopratio](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/8bb0301f-90e1-4417-93ae-c62e774f75ee)
+
+sta timing report
+
+![image](https://github.com/user-attachments/assets/e1d15e6c-8c47-4905-908c-f912011c604b)
+
 
 </details>
