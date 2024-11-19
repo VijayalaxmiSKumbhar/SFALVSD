@@ -226,5 +226,42 @@
 <details>
   <summary>Get Familiar to Open Source EDA Tools</summary>
   <br>
-  
+
+  ## OpenLANE Working Directory Structure
+  cd/Desktop/work/tools/openlane_working_dir
+
+  ![linuxcommands](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/63a389c8-6025-4b6a-b103-423c875d2234)
+
+* Note: Some useful Linux Commands
+
+  `cd` : Change directory
+
+  `ls` : list files 
+
+  `ls -ltr` : List the files in chronological order
+
+   `ls --help` : Gives the detailed information about commands
+   
+#### Process Design Kit (pdks)
+* `skywater-pdk` : It has all the pdk related files means timing libraries, tech file etc.
+* `open_pdk` : It provides the necessary technology files (LEF/DEF) and libraries required for designing integrated circuits, specifically tailored for use with the OpenLane flow.
+* `sky130A` : It contains libs.ref and libs.tech. 
+
+![image](https://github.com/user-attachments/assets/ae30cb39-ac12-4577-9616-f0ed076f6f09)
+
+* `libs.ref` (Specific to technology), `libs.tech` (Specific to tools)
+
+![libs](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/e0d718bf-fb9a-4c3c-adf4-b39538f1029e)
+
+* sky130_fd_sc_hd
+
+![sc](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/371b3f31-fc41-466e-a0f1-13aa1b433bfb)
+
+* To invoke the tool
+  * `docker` 
+    `./flow.tcl -interactive`
+
+![openlane](https://github.com/VijayalaxmiSKumbhar/VSD-SoC-Design-Program/assets/170864002/ff642715-c5eb-4d00-ba6d-6e265974a857)
+
+
 </details>
