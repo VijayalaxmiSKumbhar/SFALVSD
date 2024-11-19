@@ -222,3 +222,9 @@
   ![image](https://github.com/user-attachments/assets/2b758f1d-b0b8-4bf7-8f75-70200d5ea3e9)
 
 </details>
+
+<details>
+  <summary>Get Familiar to Open Source EDA Tools</summary>
+  <br>
+  
+</details>
