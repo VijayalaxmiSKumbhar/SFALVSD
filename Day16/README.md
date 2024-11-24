@@ -210,6 +210,145 @@ gui_start
 ![image](https://github.com/user-attachments/assets/e288ec37-a8a1-4db0-885a-34f4300a5bbc)
 ![image](https://github.com/user-attachments/assets/1054b852-1a3c-4e99-9a85-4e0c32aff7d3)
 
+## VSDBabySoC Area, Power & Timing Reports
+
+#### Area Report
+
+```
+
+****************************************
+Report : area
+Design : vsdbabysoc
+Version: T-2022.03-SP5-6
+Date   : Sun Nov 24 12:30:53 2024
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db)
+
+Number of ports:                           19
+Number of nets:                          2781
+Number of cells:                         2241
+Number of combinational cells:           1562
+Number of sequential cells:               678
+Number of macros/black boxes:               0
+Number of buf/inv:                        152
+Number of references:                       3
+
+Combinational area:               1941.268037
+Buf/Inv area:                       96.823999
+Noncombinational area:            3056.871889
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                  4998.139926
+Total area:                 undefined
+
+Information: This design contains black box (unknown) components. (RPT-8)
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  ---------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
+                                  Total      Total    national   national   boxes   Design
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+vsdbabysoc                        4998.1399    100.0     0.0000     0.0000  0.0000  vsdbabysoc
+core                              4998.1399    100.0  1941.2680  3056.8719  0.0000  rvmyth
+--------------------------------  ---------  -------  ---------  ---------  ------  ---------
+Total                                                 1941.2680  3056.8719  0.0000
+
+1
+
+```
+
+#### Power Report
+
+```
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : vsdbabysoc
+Version: T-2022.03-SP5-6
+Date   : Sun Nov 24 12:30:53 2024
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+vsdbabysoc             5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+vsdbabysoc                              111.666  249.102 1.01e+05  461.798 100.0
+  core (rvmyth)                          36.668  249.102 1.01e+05  386.800  83.8
+1
+
+```
+
+### Timing Report
+
+```
+
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : vsdbabysoc
+Version: T-2022.03-SP5-6
+Date   : Sun Nov 24 12:30:53 2024
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: dac/OUT (internal pin)
+  Endpoint: OUT (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  vsdbabysoc         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  dac/OUT (avsddac)                        0.00       0.00 r
+  OUT (out)                                0.00       0.00 r
+  data arrival time                                   0.00
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1
+
+```
 
 ## Once the synthesis flow is run without errors, design_vision gui will be generated, here we can view the VSDBabySoC Schematic
 
