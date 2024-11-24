@@ -1,6 +1,10 @@
-## ICC2 ( IC Compiler II)
+# ICC2 ( IC Compiler II)
 
-* IC Compiler II is specifically architected to address aggressive performance, power, area (PPA), and time-to-market pressures of leading edge designs.
+<details>
+  <Summary> Introduction </Summary>
+  <br>
+
+  * IC Compiler II is specifically architected to address aggressive performance, power, area (PPA), and time-to-market pressures of leading edge designs.
   
 * Key technologies include a pervasively parallel optimization framework, multi-objective global placement, routing driven placement optimization, full flow Arc based concurrent clock and data optimization, total power optimization, multi-pattern and FinFET aware flow and machine learning (ML) driven optimization for fast and predictive design closure.
   
@@ -143,3 +147,77 @@ To examine critical timing paths in the layout or perform other design planning 
 
 ![image](https://github.com/user-attachments/assets/a5b31adf-453d-4f0b-bdc0-30d53908200b)
 
+</details>
+
+<details>
+  <summary>RVMYTH Core Synthesis</summary>
+<br>
+
+* vsd.tcl
+
+```
+
+set target_library [list /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db ]
+set link_library [list  /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db ] 
+set symbol_library ""
+
+
+read_verilog /home/vijayalaxmi/VSDBabySoC_ICC2/rvmyth.v
+
+
+
+analyze -library WORK -format verilog {/home/vijayalaxmi/VSDBabySoC_ICC2/vsdbabysoc.v}
+elaborate vsdbabysoc -architecture verilog -library WORK
+analyze {}
+
+create_clock -name MYCLK -per 10 [get_ports CLK];
+set_clock_latency -source 2 [get_clocks MYCLK];
+set_clock_latency 1 [get_clocks MYCLK];
+set_clock_uncertainty -setup 0.5 [get_clocks MYCLK];
+set_clock_uncertainty -hold 0.1 [get_clocks MYCLK];
+set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports reset];
+set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports CLK];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports reset];
+set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports CLK];
+set_input_transition -max 0.4 [get_ports reset];
+set_input_transition -max 0.4 [get_ports CLK];
+set_input_transition -min 0.1 [get_ports reset];
+set_input_transition -min 0.1 [get_ports CLK];
+
+set_load -max 0.4 [get_ports OUT];
+set_load -min 0.1 [get_ports OUT];
+
+check_design
+
+compile_ultra
+
+file mkdir report
+write -hierarchy -format verilog -output /home/vijayalaxmi/VSDBabySoC_ICC2/report/rvmyth.v
+write_sdc -nosplit -version 2.0 /home/vijayalaxmi/VSDBabySoC_ICC2/report/rvmyth.sdc
+report_area -hierarchy > /home/vijayalaxmi/VSDBabySoC_ICC2/report/vsdbabysoc.area
+report_timing > /home/vijayalaxmi/VSDBabySoC_ICC2/report/vsdbabysoc.timing
+report_power -hierarchy > /home/vijayalaxmi/VSDBabySoC_ICC2/report/vsdbabysoc.power
+
+gui_start
+
+```
+
+* Invoke dc_shell
+  * csh
+  * dc_shell
+* source /home/vijayalaxmi/vsd.tcl
+
+![image](https://github.com/user-attachments/assets/e288ec37-a8a1-4db0-885a-34f4300a5bbc)
+![image](https://github.com/user-attachments/assets/1054b852-1a3c-4e99-9a85-4e0c32aff7d3)
+
+## Once the synthesis flow is run without errors, design_vision gui will be generated, here we can view the schematic
+
+![image](https://github.com/user-attachments/assets/46d691b2-a548-44ba-9523-df2b517e6b06)
+![image](https://github.com/user-attachments/assets/b9c44005-d2ed-449f-b35d-82b609e2f791)
+![image](https://github.com/user-attachments/assets/a2199231-e4ee-464e-92a8-ebe4317d573a)
+![image](https://github.com/user-attachments/assets/dcad9c12-440f-49db-9914-f1e5b375b01a)
+
+
+
+
+</details>
