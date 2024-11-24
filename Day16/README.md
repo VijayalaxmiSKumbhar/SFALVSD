@@ -210,14 +210,17 @@ gui_start
 ![image](https://github.com/user-attachments/assets/e288ec37-a8a1-4db0-885a-34f4300a5bbc)
 ![image](https://github.com/user-attachments/assets/1054b852-1a3c-4e99-9a85-4e0c32aff7d3)
 
-## Once the synthesis flow is run without errors, design_vision gui will be generated, here we can view the schematic
+
+## Once the synthesis flow is run without errors, design_vision gui will be generated, here we can view the VSDBabySoC Schematic
+
+![image](https://github.com/user-attachments/assets/3bdfbbe9-fd65-471f-8431-b5b2c483b3eb)
+![image](https://github.com/user-attachments/assets/a9da1f2b-32ad-4914-8a45-ef611b2adf72)
+
+## RVMYTH Core Schematic
 
 ![image](https://github.com/user-attachments/assets/46d691b2-a548-44ba-9523-df2b517e6b06)
 ![image](https://github.com/user-attachments/assets/b9c44005-d2ed-449f-b35d-82b609e2f791)
 ![image](https://github.com/user-attachments/assets/a2199231-e4ee-464e-92a8-ebe4317d573a)
 ![image](https://github.com/user-attachments/assets/dcad9c12-440f-49db-9914-f1e5b375b01a)
-
-
-
 
 </details>
