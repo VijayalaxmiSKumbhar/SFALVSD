@@ -1,4 +1,4 @@
-# ICC2 ( IC Compiler II)
+![image](https://github.com/user-attachments/assets/28744178-6708-419b-9d53-32e59d9b9781)# ICC2 ( IC Compiler II)
 
 <details>
   <Summary> Introduction </Summary>
@@ -168,7 +168,7 @@ To convert an .itf file to .tluplus format, follow these steps:
 
 ```
 
-* cd `/home/vijayalaxmi/VSDBabySoC/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files`
+* cd `/home/vijayalaxmi/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files`
 * In Terminal,
     grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus # to generate TLUplus RC Tech file from .itf file format using StarRC tool.
 
@@ -434,6 +434,33 @@ pns_example.tcl
 top.tcl
 write_block_data.tcl
 
+#### icc2_common_setup.tcl
+
+![image](https://github.com/user-attachments/assets/99b5f11e-eb35-49d3-8d7e-77c81969c987)
+
+![image](https://github.com/user-attachments/assets/d4f6eafd-e89a-4c75-8430-0e33fc507234)
+
+![image](https://github.com/user-attachments/assets/c037d272-6242-48c6-b76f-b4dbb6c528c7)
+
+![image](https://github.com/user-attachments/assets/5c7de479-8d85-4205-b8ba-1e6f66ab74e1)
+
+![image](https://github.com/user-attachments/assets/ce850866-63d3-4959-a741-a18dadf1dab4)
+
+#### icc2_dp_setup.tcl
+
+![image](https://github.com/user-attachments/assets/8ba83f9c-2d41-4fd8-84a4-2d7de23ff633)
+
+#### init_design.read_parasitic_tech_example.tcl
+
+![image](https://github.com/user-attachments/assets/7cc23ead-22a5-462c-b5d7-dbccc25621e3)
+
+
+#### ICC2 Screenshots:
+
+![image](https://github.com/user-attachments/assets/58fdf73b-4db1-4326-8c14-a52ef068fa89)
+
+
+![image](https://github.com/user-attachments/assets/fdcff874-62ed-49ac-9201-88d553bad143)
 
 
 </details>
