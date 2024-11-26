@@ -150,116 +150,150 @@ To examine critical timing paths in the layout or perform other design planning 
 </details>
 
 <details>
-  <summary>RVMYTH Core Synthesis</summary>
+  <summary>Lab: vsdbabysoc</summary>
 <br>
 
-* vsd.tcl
+#### Downloading Physical Design Collaterals:
+
+* git clone https://github.com/efabless/skywater-pdk-libs-sky130_fd_sc_hd to download all the technology files (.techlef) for the Skywater 130nm PDK, along with all the .lef files for the standard cells.
+* git clone https://github.com/bharath19-gs/synopsys_ICC2flow_130nm to download the technology files (.tf) for the Skywater 130nm PDK, as well as the RC Tech file (parasitics) in .itf format.
+* git clone https://github.com/kunalg123/icc2_workshop_collaterals to obtain all the scripts necessary for setting up and executing the physical design flow in the ICC2 Compiler tool.
+
+
+The ITF file is essential for parasitic extraction tools to create the RC parasitics necessary for analyzing timing, signal integrity, power, and reliability.
+
+Moreover, the ITF file can also be utilized to produce TLU+ files, which are vital technology files in physical design.
+
+To convert an .itf file to .tluplus format, follow these steps:
 
 ```
 
-set target_library [list /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db ]
-set link_library [list  /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db ] 
-set symbol_library ""
+* cd `/home/vijayalaxmi/VSDBabySoC/synopsys_ICC2flow_130nm/synopsys_skywater_flow_nominal/itf_files`
+* In Terminal,
+    grdgenxo -itf2TLUPlus -i skywater130.nominal.itf -o skywater130.nominal.tluplus # to generate TLUplus RC Tech file from .itf file format using StarRC tool.
 
+```
 
-read_verilog /home/vijayalaxmi/VSDBabySoC_ICC2/rvmyth.v
+![image](https://github.com/user-attachments/assets/c4174a8f-7492-47d3-bf0c-ceddeadef6ee)
 
+* synthesis.tcl
 
+```
 
-analyze -library WORK -format verilog {/home/vijayalaxmi/VSDBabySoC_ICC2/vsdbabysoc.v}
-elaborate vsdbabysoc -architecture verilog -library WORK
-analyze {}
-
-create_clock -name MYCLK -per 10 [get_ports CLK];
-set_clock_latency -source 2 [get_clocks MYCLK];
-set_clock_latency 1 [get_clocks MYCLK];
-set_clock_uncertainty -setup 0.5 [get_clocks MYCLK];
-set_clock_uncertainty -hold 0.1 [get_clocks MYCLK];
-set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports reset];
-set_input_delay -max 5 -clock [get_clocks MYCLK] [get_ports CLK];
-set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports reset];
-set_input_delay -min 1 -clock [get_clocks MYCLK] [get_ports CLK];
-set_input_transition -max 0.4 [get_ports reset];
-set_input_transition -max 0.4 [get_ports CLK];
-set_input_transition -min 0.1 [get_ports reset];
-set_input_transition -min 0.1 [get_ports CLK];
-
-set_load -max 0.4 [get_ports OUT];
-set_load -min 0.1 [get_ports OUT];
-
-check_design
-
+set target_library /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db
+set link_library {* /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db}
+set search_path {/home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/include /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/module}
+read_file {sandpiper_gen.vh  sandpiper.vh  sp_default.vh  sp_verilog.vh clk_gate.v rvmyth.v rvmyth_gen.v vsdbabysoc.v} -autoread -top vsdbabysoc
+link
+read_sdc /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/sdc/vsdbabysoc_synthesis.sdc
 compile_ultra
+report_qor > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/qor_post_synth.rpt
+report_area > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/area_post_synth.rpt
+report_power > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/power_post_synth.rpt
+write_file -format verilog -hierarchy -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_net.v
+write -f ddc -out /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc.ddc
 
-file mkdir report
-write -hierarchy -format verilog -output /home/vijayalaxmi/VSDBabySoC_ICC2/report/rvmyth.v
-write_sdc -nosplit -version 2.0 /home/vijayalaxmi/VSDBabySoC_ICC2/report/rvmyth.sdc
-report_area -hierarchy > /home/vijayalaxmi/VSDBabySoC_ICC2/report/vsdbabysoc.area
-report_timing > /home/vijayalaxmi/VSDBabySoC_ICC2/report/vsdbabysoc.timing
-report_power -hierarchy > /home/vijayalaxmi/VSDBabySoC_ICC2/report/vsdbabysoc.power
-
-gui_start
+start_gui
 
 ```
 
 * Invoke dc_shell
   * csh
   * dc_shell
-* source /home/vijayalaxmi/vsd.tcl
+* source /home/vijayalaxmi/Desktop/VLSI/synthesis.tcl
 
-![image](https://github.com/user-attachments/assets/e288ec37-a8a1-4db0-885a-34f4300a5bbc)
-![image](https://github.com/user-attachments/assets/1054b852-1a3c-4e99-9a85-4e0c32aff7d3)
+![image](https://github.com/user-attachments/assets/e3c6222a-0b85-4aa6-8eb7-790a107cacc0)
+![image](https://github.com/user-attachments/assets/eca343e5-0d46-4929-a6c7-f9220caf9e5c)
 
-## VSDBabySoC Area, Power & Timing Reports
 
-#### Area Report
+## VSDBabySoC Reports
+
+#### QoR Report
 
 ```
 
+Information: Updating design information... (UID-85)
+ 
 ****************************************
-Report : area
+Report : qor
 Design : vsdbabysoc
 Version: T-2022.03-SP5-6
-Date   : Sun Nov 24 12:30:53 2024
+Date   : Tue Nov 26 12:47:22 2024
 ****************************************
 
-Information: Updating design information... (UID-85)
-Library(s) Used:
 
-    NangateOpenCellLibrary (File: /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db)
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              41.00
+  Critical Path Length:         10.87
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:     11.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
 
-Number of ports:                           19
-Number of nets:                          2781
-Number of cells:                         2241
-Number of combinational cells:           1562
-Number of sequential cells:               678
-Number of macros/black boxes:               0
-Number of buf/inv:                        152
-Number of references:                       3
 
-Combinational area:               1941.268037
-Buf/Inv area:                       96.823999
-Noncombinational area:            3056.871889
-Macro/Black Box area:                0.000000
-Net Interconnect area:      undefined  (Wire load has zero net area)
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          1
+  Hierarchical Port Count:         12
+  Leaf Cell Count:               2539
+  Buf/Inv Cell Count:             518
+  Buf Cell Count:                   4
+  Inv Cell Count:                 514
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1863
+  Sequential Cell Count:          676
+  Macro Count:                      0
+  -----------------------------------
 
-Total cell area:                  4998.139926
-Total area:                 undefined
 
-Information: This design contains black box (unknown) components. (RPT-8)
+  Area
+  -----------------------------------
+  Combinational Area:    11173.215786
+  Noncombinational Area: 13532.978775
+  Buf/Inv Area:           1950.620739
+  Total Buffer Area:            18.77
+  Total Inverter Area:        1931.85
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             24706.194561
+  Design Area:           24706.194561
 
-Hierarchical area distribution
-------------------------------
 
-                                  Global cell area          Local cell area
-                                  ------------------  ---------------------------- 
-Hierarchical cell                 Absolute   Percent  Combi-     Noncombi-  Black-
-                                  Total      Total    national   national   boxes   Design
---------------------------------  ---------  -------  ---------  ---------  ------  ---------
-vsdbabysoc                        4998.1399    100.0     0.0000     0.0000  0.0000  vsdbabysoc
-core                              4998.1399    100.0  1941.2680  3056.8719  0.0000  rvmyth
---------------------------------  ---------  -------  ---------  ---------  ------  ---------
-Total                                                 1941.2680  3056.8719  0.0000
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          2579
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: sfalvsd
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.03
+  Logic Optimization:                  2.02
+  Mapping Optimization:                4.27
+  -----------------------------------------
+  Overall Compile Time:               19.77
+  Overall Compile Wall Clock Time:    20.11
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
 
 1
 
@@ -269,97 +303,137 @@ Total                                                 1941.2680  3056.8719  0.00
 
 ```
  
+ 
 ****************************************
 Report : power
-        -hier
         -analysis_effort low
 Design : vsdbabysoc
 Version: T-2022.03-SP5-6
-Date   : Sun Nov 24 12:30:53 2024
+Date   : Tue Nov 26 12:47:22 2024
 ****************************************
 
 
 Library(s) Used:
 
-    NangateOpenCellLibrary (File: /home/vijayalaxmi/VSDBabySoC_ICC2/nangate_typical.db)
+    sky130_fd_sc_hd__tt_025C_1v80 (File: /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db)
+    avsddac (File: /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db)
+    avsdpll (File: /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db)
 
 
-Operating Conditions: typical   Library: NangateOpenCellLibrary
+Operating Conditions: tt_025C_1v80   Library: sky130_fd_sc_hd__tt_025C_1v80
 Wire Load Model Mode: top
 
 Design        Wire Load Model            Library
 ------------------------------------------------
-vsdbabysoc             5K_hvratio_1_1    NangateOpenCellLibrary
+vsdbabysoc             Small             sky130_fd_sc_hd__tt_025C_1v80
 
 
-Global Operating Voltage = 1.1  
+Global Operating Voltage = 1.8  
 Power-specific unit information :
     Voltage Units = 1V
-    Capacitance Units = 1.000000ff
+    Capacitance Units = 1.000000pf
     Time Units = 1ns
-    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
     Leakage Power Units = 1nW
 
 
---------------------------------------------------------------------------------
-                                       Switch   Int      Leak     Total
-Hierarchy                              Power    Power    Power    Power    %
---------------------------------------------------------------------------------
-vsdbabysoc                              111.666  249.102 1.01e+05  461.798 100.0
-  core (rvmyth)                          36.668  249.102 1.01e+05  386.800  83.8
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =   2.6041 mW   (83%)
+  Net Switching Power  = 536.1713 uW   (17%)
+                         ---------
+Total Dynamic Power    =   3.1402 mW  (100%)
+
+Cell Leakage Power     =   8.0471 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.3975            0.0000            0.3975  (  12.66%)
+clock_network      2.5022            0.0000            0.0000            2.5022  (  79.68%)  i
+register       4.2197e-02        1.8358e-02            5.4668        6.0562e-02  (   1.93%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational  5.9688e-02            0.1203            2.5803            0.1800  (   5.73%)
+--------------------------------------------------------------------------------------------------
+Total              2.6041 mW         0.5362 mW         8.0471 nW         3.1402 mW
 1
 
 ```
 
-### Timing Report
+### Area Report
 
 ```
 
+ 
 ****************************************
-Report : timing
-        -path full
-        -delay max
-        -max_paths 1
+Report : area
 Design : vsdbabysoc
 Version: T-2022.03-SP5-6
-Date   : Sun Nov 24 12:30:53 2024
+Date   : Tue Nov 26 12:47:22 2024
 ****************************************
 
-Operating Conditions: typical   Library: NangateOpenCellLibrary
-Wire Load Model Mode: top
+Library(s) Used:
 
-  Startpoint: dac/OUT (internal pin)
-  Endpoint: OUT (output port)
-  Path Group: (none)
-  Path Type: max
+    sky130_fd_sc_hd__tt_025C_1v80 (File: /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/sky130_fd_sc_hd__tt_025C_1v80.db)
+    avsddac (File: /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsddac.db)
+    avsdpll (File: /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/src/lib/avsdpll.db)
 
-  Des/Clust/Port     Wire Load Model       Library
-  ------------------------------------------------
-  vsdbabysoc         5K_hvratio_1_1        NangateOpenCellLibrary
+Number of ports:                           19
+Number of nets:                          2591
+Number of cells:                         2540
+Number of combinational cells:           1861
+Number of sequential cells:               676
+Number of macros/black boxes:               2
+Number of buf/inv:                        518
+Number of references:                       4
 
-  Point                                    Incr       Path
-  -----------------------------------------------------------
-  dac/OUT (avsddac)                        0.00       0.00 r
-  OUT (out)                                0.00       0.00 r
-  data arrival time                                   0.00
-  -----------------------------------------------------------
-  (Path is unconstrained)
+Combinational area:              11173.215786
+Buf/Inv area:                     1950.620739
+Noncombinational area:           13532.978775
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
 
-
+Total cell area:                 24706.194561
+Total area:                 undefined
 1
 
 ```
 
-## Once the synthesis flow is run without errors, design_vision gui will be generated, here we can view the VSDBabySoC Schematic
+## Once the synthesis flow is run without errors, design_vision gui will be generated, here we can view 
 
-![image](https://github.com/user-attachments/assets/3bdfbbe9-fd65-471f-8431-b5b2c483b3eb)
-![image](https://github.com/user-attachments/assets/a9da1f2b-32ad-4914-8a45-ef611b2adf72)
+## VSDBabySoC Schematic
+
+![image](https://github.com/user-attachments/assets/7f1bb72a-461d-4fcd-8c44-7f7ccee9ebcc)
+![image](https://github.com/user-attachments/assets/54e344b9-9e1d-48a3-8217-da371274e1e6)
+
 
 ## RVMYTH Core Schematic
 
-![image](https://github.com/user-attachments/assets/46d691b2-a548-44ba-9523-df2b517e6b06)
-![image](https://github.com/user-attachments/assets/b9c44005-d2ed-449f-b35d-82b609e2f791)
-![image](https://github.com/user-attachments/assets/a2199231-e4ee-464e-92a8-ebe4317d573a)
-![image](https://github.com/user-attachments/assets/dcad9c12-440f-49db-9914-f1e5b375b01a)
+![image](https://github.com/user-attachments/assets/58c50b13-122e-4c5c-b105-a844d0714596)
+![image](https://github.com/user-attachments/assets/41ee5ce4-79f2-4244-b738-64d723770361)
+![image](https://github.com/user-attachments/assets/6fef96eb-f831-4582-875f-2e5ee3de924b)
+![image](https://github.com/user-attachments/assets/6e1b42d2-4ced-4ee4-bd51-3401ffc8341c)
+
+
+## Physical Design Flow
+
+Collaterals can be configured using the following files located at the path 
+/home/vijayalaxmi/Desktop/PD_flow/scripts:
+
+compile_pg_example.tcl
+init_design.mcmm_example.auto_expanded.tcl
+init_design.read_parasitic_tech_example.tcl
+init_design.tech_setup.tcl
+pns_example.tcl
+top.tcl
+write_block_data.tcl
+
+
 
 </details>
