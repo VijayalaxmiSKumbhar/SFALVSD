@@ -150,7 +150,7 @@ To examine critical timing paths in the layout or perform other design planning 
 </details>
 
 <details>
-  <summary>Lab: vsdbabysoc</summary>
+  <summary>ICC2 Lab: vsdbabysoc</summary>
 <br>
 
 #### Downloading Physical Design Collaterals:
@@ -200,6 +200,7 @@ start_gui
 * Invoke dc_shell
   * csh
   * dc_shell
+    
 * source /home/vijayalaxmi/Desktop/VLSI/synthesis.tcl
 
 ![image](https://github.com/user-attachments/assets/e3c6222a-0b85-4aa6-8eb7-790a107cacc0)
@@ -426,13 +427,19 @@ Total area:                 undefined
 Collaterals can be configured using the following files located at the path 
 /home/vijayalaxmi/Desktop/PD_flow/scripts:
 
-compile_pg_example.tcl
-init_design.mcmm_example.auto_expanded.tcl
-init_design.read_parasitic_tech_example.tcl
-init_design.tech_setup.tcl
-pns_example.tcl
-top.tcl
-write_block_data.tcl
+* compile_pg_example.tcl
+
+* init_design.mcmm_example.auto_expanded.tcl
+  
+* init_design.read_parasitic_tech_example.tcl
+
+* init_design.tech_setup.tcl
+
+* pns_example.tcl
+
+* top.tcl
+
+* write_block_data.tcl
 
 #### icc2_common_setup.tcl
 
