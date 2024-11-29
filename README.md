@@ -106,9 +106,25 @@
 
 ### Task Repository
 
-| Day  | Folder  |Activity  |
+| Day  | Description  |Folder  |
 | ------------ | ------------ | ------------ |
-|[Day 1](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%201 "Day 1") | Day 1  |  Tools Setup |
+|[Day 0](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%200 "Day 0") | Tools Installation  |Day 0|
+|[Day 1](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%201 "Day 1") | Introduction to Verilog RTL design and Synthesis  |Day 1 |
+|[Day 2](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%202%20 "Day 2") | Timing libs, hierarchical vs flat synthesis and efficient flop coding styles   |Day 2 |
+| [Day 3](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%203 "Day 3")| Combinational and Sequential Optimizations   |Day 3 |
+| [Day 4](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%204 "Day 4")| GLS, blocking vs non-blocking and Synthesis-Simulation mismatch   |Day 4 |
+|[Day 5](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%205 "Day 5") | Advanced Synthesis and STA with DC  |Day 5 |
+|[Day 6](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%206 "Day 6") | Basics of STA (Static Timing Analysis)  |Day 6 |
+| [Day 7](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%207 "Day 7")| Advanced Constraints  |Day 7 |
+| [Day 8](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%208 "Day 8")| Optimizations   |Day 8 |
+|[Day 9](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day%209 "Day 9") | Generating Timing Reports and Analyzing QoR   |Day 9 |
+| [Day 10](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day10 "Day 10")| Introduction to VSDBabySoC and Fundamentals of SoC   |Day 10 |
+| [Day 11](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day11 "Day 11")| VSDBabySoC Modeling   |Day 11 |
+|[Day 12](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day12 "Day 12") | Post-Synthesis Simulation    |Day 12 |
+|[Day 13](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day13 "Day 13") | PVT (Process Voltage Temperature) Analysis   |Day 13 |
+| [Day 14](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day14 "Day 14")| Inception of open-source EDA, OpenLANE and Sky130 PDK  |Day 14 |
+| [Day 15](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day15 "Day 15")| Good floorplan Vs bad floorplan and introduction to library cells  |Day 15 |
+|[Day 16](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day16 "Day 16") | ICC2 ( IC Compiler II)  |Day 16 |
 
 
  
