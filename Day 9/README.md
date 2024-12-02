@@ -31,7 +31,19 @@
 <summary> Lab: Report Timing </summary>
 <br>
 
+## Example is lab8_circuit_modified.v
 
+* Invoke `dc_shell`
+  
+* `read_verilog lab8_circuit_modified.v`
+
+![image](https://github.com/user-attachments/assets/75c4b28f-d67c-44a3-b39a-735d3f935d90)
+
+* `link`
+
+![image](https://github.com/user-attachments/assets/5a13b0ab-5bc1-4699-97d4-0d69177dde63)
+
+* `source lab8_cons_modified.tcl`
 </details>
 
 <details>
