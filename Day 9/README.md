@@ -45,6 +45,8 @@
 ![image](https://github.com/user-attachments/assets/f0f894ac-df3a-404c-a95f-526e4a0cf9cb)
 
 * `source /home/vijayalaxmi/lab8_cons_modified.tcl`
+* `compile_ultra`
+* `report_timing -sig 4 -nosplit -trans -cap -nets -inp`
 
 
 </details>
