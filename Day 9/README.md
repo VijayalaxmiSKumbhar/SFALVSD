@@ -35,15 +35,18 @@
 
 * Invoke `dc_shell`
   
-* `read_verilog lab8_circuit_modified.v`
+* `read_verilog /home/vijayalaxmi/lab8_circuit_modified.v`
 
-![image](https://github.com/user-attachments/assets/75c4b28f-d67c-44a3-b39a-735d3f935d90)
+![image](https://github.com/user-attachments/assets/50a33220-283a-4f0d-bfb0-5bf9b61c0c79)
 
-* `link`
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}'
+* `link'
+![image](https://github.com/user-attachments/assets/f0f894ac-df3a-404c-a95f-526e4a0cf9cb)
 
-![image](https://github.com/user-attachments/assets/5a13b0ab-5bc1-4699-97d4-0d69177dde63)
+* `source /home/vijayalaxmi/lab8_cons_modified.tcl`
 
-* `source lab8_cons_modified.tcl`
+
 </details>
 
 <details>
