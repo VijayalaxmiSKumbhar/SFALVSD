@@ -53,7 +53,14 @@
 ![image](https://github.com/user-attachments/assets/1a256031-6852-4511-b79a-d96d15371182)
 ![image](https://github.com/user-attachments/assets/d537d329-a200-4a53-a0cc-8ebe64abaa84)
 
-* `report_timing -sig 4 -nosplit -trans -cap -nets -inp`
+* `report_timing -sig 4 -nosplit -trans -cap -nets -inp > t1.rpt`
+* `sh gvim t1.rpt`
+
+![image](https://github.com/user-attachments/assets/d0876bec-f56e-49cf-9386-e111ee2e8dab)
+![image](https://github.com/user-attachments/assets/18fb0689-32d3-4304-90e6-b762cdd7792f)
+![image](https://github.com/user-attachments/assets/efa48ed4-eef4-46c9-a1ae-9067fccafd7d)
+![image](https://github.com/user-attachments/assets/25dc526e-df52-4c42-89b6-3cc72a984681)
+
 
 
 </details>
