@@ -35,17 +35,24 @@
 
 * Invoke `dc_shell`
   
-* `read_verilog /home/vijayalaxmi/lab8_circuit_modified.v`
+* `read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_circuit_modified.v`
 
-![image](https://github.com/user-attachments/assets/50a33220-283a-4f0d-bfb0-5bf9b61c0c79)
+![image](https://github.com/user-attachments/assets/c55b9a9e-eb9c-44bc-a238-9a0ad89288e6)
+
 
 * `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
 * `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}'
 * `link'
-![image](https://github.com/user-attachments/assets/f0f894ac-df3a-404c-a95f-526e4a0cf9cb)
 
-* `source /home/vijayalaxmi/lab8_cons_modified.tcl`
+![image](https://github.com/user-attachments/assets/bf9b7543-d446-4250-b29f-58005a41d390)
+
+
+* `source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_cons_modified.tcl`
 * `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/1a256031-6852-4511-b79a-d96d15371182)
+![image](https://github.com/user-attachments/assets/d537d329-a200-4a53-a0cc-8ebe64abaa84)
+
 * `report_timing -sig 4 -nosplit -trans -cap -nets -inp`
 
 
