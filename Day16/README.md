@@ -481,6 +481,8 @@ Collaterals can be configured using the following files located at the path
 
 ## Design Planning
 
+-----
+
 * Floorplan Preparation
 
 ![image](https://github.com/user-attachments/assets/05960a08-eb33-404a-afb1-588698763c50)
@@ -497,6 +499,7 @@ set_constraint_mapping_file
 set_signal_io_constraints
 uncommit_block
 ```
+-------
 
 * Multi-Threaded and Distributed Processing
 
@@ -509,6 +512,8 @@ remove_host_options
 report_host_options
 set_host_options
 ```
+-----
+
 * Block Shaping
 
 ![image](https://github.com/user-attachments/assets/0e001009-b8ca-431d-aa2f-5b3a8e61256e)
@@ -525,6 +530,8 @@ set_shaping_options
 shape_blocks
 ```
 
+-----
+
 * Cell Placement
 
 ![image](https://github.com/user-attachments/assets/f21e676f-b9ee-4e23-8f20-b13f2f63ed3d)
@@ -537,13 +544,17 @@ push_down_objects
 report_placement
 ```
 
+-----
+
 * What-if Channel Congestion
 
 The IC Compiler II tool supports interactive, what-if analysis to identify congested global routing channels. To open the What-if Channel Congestion panel in the layout window, select What-if Channel Congestion in the Design Planning section of the Task Assistant, or choose View > Map > What-if Channel Congestion. The What-if Channel Congestion panel appears on the right of the layout window as shown in Figure A-9.
 
 ![image](https://github.com/user-attachments/assets/7ebe2676-670d-412b-b026-0d52c16144e2)
+
 ![image](https://github.com/user-attachments/assets/68816185-d0a4-4c98-b1af-3327d94d2558)
 
+-----
 
 * PG Planning
 
@@ -577,6 +588,7 @@ set_pg_via_master_rule
 set_power_switch_placement_pattern
 set_virtual_pad
 ```
+-----
 
 * Clock Trunk Planning
 
@@ -587,6 +599,7 @@ set_virtual_pad
 syntesize_clock_trunk
 
 ```
+----
 
 * Pin Assignment
 
@@ -604,6 +617,7 @@ set_bundle_pin_constraints
 set_individual_pin_constraints
 write_pin_constraints
 ```
+-----
 
 * Hierarchy Handling
 
@@ -611,9 +625,13 @@ write_pin_constraints
 
 ` Related Commands`
 ```
-![image](https://github.com/user-attachments/assets/6c043e7d-b12a-4958-9985-21d122a7a1fd)
+pop_up_objects
+push_down_objects
+set_pop_up_object_options
+set_push_down_object_options
 
 ```
+------
 
 * Virtual In-Place Optimization
 
@@ -626,6 +644,7 @@ create_abstract
 estimate_timing
 
 ```
+------
 
 * Budgeting
 
@@ -637,6 +656,7 @@ compute_budget_constraints
 set_budget_options
 write_budgets
 ```
+----
 
 * Write Floorplan and Verilog
 
@@ -647,15 +667,18 @@ write_budgets
 write_floorplan
 write_verilog
 ```
+-----
 
 * Relative Location
 
 Use Relative Location constraints to save the macro placement in the current block and restore it in the resized or reshaped block. In addition the port placement can also be stored and restored.
 
+----
 
-<p style="color: blue;">The top.tcl script, executed in the icc2_shell, is responsible for generating the Final Layout. This script is included in the provided files.</p>
 
-<p style="color: green;">The process consists of the following steps:</p>
+## The top.tcl script, executed in the icc2_shell, is responsible for generating the Final Layout. This script is included in the provided files.
+
+## The process consists of the following steps:
 
 
 ### 📚 NDM Library Creation
