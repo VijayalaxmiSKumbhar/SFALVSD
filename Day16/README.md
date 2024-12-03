@@ -479,6 +479,7 @@ Collaterals can be configured using the following files located at the path
 
 # Physical Design Flow
 
+
 <p style="color: blue;">The top.tcl script, executed in the icc2_shell, is responsible for generating the Final Layout. This script is included in the provided files.</p>
 
 <p style="color: green;">The process consists of the following steps:</p>
@@ -545,6 +546,7 @@ Collaterals can be configured using the following files located at the path
 
 <h2 style="color: blue;">## Start gui</h2>
 
+
 * Collaterals can be configured using the following files located at the path 
 `/home/vijayalaxmi/Desktop/PD_flow2`:
 
@@ -562,7 +564,7 @@ Collaterals can be configured using the following files located at the path
 
 * write_block_data.tcl
 
-## * `icc2_common_setup.tcl`
+## `icc2_common_setup.tcl`
 
 ![image](https://github.com/user-attachments/assets/ef923c9f-10bb-48ef-ba00-17ea07582948)
 ![image](https://github.com/user-attachments/assets/3e469d85-99bc-47e2-8ae7-395b6df6cf44)
@@ -571,7 +573,7 @@ Collaterals can be configured using the following files located at the path
 ![image](https://github.com/user-attachments/assets/94727a3c-496a-438a-acf4-1cdac33813f8)
 ![image](https://github.com/user-attachments/assets/e8ede05c-7f10-4688-9eb7-ad85719dc145)
 
-## * `icc2_dp_setup.tcl`
+## `icc2_dp_setup.tcl`
 
 ![image](https://github.com/user-attachments/assets/663a46ea-c5c1-49b6-8ae6-ed4920320b15)
 ![image](https://github.com/user-attachments/assets/dd85df07-d6e2-4053-8b87-c49812f2a6e9)
@@ -583,38 +585,38 @@ Collaterals can be configured using the following files located at the path
 ![image](https://github.com/user-attachments/assets/7fc9c426-0537-4b59-a045-14b2a04b4f13)
 ![image](https://github.com/user-attachments/assets/6954b2d6-98c7-446b-9425-cd8b6170215a)
 
-## * `init_design.mcmm_example.auto_expanded.tcl`
+##  `init_design.mcmm_example.auto_expanded.tcl`
 
 ![image](https://github.com/user-attachments/assets/72e46837-c23d-498d-b3f5-1263878167cd)
 ![image](https://github.com/user-attachments/assets/177ddac7-9812-4286-a3bb-eaca46dc9579)
 ![image](https://github.com/user-attachments/assets/c4b436e9-a71d-4659-ac39-120e2e356631)
 
 
-## * `init_design.read_parasitic_tech_example.tcl`
+##  `init_design.read_parasitic_tech_example.tcl`
 
 ![image](https://github.com/user-attachments/assets/0abf83a2-bcdd-4943-adb8-fc2e83e4c561)
 ![image](https://github.com/user-attachments/assets/eb15d9fd-d89d-4bd2-b95b-93e827135c04)
 
 
-## * `init_design.tech_setup.tcl`
+##  `init_design.tech_setup.tcl`
 
 ![image](https://github.com/user-attachments/assets/0374987e-0d90-4a3f-a11f-11abdd852996)
 ![image](https://github.com/user-attachments/assets/7500a0a3-9423-4aca-9763-290499ec7253)
 
 
-## * `compile_pg_example.tcl`
+##  `compile_pg_example.tcl`
 
 ![image](https://github.com/user-attachments/assets/36163151-e900-4854-ae18-dc20f1f3ee9a)
 
 
-## * `pns_example`
+##  `pns_example`
 
 ![image](https://github.com/user-attachments/assets/b70f88fb-9942-4950-b9ae-38627a865aef)
 ![image](https://github.com/user-attachments/assets/e723ea13-7fd7-4059-aeed-315d70521565)
 ![image](https://github.com/user-attachments/assets/59314bf0-9a69-4c0b-b05e-e611268a0923)
 
 
-#### * `ICC2 Screenshots`
+####  `ICC2 Screenshots`
 
 * `source /home/vijayalaxmi/Desktop/PD_flow2/top.tcl`
   
