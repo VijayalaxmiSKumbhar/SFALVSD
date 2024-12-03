@@ -61,6 +61,52 @@
 ![image](https://github.com/user-attachments/assets/efa48ed4-eef4-46c9-a1ae-9067fccafd7d)
 ![image](https://github.com/user-attachments/assets/25dc526e-df52-4c42-89b6-3cc72a984681)
 
+```
+* Note: Clues to identify whether it is setup check or hold check
+  * `Path type: max`, therefore it is doing setup check
+  * The launch edge and capture edge are not same
+  * `Library setup time` is printed in the report
+  * In the report it is `setup slack = data required time-data arrival time`, this is for `max` path.
+```
+
+* `report_timing -sig 4 -nosplit -trans -cap -nets -inp -from IN_A > t1.rpt`
+
+![image](https://github.com/user-attachments/assets/6ce12c6f-70ea-4e8b-9921-e6fde3ca3c95)
+
+* `report_timing -rise_from IN_A -sig 4 -nosplit -trans -cap -nets -inp > t2.rpt`
+* `sh gvim t1.rpt -o t2.rpt`
+
+![image](https://github.com/user-attachments/assets/6bfbc38e-92b1-431e-bdbf-a50b73005a4d)
+![image](https://github.com/user-attachments/assets/25f6d5ba-d7bc-4733-98ba-7eb30c9db184)
+
+* `report_timing -rise_from IN_A -sig 4 -nosplit -trans -cap -nets -inp -to REGA_reg/D > t3.rpt`
+* `sh gvim t1.rpt -o t3.rpt &`
+
+![image](https://github.com/user-attachments/assets/e0ce7310-166a-4575-9418-6b143233ff63)
+
+## Min timing report
+
+* ` report_timing -delay min -from IN_A `
+
+![image](https://github.com/user-attachments/assets/6d312b7a-6350-4caf-ab51-48fd6b7edd7f)
+![image](https://github.com/user-attachments/assets/e4c24856-8803-472b-9f26-368cf045fe32)
+
+```
+* Note: Clues to identify whether it is setup check or hold check
+  * `Path type: min`, therefore it is doing hold check
+  * The launch edge and capture edge are same (it is doing `zero cycle` check)
+  * `Library hold time` is printed in the report
+  * In the report it is `setup slack = data arrival time-data required time` (don't go by sign), this is for `min` path. 
+```
+* ` report_timing -thr U15/Y `
+
+![image](https://github.com/user-attachments/assets/e8d60242-c82c-43e5-806f-c772a13fdef1)
+![image](https://github.com/user-attachments/assets/78f2afad-d4a4-4b48-a0f9-23ffa68377a8)
+
+* ` report_timing -thr U15/Y -delay min `
+
+![image](https://github.com/user-attachments/assets/d277a314-b193-4ec0-85fb-05eb7b9e50a3)
+![image](https://github.com/user-attachments/assets/3fede56a-c40c-4cfd-b8e1-eff6b4785b45)
 
 
 </details>
