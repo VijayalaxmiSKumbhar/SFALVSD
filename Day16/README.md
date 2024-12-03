@@ -4,7 +4,7 @@
   <Summary> Introduction </Summary>
   <br>
 
-  * IC Compiler II is specifically architected to address aggressive performance, power, area (PPA), and time-to-market pressures of leading edge designs.
+* IC Compiler II is specifically architected to address aggressive performance, power, area (PPA), and time-to-market pressures of leading edge designs.
   
 * Key technologies include a pervasively parallel optimization framework, multi-objective global placement, routing driven placement optimization, full flow Arc based concurrent clock and data optimization, total power optimization, multi-pattern and FinFET aware flow and machine learning (ML) driven optimization for fast and predictive design closure.
   
@@ -479,7 +479,6 @@ Collaterals can be configured using the following files located at the path
 
 # Physical Design Flow
 
-
 <p style="color: blue;">The top.tcl script, executed in the icc2_shell, is responsible for generating the Final Layout. This script is included in the provided files.</p>
 
 <p style="color: green;">The process consists of the following steps:</p>
@@ -545,7 +544,6 @@ Collaterals can be configured using the following files located at the path
 <p style="color: orange;">####################################</p>
 
 <h2 style="color: blue;">## Start gui</h2>
-
 
 * Collaterals can be configured using the following files located at the path 
 `/home/vijayalaxmi/Desktop/PD_flow2`:
@@ -617,6 +615,8 @@ Collaterals can be configured using the following files located at the path
 
 
 ####  `ICC2 Screenshots`
+
+## Once the `top.tcl` is excecuted using the following command in icc2_shell, type start_gui and the layout can be observed as shown in the screenshot.
 
 * `source /home/vijayalaxmi/Desktop/PD_flow2/top.tcl`
   
