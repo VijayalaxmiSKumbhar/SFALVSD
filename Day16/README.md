@@ -483,69 +483,46 @@ Collaterals can be configured using the following files located at the path
 
 <p style="color: green;">The process consists of the following steps:</p>
 
-<h3 style="color: orange;">###---NDM Library creation---###</h3>
 
-<h3 style="color: purple;">###---Read Synthesized Verilog---###</h3>
+### 📚 NDM Library Creation
 
-<h2 style="color: red;">## Technology setup for routing layer direction, offset, site default, and site symmetry.</h2>
+### 📜 Read Synthesized Verilog
 
-<h3 style="color: blue;">###---Routing settings---###</h3>
+## 🔧 Technology Setup
 
-<p style="color: green;">####################################</p>
-<p style="color: green;"># Check Design: Pre-Floorplanning</p>
-<p style="color: green;">####################################</p>
+## Setup for routing layer direction, offset, site default, and site symmetry.
 
-<p style="color: purple;">####################################</p>
-<p style="color: purple;"># Floorplanning</p>
-<p style="color: purple;">####################################</p>
+### 🔧 Routing Settings
 
-<p style="color: orange;">####################################</p>
-<p style="color: orange;">## PG Pin connections</p>
-<p style="color: orange;">####################################</p>
+### ✔️ Check Design: Pre-Floorplanning
 
-<p style="color: blue;">####################################</p>
-<p style="color: blue;">### Place IO</p>
-<p style="color: blue;">####################################</p>
+### 🏗️ Floorplanning
 
-<p style="color: red;">####################################</p>
-<p style="color: red;">### Memory Placement</p>
-<p style="color: red;">####################################</p>
+### 🔌 PG Pin Connections
 
-<p style="color: green;">####################################</p>
-<p style="color: green;"># Configure placement</p>
-<p style="color: green;">####################################</p>
+### 🧩 Place IO
 
-<p style="color: purple;">########################################</p>
-<p style="color: purple;">## Read parasitic files</p>
-<p style="color: purple;">########################################</p>
+### 🧠 Memory Placement
 
-<p style="color: orange;">########################################</p>
-<p style="color: orange;">## Read constraints</p>
-<p style="color: orange;">########################################</p>
+### ⚙️ Configure Placement
 
-<p style="color: blue;">####################################</p>
-<p style="color: blue;"># Fix all shaped blocks and macros</p>
-<p style="color: blue;">####################################</p>
+### 📂 Read Parasitic Files
 
-<p style="color: red;">####################################</p>
-<p style="color: red;"># Create Power</p>
-<p style="color: red;">####################################</p>
+### 📋 Read Constraints
 
-<p style="color: green;">####################################</p>
-<p style="color: green;"># Pin Placement</p>
-<p style="color: green;">####################################</p>
+### 🎨 Fix All Shaped Blocks and Macros
 
-<p style="color: purple;">####################################</p>
-<p style="color: purple;"># Timing estimation</p>
-<p style="color: purple;">####################################</p>
+### ⚡ Create Power
 
-<p style="color: orange;">####################################</p>
-<p style="color: orange;"># Place, CTS, Route</p>
-<p style="color: orange;">####################################</p>
+### 📍 Pin Placement
 
-<h2 style="color: blue;">## Start gui</h2>
+### 📐 Timing Estimation
 
-* Collaterals can be configured using the following files located at the path 
+### 🚧 Place, CTS, Route
+
+## 🖥️ Start GUI
+
+## Collaterals can be configured using the following files located at the path 
 `/home/vijayalaxmi/Desktop/PD_flow2`:
 
 * compile_pg_example.tcl
