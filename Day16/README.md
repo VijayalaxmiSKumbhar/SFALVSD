@@ -471,3 +471,81 @@ Collaterals can be configured using the following files located at the path
 
 
 </details>
+
+
+<details>
+  <summary> ICC2 Lab: VSDBabySoC (PD_flow2)</summary>
+
+  ## Physical Design Flow
+
+Collaterals can be configured using the following files located at the path 
+/home/vijayalaxmi/Desktop/PD_flow2:
+
+* compile_pg_example.tcl
+
+* init_design.mcmm_example.auto_expanded.tcl
+  
+* init_design.read_parasitic_tech_example.tcl
+
+* init_design.tech_setup.tcl
+
+* pns_example.tcl
+
+* top.tcl
+
+* write_block_data.tcl
+
+## icc2_common_setup.tcl
+
+![image](https://github.com/user-attachments/assets/ef923c9f-10bb-48ef-ba00-17ea07582948)
+![image](https://github.com/user-attachments/assets/3e469d85-99bc-47e2-8ae7-395b6df6cf44)
+![image](https://github.com/user-attachments/assets/1c03ff71-7da2-419a-92f7-c33e0c4bcbad)
+![image](https://github.com/user-attachments/assets/d5a787d1-48f0-4e90-b10c-cecfb28445e6)
+![image](https://github.com/user-attachments/assets/94727a3c-496a-438a-acf4-1cdac33813f8)
+![image](https://github.com/user-attachments/assets/e8ede05c-7f10-4688-9eb7-ad85719dc145)
+
+## icc2_dp_setup.tcl
+
+![image](https://github.com/user-attachments/assets/663a46ea-c5c1-49b6-8ae6-ed4920320b15)
+![image](https://github.com/user-attachments/assets/dd85df07-d6e2-4053-8b87-c49812f2a6e9)
+![image](https://github.com/user-attachments/assets/bbe94a67-ff46-4027-8529-2442fb512c88)
+![image](https://github.com/user-attachments/assets/b822cbc2-08f6-4bab-9321-2b9d3bc0cb1e)
+![image](https://github.com/user-attachments/assets/8d639350-7161-4b2b-bbd3-a4688cd993c4)
+![image](https://github.com/user-attachments/assets/4dea7755-3487-41e3-a7c0-89e3d806e666)
+![image](https://github.com/user-attachments/assets/f91a7e0f-2cc1-4ff5-ab56-8b79c1fe0960)
+![image](https://github.com/user-attachments/assets/7fc9c426-0537-4b59-a045-14b2a04b4f13)
+![image](https://github.com/user-attachments/assets/6954b2d6-98c7-446b-9425-cd8b6170215a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#### ICC2 Screenshots
+
+* `source /home/vijayalaxmi/Desktop/PD_flow2/top.tcl`
+  
+![image](https://github.com/user-attachments/assets/be98479e-6d42-4a0b-8544-928b96f6b1d9)
+![image](https://github.com/user-attachments/assets/f2f4ff74-925e-46e4-8d42-597fa9fcac03)
+![image](https://github.com/user-attachments/assets/8fdc7e42-8371-4c32-8b79-3ac82f1e11a3)
+![image](https://github.com/user-attachments/assets/72eb48a3-ae3d-442a-aabc-25cb84434238)
+
+![image](https://github.com/user-attachments/assets/48b18f5f-468d-4974-a3e4-25692de6ae97)
+
+
+
+
+
+</details>
