@@ -479,6 +479,180 @@ Collaterals can be configured using the following files located at the path
 
 # Physical Design Flow
 
+## Design Planning
+
+* Floorplan Preparation
+
+![image](https://github.com/user-attachments/assets/05960a08-eb33-404a-afb1-588698763c50)
+
+` Related Commands`
+```
+commit_block
+create_io_guide
+create_io_ring
+explore_logic_hierarchy
+initialize_floorplan
+place_io
+set_constraint_mapping_file
+set_signal_io_constraints
+uncommit_block
+```
+
+* Multi-Threaded and Distributed Processing
+
+![image](https://github.com/user-attachments/assets/88aa4bac-6a95-4f0f-b603-5f7c8f729df8)
+
+` Related Commands`
+```
+check_host_options
+remove_host_options
+report_host_options
+set_host_options
+```
+* Block Shaping
+
+![image](https://github.com/user-attachments/assets/0e001009-b8ca-431d-aa2f-5b3a8e61256e)
+
+` Related Commands`
+```
+create_abstract
+create_grid
+create_keepout_margin
+expand_outline
+report_block_shaping
+set_block_grid_references
+set_shaping_options
+shape_blocks
+```
+
+* Cell Placement
+
+![image](https://github.com/user-attachments/assets/f21e676f-b9ee-4e23-8f20-b13f2f63ed3d)
+
+` Related Commands`
+```
+create_keepout_margin
+create_placement
+push_down_objects
+report_placement
+```
+
+* What-if Channel Congestion
+
+The IC Compiler II tool supports interactive, what-if analysis to identify congested global routing channels. To open the What-if Channel Congestion panel in the layout window, select What-if Channel Congestion in the Design Planning section of the Task Assistant, or choose View > Map > What-if Channel Congestion. The What-if Channel Congestion panel appears on the right of the layout window as shown in Figure A-9.
+
+![image](https://github.com/user-attachments/assets/7ebe2676-670d-412b-b026-0d52c16144e2)
+![image](https://github.com/user-attachments/assets/68816185-d0a4-4c98-b1af-3327d94d2558)
+
+
+* PG Planning
+
+![image](https://github.com/user-attachments/assets/5e359fff-0c8c-4599-ade9-0b8459d50064)
+![image](https://github.com/user-attachments/assets/a7f466f5-07df-417b-be0c-dd2254d13cac)
+
+
+` Related Commands`
+```
+analyze_power_plan
+characterize_block_pg
+check_pg_connectivity
+check_pg_drc
+check_pg_missing_vias
+compile_pg
+create_pg_vias
+connect_pg_net
+create_pg_macro_conn_pattern
+create_pg_mesh_pattern
+create_pg_region
+create_pg_ring_pattern
+create_pg_special_pattern
+create_pg_std_cell_conn_pattern
+create_power_switch_array
+create_power_switch_ring
+run_block_compile_pg
+set_constraint_mapping_file
+set_pg_strategy
+set_pg_strategy_via_rule
+set_pg_via_master_rule
+set_power_switch_placement_pattern
+set_virtual_pad
+```
+
+* Clock Trunk Planning
+
+![image](https://github.com/user-attachments/assets/c9f8766f-8ffa-41d0-8c9d-c7940e238d44)
+
+` Related Commands`
+```
+syntesize_clock_trunk
+
+```
+
+* Pin Assignment
+
+![image](https://github.com/user-attachments/assets/7b623eaa-1ebf-4dea-a66e-93f4954722dd)
+
+` Related Commands`
+```
+check_pin_placement
+place_pins
+read_pin_constraints
+report_pin_placement
+route_global
+set_block_pin_constraints
+set_bundle_pin_constraints
+set_individual_pin_constraints
+write_pin_constraints
+```
+
+* Hierarchy Handling
+
+![image](https://github.com/user-attachments/assets/9547cc5d-1e41-4e5e-bd78-0a7fd65417e7)
+
+` Related Commands`
+```
+![image](https://github.com/user-attachments/assets/6c043e7d-b12a-4958-9985-21d122a7a1fd)
+
+```
+
+* Virtual In-Place Optimization
+
+![image](https://github.com/user-attachments/assets/98a2ce78-3629-40da-8798-abf8c83daf3d)
+
+
+` Related Commands`
+```
+create_abstract
+estimate_timing
+
+```
+
+* Budgeting
+
+![image](https://github.com/user-attachments/assets/f3b0c385-6bc8-40e6-8ad6-c1da23cd812d)
+
+` Related Commands`
+```
+compute_budget_constraints
+set_budget_options
+write_budgets
+```
+
+* Write Floorplan and Verilog
+
+![image](https://github.com/user-attachments/assets/6926181a-04e2-4e32-8c28-571adc611fa1)
+
+` Related Commands`
+```
+write_floorplan
+write_verilog
+```
+
+* Relative Location
+
+Use Relative Location constraints to save the macro placement in the current block and restore it in the resized or reshaped block. In addition the port placement can also be stored and restored.
+
+
 <p style="color: blue;">The top.tcl script, executed in the icc2_shell, is responsible for generating the Final Layout. This script is included in the provided files.</p>
 
 <p style="color: green;">The process consists of the following steps:</p>
@@ -603,6 +777,8 @@ Collaterals can be configured using the following files located at the path
 ![image](https://github.com/user-attachments/assets/72eb48a3-ae3d-442a-aabc-25cb84434238)
 
 ![image](https://github.com/user-attachments/assets/48b18f5f-468d-4974-a3e4-25692de6ae97)
+![image](https://github.com/user-attachments/assets/f7864e3e-da2d-493b-8b85-e1b4402b94f8)
+![image](https://github.com/user-attachments/assets/de111bed-8cf5-4dfd-88db-93ef282ddc91)
 
 
 
