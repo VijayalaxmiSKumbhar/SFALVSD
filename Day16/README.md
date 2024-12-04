@@ -472,9 +472,8 @@ Collaterals can be configured using the following files located at the path
 
 </details>
 
-
 <details>
-  <summary> ICC2 Lab: VSDBabySoC (PD_flow2)</summary>
+  <summary> Theory: Design Planning </summary>
 <br>
 
 # Physical Design Flow
@@ -718,6 +717,13 @@ Use Relative Location constraints to save the macro placement in the current blo
 ### 🚧 Place, CTS, Route
 
 ## 🖥️ Start GUI
+
+</details>
+
+
+<details>
+  <summary> ICC2 Lab: VSDBabySoC (PD_flow2)</summary>
+<br>
 
 ## Collaterals can be configured using the following files located at the path 
 `/home/vijayalaxmi/Desktop/PD_flow2`:
