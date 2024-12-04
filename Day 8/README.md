@@ -553,6 +553,31 @@ design_vision> compile_ultra
 <summary>Lab 19: Register Retiming </summary>
 <br>
 
+## Example is check_reg_retime.v
+
+![image](https://github.com/user-attachments/assets/fee3adff-3942-4a67-bcca-ddc7df67d06f)
+
+## Launch design_vision
+
+* ` sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_reg_retime.v `
+  
+![image](https://github.com/user-attachments/assets/ca4c353a-37c0-4778-a868-5324115034ae)
+
+* ` read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_reg_retime.v `
+*  `link`
+*  `compile`
+
+![image](https://github.com/user-attachments/assets/06f20093-bc5b-4071-a0b0-f1a604f72c67)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/758dfe6f-38b4-4027-8454-53c68381b2e1)
+![image](https://github.com/user-attachments/assets/39e046d1-5db7-410a-aa71-2ea3e66ac721)
+![image](https://github.com/user-attachments/assets/f3f4cdb1-cb4f-4c1b-acc2-222feed97d44)
+![image](https://github.com/user-attachments/assets/ea07f8f2-3c3b-47cc-b388-a7db3524c5b6)
+
+
+
 
 </details>
 
