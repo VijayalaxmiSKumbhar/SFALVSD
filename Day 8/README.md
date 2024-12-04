@@ -600,7 +600,7 @@ design_vision> compile_ultra
 * ` report_timing -from [all_inputs] `
 * ` report_timing -from [all_inputs] -trans -cap -nosplit -sig 4 `
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/0eeb64a6-dec8-4dec-ad4c-0fb9913e8eec)
 
 
 </details>
@@ -608,6 +608,27 @@ design_vision> compile_ultra
 <details>
 <summary>Lab 20: Isolating output ports </summary>
 <br>
+
+## Lab example is check_boundary.v
+
+![image](https://github.com/user-attachments/assets/b9b21efd-3a1f-4247-a5bd-e6ab4d1d162f)
+
+## Invoke design vision
+
+* `sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v`
+
+![image](https://github.com/user-attachments/assets/ec904cdf-c998-4398-92b6-5a422f4033e4)
+![image](https://github.com/user-attachments/assets/42959631-5323-4955-adc2-845d795f1372)
+
+* ` read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v`
+*  `link`
+*  `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/1191f681-f414-4f19-abf1-c02a6598a7b3)
+
+
+
+
 
 
 </details>
