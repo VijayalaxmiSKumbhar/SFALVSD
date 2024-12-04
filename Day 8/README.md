@@ -591,9 +591,16 @@ design_vision> compile_ultra
 * ` compile_ultra -retime `
 
 ![image](https://github.com/user-attachments/assets/2d96dd9c-82db-4a46-9546-c08f686eacfe)
+![image](https://github.com/user-attachments/assets/34932710-32a1-4a1e-aac2-6e6933d48082)
+
+* ` report_timing `
+
+![image](https://github.com/user-attachments/assets/c3f82bf4-9942-4ac0-92b1-3d6a300bc40a)
+
+* ` report_timing -from [all_inputs] `
+* ` report_timing -from [all_inputs] -trans -cap -nosplit -sig 4 `
+
 ![Uploading image.png…]()
-
-
 
 
 </details>
