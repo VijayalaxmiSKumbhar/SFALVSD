@@ -663,6 +663,15 @@ design_vision> compile_ultra
 
 ![image](https://github.com/user-attachments/assets/69c9b5ba-ab2e-47b1-a567-14fca73ccf66)
 
+* `set_isolate_ports -type buffer [all_outputs]`
+* `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/9e3dd868-98d3-4e88-b1e2-9c0bfad6175e)
+
+* `report_timing -nosplit -inp -cap -trans -sig 4`
+
+![image](https://github.com/user-attachments/assets/ba9fe8c8-890d-4286-a803-16ca9b3c9f10)
+
 
 </details>
 
