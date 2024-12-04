@@ -576,6 +576,23 @@ design_vision> compile_ultra
 ![image](https://github.com/user-attachments/assets/f3f4cdb1-cb4f-4c1b-acc2-222feed97d44)
 ![image](https://github.com/user-attachments/assets/ea07f8f2-3c3b-47cc-b388-a7db3524c5b6)
 
+* ` source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/reg_retime_cons.tcl `
+
+![image](https://github.com/user-attachments/assets/e209ad97-48e9-44ea-8897-c73b36f44afb)
+
+* ` report_clocks `
+
+![image](https://github.com/user-attachments/assets/d8cfe221-7767-44d5-9eec-2e611b7fef35)
+
+*  ` report_timing `
+
+ ![image](https://github.com/user-attachments/assets/9d38f480-c01f-4e1d-8882-346237cd280e)
+
+* ` compile_ultra -retime `
+
+![image](https://github.com/user-attachments/assets/2d96dd9c-82db-4a46-9546-c08f686eacfe)
+![Uploading image.png…]()
+
 
 
 
