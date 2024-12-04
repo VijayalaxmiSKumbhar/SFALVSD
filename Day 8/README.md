@@ -626,9 +626,42 @@ design_vision> compile_ultra
 
 ![image](https://github.com/user-attachments/assets/1191f681-f414-4f19-abf1-c02a6598a7b3)
 
+* `set_isolate_ports -type buffer [all_outputs]`
+* `compile_ultra`
 
+![image](https://github.com/user-attachments/assets/308ff029-ff67-4e84-b4cb-6998cf13c904)
 
+## Buffers added at the output can be observed in screenshot
 
+![image](https://github.com/user-attachments/assets/69bc2d1a-24d0-47a1-84fb-9d33d22482d8)
+
+## Launch dc_shell
+
+* ` read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v`
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}`
+*  `link`
+
+![image](https://github.com/user-attachments/assets/62dce77d-ef8a-4b97-8812-4bf94bf48c88)
+
+*  `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/5a9727ff-02f5-4be3-b412-572b4314c567)
+
+* `create_clock -per 5 -name myclk [get_ports clk]`
+* `set_input_delay -max 2 [all_inputs] -clock myclk`
+* `set_output_delay -max 2 [all_outputs] -clock myclk`
+* `set_input_delay -max 2 [all_inputs] -clock myclk`
+
+![image](https://github.com/user-attachments/assets/826619e5-c7ef-4a26-8828-e6d453b0b34f)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/5cc94ce2-94c3-4989-bd48-c9ed58337ff1)
+
+* `report_timing -nosplit -inp -cap -trans -sig 4`
+
+![image](https://github.com/user-attachments/assets/69c9b5ba-ab2e-47b1-a567-14fca73ccf66)
 
 
 </details>
