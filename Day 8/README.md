@@ -437,6 +437,48 @@ report_timing
 <summary>Lab 18: Boundary optimizations </summary>
 <br>
 
+## What is boundary optimization?
+
+![image](https://github.com/user-attachments/assets/f57e99d4-fb73-434a-ac9c-c5829d962860)
+
+## Example is check_bounday.v
+
+* ` sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v`
+  
+![image](https://github.com/user-attachments/assets/386e89dd-7475-4e1a-ace7-0722397b0d9f)
+
+## Above program implements the following logic
+
+![image](https://github.com/user-attachments/assets/ce101132-a162-497e-9b56-ca591917e40e)
+
+* `reset_design`
+* `read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary`
+
+![image](https://github.com/user-attachments/assets/84d9bda8-0db6-458c-9516-4eaa399d7149)
+
+ * `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+ * `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}`
+ * `link`
+ 
+  ![image](https://github.com/user-attachments/assets/ecdd965e-14e4-416a-9268-0fc6ffbe0fc8)
+
+ * ` compile_ultra`
+
+![image](https://github.com/user-attachments/assets/dd88db25-38cd-4acf-8a25-b8c427f61404)
+![image](https://github.com/user-attachments/assets/ad5f6782-b4a3-4c2e-b2af-ff919c11bd3f)
+
+* ` write -f ddc -out boundary.ddc `
+*  ` get_cells `
+
+![image](https://github.com/user-attachments/assets/34cbd4b6-4e43-413b-9ddb-0f31a49f17a3)
+
+## Launch design_vision
+
+* ` read_ddc /home/vijayalaxmi/boundary.ddc `
+
+![image](https://github.com/user-attachments/assets/d6fcbcff-9292-47d5-9fec-e06105358688)
+![image](https://github.com/user-attachments/assets/e31cf82d-af29-4ce0-89c8-41fcd23d33d8)
+![image](https://github.com/user-attachments/assets/1212a71f-932f-4acb-9ffb-4053fa461438)
 
 </details>
 
