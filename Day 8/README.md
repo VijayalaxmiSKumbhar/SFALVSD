@@ -452,7 +452,7 @@ report_timing
 ![image](https://github.com/user-attachments/assets/ce101132-a162-497e-9b56-ca591917e40e)
 
 * `reset_design`
-* `read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary`
+* `read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v`
 
 ![image](https://github.com/user-attachments/assets/84d9bda8-0db6-458c-9516-4eaa399d7149)
 
@@ -479,6 +479,73 @@ report_timing
 ![image](https://github.com/user-attachments/assets/d6fcbcff-9292-47d5-9fec-e06105358688)
 ![image](https://github.com/user-attachments/assets/e31cf82d-af29-4ce0-89c8-41fcd23d33d8)
 ![image](https://github.com/user-attachments/assets/1212a71f-932f-4acb-9ffb-4053fa461438)
+
+## In dc_shell give the command ` get_pins u_im/* `: This shows that boundary optimization has happened.
+
+![image](https://github.com/user-attachments/assets/931b89de-7266-4f14-ac96-1e8d1933db7d)
+
+```
+
+* Commands given in design_vision are as follows: 
+
+dc_shell> gui_start
+4.1.1
+design_vision> read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v
+Loading db file '/usr/synopsys/syn/T-2022.03-SP5-6/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/syn/T-2022.03-SP5-6/libraries/syn/standard.sldb'
+  Loading link library 'gtech'
+Loading verilog file '/home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Warning: Can't read link_library file '$target_library'. (UID-3)
+Compiling source file /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v
+
+Inferred memory devices in process
+        in routine check_boundary line 5 in file
+                '/home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     val_out_reg     | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+        in routine internal_module line 18 in file
+                '/home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       cnt_reg       | Flip-flop |   3   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Current design is now '/home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.db:check_boundary'
+Loaded 2 designs.
+Current design is 'check_boundary'.
+check_boundary internal_module
+Current design is 'check_boundary'.
+design_vision> link
+Warning: Can't read link_library file '$target_library'. (UID-3)
+
+  Linking design 'check_boundary'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (2 designs)               /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/check_boundary.db, etc
+
+1
+design_vision> get_cells
+{u_im val_out_reg[3] val_out_reg[2] val_out_reg[1] val_out_reg[0] U1}
+design_vision> get_pins u_im/*
+{u_im/clk u_im/res u_im/cnt_roll}
+design_vision> set_boundary_optimization u_im false
+1
+design_vision> compile_ultra
+
+```
+
+![image](https://github.com/user-attachments/assets/416cee8f-da02-445b-bc3f-0237f1df01a7)
+![image](https://github.com/user-attachments/assets/487741b6-6b74-4a98-9026-4e75cbe1ceba)
+
 
 </details>
 
