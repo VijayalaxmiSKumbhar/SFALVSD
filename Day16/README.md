@@ -674,6 +674,11 @@ Use Relative Location constraints to save the macro placement in the current blo
 
 ----
 
+</details>
+
+<details>
+  <summary> ICC2 Lab: VSDBabySoC (PD_flow2)</summary>
+<br>
 
 ## The top.tcl script, executed in the icc2_shell, is responsible for generating the Final Layout. This script is included in the provided files.
 
@@ -717,13 +722,6 @@ Use Relative Location constraints to save the macro placement in the current blo
 ### 🚧 Place, CTS, Route
 
 ## 🖥️ Start GUI
-
-</details>
-
-
-<details>
-  <summary> ICC2 Lab: VSDBabySoC (PD_flow2)</summary>
-<br>
 
 ## Collaterals can be configured using the following files located at the path 
 `/home/vijayalaxmi/Desktop/PD_flow2`:
