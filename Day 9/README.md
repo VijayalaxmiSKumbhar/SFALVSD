@@ -314,6 +314,46 @@ endmodule
 ![image](https://github.com/user-attachments/assets/6c5b2719-88f2-403e-bd84-0265615cb784)
 ![image](https://github.com/user-attachments/assets/dca4b23b-437b-481d-aa98-0cf389657961)
 ![image](https://github.com/user-attachments/assets/2fae0247-34db-4977-b74d-9178a8d44b6e)
+![image](https://github.com/user-attachments/assets/3fd65115-f373-4caa-b752-5d75fe799045)
+
+```
+Note: Important Commands
+![image](https://github.com/user-attachments/assets/2f8978ce-b4a7-45cb-86de-c2e72267f496)
+
+```
+
+* `report_timing -from en -inp -nets -cap -sig 4 -trans`
+
+![image](https://github.com/user-attachments/assets/f6372b0a-1b09-446b-8f1d-6fc33de8f3bf)
+![image](https://github.com/user-attachments/assets/3d4bc6f4-6157-43ba-bc16-b062908c125c)
+
+* `set_max_transition 0.150 [current_design]`
+* `report_constraints`
+
+![image](https://github.com/user-attachments/assets/2977a130-977a-4c3d-a3ab-3a9ef083da45)
+
+* `report_constraints -all_violators`
+
+![image](https://github.com/user-attachments/assets/8ad92471-1f68-46ba-aaf8-6486cf1241af)
+![image](https://github.com/user-attachments/assets/986547cc-b8d4-4d21-817b-5ec57d719ad6)
+
+* `compile_ultra`
+* `report_constraints -all_violators`
+
+![image](https://github.com/user-attachments/assets/77bd9c02-75c9-4014-b10e-886dee6a03f5)
+
+* `check_timing`
+
+![image](https://github.com/user-attachments/assets/ebb85018-146b-4e1a-9504-cfbdc7b3c34e)
+![image](https://github.com/user-attachments/assets/eada651b-3da5-4370-82e5-74c539ab8802)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/fb3addd2-afc3-417a-b5f4-1544cf6fcd7d)
+
+* `report_timing -inp -nets -cap -trans -sig 4 -nosplit`
+
+![image](https://github.com/user-attachments/assets/f12c1e46-2621-4423-884f-d4ee07773e54)
 
 </details>
 
