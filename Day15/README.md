@@ -36,6 +36,22 @@
 
 * In this case `utilization factor = 1`
   
+* 100% utilization factor means core is completely occupied and there is no space to add any extra logic
+  
+* `Aspect Ratio = Height/Width`
+  
+* In the above example Aspect Ratio=1
+  
+* `Aspect Ratio = 1` signifies that chip is `square` shaped
+  
+* `Aspect Ratio` other than 1 signifies that chip is `rectangular` shaped
+
+* ![image](https://github.com/user-attachments/assets/6efdf404-fa26-449c-be64-e95c8e1de63d)
+
+* Example to understand `utilization factor` and `aspect ratio`
+
+![image](https://github.com/user-attachments/assets/c70e43bc-48a0-457f-af36-908b8b4e5ef1)
+
 </details>
 
 
