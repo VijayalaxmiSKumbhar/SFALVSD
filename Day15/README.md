@@ -1,6 +1,11 @@
-# Good floorplan Vs bad floorplan and introduction to library cells
 
-* First step in physical design is defining `width (W)` and `height (H)` of `Core` and `Die`
+
+
+<details>
+  <summary> Good floorplan Vs bad floorplan and introduction to library cells: Theory</summary>
+  <br>
+
+  * First step in physical design is defining `width (W)` and `height (H)` of `Core` and `Die`
 
   ![image](https://github.com/user-attachments/assets/27eac35f-3fa5-4303-a4a1-553cdba608c3)
 
@@ -33,6 +38,13 @@
 ![image](https://github.com/user-attachments/assets/8f4e2711-79dd-46c5-98ed-aed3863427ee)
 
 * In this case `utilization factor = 1`
+  
+</details>
+
+
+
+
+
 
 
 
