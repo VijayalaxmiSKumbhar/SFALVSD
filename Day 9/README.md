@@ -213,7 +213,20 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/99b29a1e-9e7a-4fbb-bec7-e8e00348ef0d)
 
+* `report_timing -net -cap`
 
+![image](https://github.com/user-attachments/assets/cfeb444f-22f7-47b4-a594-38fd8badb070)
+![image](https://github.com/user-attachments/assets/74e01a22-802c-428e-9cad-75f8ad25275d)
+
+* `check_timing` (y is unconstrained)
+
+![image](https://github.com/user-attachments/assets/423a750c-7fae-461b-b7b5-137287405496)
+
+* `set_max_delay -from [all_inputs] -to [all_outputs] 3.5`
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/65e75bec-b47c-4463-84bd-39407d340aa5)
+![image](https://github.com/user-attachments/assets/54c95435-7fe8-4bca-9359-41b7ea20aabb)
 
 </details>
 
