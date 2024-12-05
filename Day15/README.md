@@ -52,6 +52,37 @@
 
 ![image](https://github.com/user-attachments/assets/c70e43bc-48a0-457f-af36-908b8b4e5ef1)
 
+## Defining Locations of Preplaced cells
+
+#### What is Preplaced Cell?
+
+![image](https://github.com/user-attachments/assets/9ebccb6d-4f42-4f38-938c-d0bcdf6ed557)
+![image](https://github.com/user-attachments/assets/7415e170-1ec1-43f1-b8f9-7c4d504d004f)
+![image](https://github.com/user-attachments/assets/a4c1733c-9cac-4a5f-b52e-47029bfbbf51)
+![image](https://github.com/user-attachments/assets/7f82bb03-8615-4197-80b9-ba2de5fa961c)
+
+#### Locations of preplaced cells
+
+* The preplaced cells are located based on design background
+
+![image](https://github.com/user-attachments/assets/8c8bef0f-bf7b-41a9-8886-6b0b99509818)
+
+* Surround the preplaced cells with decoupling capacitors
+
+![image](https://github.com/user-attachments/assets/1185b44e-b090-4153-945d-d7272e38f5d5)
+![image](https://github.com/user-attachments/assets/eeb283d5-5614-4509-a0f3-f7d413d35de0)
+
+* Solution: Add decoupling capacitors to correctly identify `logic 0` and `logic 1`
+
+![image](https://github.com/user-attachments/assets/8cd95b75-2ca7-4026-8b1e-c5e3e90d5e20)
+
+
+
+
+
+
+
+
 </details>
 
 
