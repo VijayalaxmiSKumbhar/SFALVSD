@@ -228,5 +228,41 @@ endmodule
 ![image](https://github.com/user-attachments/assets/65e75bec-b47c-4463-84bd-39407d340aa5)
 ![image](https://github.com/user-attachments/assets/54c95435-7fe8-4bca-9359-41b7ea20aabb)
 
+* `set_max_capacitance 0.025 [current_design]`
+* Command to check all the violating constraints: `report_constraint -all_violators`
+
+![image](https://github.com/user-attachments/assets/7e498e5e-1a82-46f5-b75e-066b9d645e31)
+![image](https://github.com/user-attachments/assets/71304ae4-fba1-47b0-bc13-0c84c087ed63)
+
+* `compile_ultra`
+* 'check_timing`
+
+![image](https://github.com/user-attachments/assets/c3d84ebd-8f9f-42d2-ab4e-ac71f8641dd3)
+
+* `report_constraints`
+
+![image](https://github.com/user-attachments/assets/b94be1c4-7d09-49cd-a65e-8947eb0bed38)
+![image](https://github.com/user-attachments/assets/b6c70839-c0a0-424b-a34f-32492f60a1d1)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/b1f2bdc1-5a0a-4dfa-a7b6-2e35fb6ba2b6)
+![image](https://github.com/user-attachments/assets/e5616397-3494-4310-ad75-36f274f3cb06)
+
+* `report_timing -net -cap -sig 4`
+  * Limit the capacitance so that high fanout nets are buffered properly
+
+![image](https://github.com/user-attachments/assets/98c6429a-11c5-4094-bab3-cdba0b380f70)
+![image](https://github.com/user-attachments/assets/519a8ef5-3633-4056-9c4d-c2e17528993d)
+
+# High Fanout Net (HFN) : As the complexity of circuit increases, net will be heavily loaded due to large `fanout` this is called HFN
+
+* Example of 128:1 mux scenario is shown here
+
+![image](https://github.com/user-attachments/assets/a901f965-c0be-4c15-a445-1c23eaaf3f7b)
+
+
+
+
 </details>
 
