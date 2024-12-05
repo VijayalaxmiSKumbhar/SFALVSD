@@ -679,6 +679,49 @@ design_vision> compile_ultra
 <summary>Lab 21: MultiCycle Path </summary>
 <br>
 
+## Lab example is mcp_check.v
+
+![image](https://github.com/user-attachments/assets/d1eab26a-5b97-427f-b39f-b2d86f15e3bb)
+
+* ` sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/mcp_check.v `
+
+![image](https://github.com/user-attachments/assets/d4a069a4-bc1e-4fd8-8e17-d2b8b8a4bc0f)
+
+* ` read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/mcp_check.v`
+
+![image](https://github.com/user-attachments/assets/c0e593c6-735a-4d2d-b5f1-e47b69e0a78c)
+
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}`
+*  `link`
+*  `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/88eb8a59-4aef-4d32-a307-9506a164a579)
+![image](https://github.com/user-attachments/assets/5260613d-31f7-4af1-aaf7-a20ad8a4008f)
+
+
+## Constraint file used here is mcp_check_cons.tcl
+
+* `sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/mcp_check_cons.tcl`
+
+![image](https://github.com/user-attachments/assets/69ba17bc-e8c5-4da4-bbb6-76ae255594a5)
+
+* `source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/mcp_check_cons.tcl`
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/81f99282-5c7e-4564-abc3-27cddf5644de)
+![image](https://github.com/user-attachments/assets/96b7e82a-037c-4516-935e-e707c0558bd6)
+![image](https://github.com/user-attachments/assets/f94679a6-3356-44ef-9fbc-475ebc531aee)
+
+* `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/40b30d52-7bea-4e7b-a1a2-96a75674173a)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/bbcf1649-f233-4f5e-b9ec-879d7765ff6f)
+![image](https://github.com/user-attachments/assets/4b749ec8-c4de-4371-bfb1-55a85e331099)
+
 
 </details>
 
