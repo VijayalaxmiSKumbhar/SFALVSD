@@ -115,6 +115,57 @@
 <summary>Lab: Check_timing, Check_design, Set_max_capacitance, HFN </summary>
 <br>
 
+## Example is lab8_circuit_modified.v
+
+* Invoke `dc_shell`
+  
+* `read_verilog /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_circuit_modified.v`
+
+![image](https://github.com/user-attachments/assets/83e5394b-385c-4cbd-a154-e0f67c946fe9)
+
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}'
+* `link'
+
+![image](https://github.com/user-attachments/assets/2309bf12-0ef3-4c32-9ffc-74c6f82e82b8)
+
+* `check_design`
+
+![image](https://github.com/user-attachments/assets/2db72843-38e7-4b83-966d-e5807c74b4e1)
+
+* `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/1b61634f-b660-418b-a5f2-ba8bc35b3f32)
+
+* `check_timing`: This command will ensure whether the design is properly constrained or not
+
+![image](https://github.com/user-attachments/assets/7fe1c429-3661-4a29-afc3-66eaa24859c2)
+
+* `report_constraints`
+
+![image](https://github.com/user-attachments/assets/4d100e76-19f8-4e6d-9887-f6cbcda618cb)
+
+* `source /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/lab8_cons_modified.tcl`
+* `check_timing`
+
+![image](https://github.com/user-attachments/assets/875ca490-a7a5-4cc1-993c-7b215d2b05ff)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/5200bf7e-7cdb-4c7d-85b6-bf5a1938b08f)
+
+* `report_constraints`
+
+![image](https://github.com/user-attachments/assets/9ccebc7e-fe88-445e-acfb-e1c268cc65f5)
+![image](https://github.com/user-attachments/assets/77825f6c-e415-4472-a651-356685d65667)
+
+
+
+
+
+
+
+
 
 </details>
 
