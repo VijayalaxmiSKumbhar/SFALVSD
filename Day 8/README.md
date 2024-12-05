@@ -722,6 +722,43 @@ design_vision> compile_ultra
 ![image](https://github.com/user-attachments/assets/bbcf1649-f233-4f5e-b9ec-879d7765ff6f)
 ![image](https://github.com/user-attachments/assets/4b749ec8-c4de-4371-bfb1-55a85e331099)
 
+* `set_multicycle_path -setup 2 -to prod_reg[*]/D -from [all_inputs]`
+
+![image](https://github.com/user-attachments/assets/0382900d-bab5-4c84-ade7-32189c0d06fb)
+![image](https://github.com/user-attachments/assets/bd010996-4158-41ca-9631-290fcb78d189)
+
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/97edb9fc-090a-4dd8-84cf-1f29e2da34f3)
+
+* `report_timing -to prod_reg[*]/D`
+
+![image](https://github.com/user-attachments/assets/539b49a9-bfcf-4df2-8fe1-2692e20384db)
+
+* `report_timing -from [all_inputs] -to prod_reg[*]/D `
+
+![image](https://github.com/user-attachments/assets/f5bf29ed-cec3-4c3d-947c-be6212ae47fa)
+![image](https://github.com/user-attachments/assets/07153db0-4aa6-4497-8033-c2c64c068d68)
+
+* `set_multicycle_path -hold 1 -from [all_inputs] -to prod_reg[*]/D`
+* `report_timing -delay min`
+
+![image](https://github.com/user-attachments/assets/cb9d7776-1ad9-4b78-aa2f-40396734f12b)
+
+* `report_timing -delay min -to prod_reg[*]/D -from [all_inputs]`
+
+![image](https://github.com/user-attachments/assets/223268ff-a2e7-45e7-a449-7745936894c1)
+
+* `report_timing -inp -cap -trans -nosplit -sig 4`
+
+![image](https://github.com/user-attachments/assets/64625e70-ce80-4e82-bedd-b3dcc8f5f062)
+![image](https://github.com/user-attachments/assets/3b007919-a8a9-4fe3-8b07-aef7ed786907)
+
+* `set_isolate_ports -type buffer [all_outputs]`
+* `compile_ultra`
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/ca66f576-9b18-4de1-9682-2ffda5e38905)
 
 </details>
 
