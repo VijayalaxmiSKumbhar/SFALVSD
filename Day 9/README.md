@@ -261,8 +261,59 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/a901f965-c0be-4c15-a445-1c23eaaf3f7b)
 
+# Another example of HFN is given here:
+
+![image](https://github.com/user-attachments/assets/29f4f978-dda5-477c-bd2e-b26d2acf3fc9)
+
+## Let us execute the above example in dc_shell
+
+* `gvim en_128.v`
+
+![image](https://github.com/user-attachments/assets/4197719e-045f-46d9-8921-43d3de111ea6)
 
 
+* Invoke `dc_shell`
+* read_verilog /home/vijayalaxmi/en_128.v
+
+![image](https://github.com/user-attachments/assets/53809ea4-8104-4609-b733-39c407507fb3)
+
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}'
+* `link'
+
+![image](https://github.com/user-attachments/assets/54c71499-2d64-4eb1-8564-304c92273346)
+
+* `compile_ultra`
+* `report_timing`
+
+![image](https://github.com/user-attachments/assets/8ac00e9d-463e-4996-867f-cb93b5532a99)
+![image](https://github.com/user-attachments/assets/b27bd73f-0575-48eb-a737-69f52e27ebce)
+
+* `report_timing -from en -inp -nets -cap`
+
+![image](https://github.com/user-attachments/assets/8c6c915d-9aea-47db-8410-90f5bf9107ac)
+
+* `set_max_capacitance 0.03 [current_design]`
+* 'report_constraints`
+
+![image](https://github.com/user-attachments/assets/5b312230-c9b0-4e0b-8b61-a426e3f5b397)
+
+* `compile_ultra`
+* `report_timing -from en -inp -nets -cap -sig 4`
+
+![image](https://github.com/user-attachments/assets/9a9a4d42-18a0-449f-bb6e-6c9882822542)
+![image](https://github.com/user-attachments/assets/2ee72f0d-8933-40ba-b2f1-f8462783dc81)
+
+* `write -f ddc -out en_128.ddc`
+
+![image](https://github.com/user-attachments/assets/797b8c3d-08bc-4380-96f9-202425676e73)
+
+* Launch `design_vision`
+* `read_ddc /home/vijayalaxmi/en_128.ddc`
+
+![image](https://github.com/user-attachments/assets/6c5b2719-88f2-403e-bd84-0265615cb784)
+![image](https://github.com/user-attachments/assets/dca4b23b-437b-481d-aa98-0cf389657961)
+![image](https://github.com/user-attachments/assets/2fae0247-34db-4977-b74d-9178a8d44b6e)
 
 </details>
 
