@@ -159,11 +159,59 @@
 ![image](https://github.com/user-attachments/assets/9ccebc7e-fe88-445e-acfb-e1c268cc65f5)
 ![image](https://github.com/user-attachments/assets/77825f6c-e415-4472-a651-356685d65667)
 
+## Let us consider an example of 4:1 multiplexer to understand what is max_transistion, max_capacitance etc constraints
 
+* `sh gvim /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/verilog_files/mux_generate.v`
 
+![image](https://github.com/user-attachments/assets/47dfeff2-0b41-4834-aa99-f2f4d1770988)
 
+* In GVIM write `( :sp mux_generate_128_1.v)` to change the design to 128:1 mux
 
+![image](https://github.com/user-attachments/assets/766f2a14-d84b-453e-b22f-c2188313384a)
 
+* mux_generate_128_1.v
+```
+module mux_generate (input [127:0] in, input [6:0] sel, output reg y);
+integer k;
+always @ (*)
+begin
+for(k = 0; k < 128; k=k+1) begin
+	if(k == sel)
+		y = in[k];
+end
+end
+endmodule
+
+```
+
+* `read_verilog /home/vijayalaxmi/mux_generate_128_1.v`
+
+![image](https://github.com/user-attachments/assets/9b9d7950-c448-4744-83c1-429e4fe37078)
+
+* `check_design`
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db}'
+* `link'
+
+![image](https://github.com/user-attachments/assets/1c4b088a-2792-4556-aae5-29b90a2794b0)
+
+* `compile_ultra`
+
+![image](https://github.com/user-attachments/assets/45bd769f-cec7-4905-884f-1872cc885fd9)
+
+* `write -f verilog -out mux_generate_128_1_net.v`
+
+![image](https://github.com/user-attachments/assets/ccba62cd-2df6-4bcc-812a-03c3d8c1a2a3)
+
+* `sh gvim /home/vijayalaxmi/mux_generate_128_1_net.v`
+
+![image](https://github.com/user-attachments/assets/70e05d05-3f62-418d-aef0-3b416819a5b4)
+![image](https://github.com/user-attachments/assets/3bd055c1-6049-4c4d-9133-bfd0b1bcac65)
+
+* `get_cells * -hier -filter "is_sequential == true" `
+* `get_cells * -hier -filter "is_sequential == false"`
+
+![image](https://github.com/user-attachments/assets/99b29a1e-9e7a-4fbb-bec7-e8e00348ef0d)
 
 
 
