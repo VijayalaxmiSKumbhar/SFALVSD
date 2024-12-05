@@ -67,7 +67,7 @@
 
 ![image](https://github.com/user-attachments/assets/8c8bef0f-bf7b-41a9-8886-6b0b99509818)
 
-* Surround the preplaced cells with decoupling capacitors
+#### Surround the preplaced cells with decoupling capacitors
 
 ![image](https://github.com/user-attachments/assets/1185b44e-b090-4153-945d-d7272e38f5d5)
 ![image](https://github.com/user-attachments/assets/eeb283d5-5614-4509-a0f3-f7d413d35de0)
@@ -76,8 +76,9 @@
 
 ![image](https://github.com/user-attachments/assets/8cd95b75-2ca7-4026-8b1e-c5e3e90d5e20)
 
+![image](https://github.com/user-attachments/assets/0f547cee-9868-4f51-adea-6960bbb58626)
 
-
+### Power Planning
 
 
 
