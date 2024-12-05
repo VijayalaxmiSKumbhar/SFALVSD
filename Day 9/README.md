@@ -355,5 +355,15 @@ Note: Important Commands
 
 ![image](https://github.com/user-attachments/assets/f12c1e46-2621-4423-884f-d4ee07773e54)
 
+## Summary of what are all the settings should be present in `synth.tcl`
+
+![image](https://github.com/user-attachments/assets/48f88d34-dd10-4b73-bf7f-61782bd42ae7)
+![image](https://github.com/user-attachments/assets/2a9171ae-ba76-4f3f-8a30-ae3af616df98)
+
+## Commands to be run once the file is loaded
+
+![image](https://github.com/user-attachments/assets/05bd813b-88b1-4d97-b1c2-f459d6f8b806)
+
+
 </details>
 
