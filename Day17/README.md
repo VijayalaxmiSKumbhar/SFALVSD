@@ -62,4 +62,81 @@ gui_start
 
 ## Physical Design
 
+#### The top.tcl script file that is run in the icc2_shell that generates the Final Layout. 
+
+```
+The steps includes:
+
+
+###---NDM Library creation---###
+
+###---Read Synthesized Verilog---###
+
+## Technology setup for routing layer direction, offset, site default, and site symmetry.
+
+###---Routing settings---###
+
+####################################
+# Check Design: Pre-Floorplanning
+####################################
+
+####################################
+# Floorplanning
+####################################
+
+####################################
+## PG Pin connections
+#####################################
+
+####################################
+### Place IO
+######################################
+
+####################################
+### Memory Placement
+######################################
+
+####################################
+# Configure placement
+####################################
+
+########################################
+## Read parasitic files
+########################################
+
+########################################
+## Read constraints
+########################################
+
+####################################
+# Fix all shaped blocks and macros
+####################################
+
+####################################
+# Create Power
+####################################
+
+####################################
+# Pin Placement
+####################################
+
+####################################
+# Timing estimation
+####################################
+
+####################################
+# Place, CTS, Route
+####################################
+
+```
+![image](https://github.com/user-attachments/assets/8b1a665a-2b64-4e2a-b818-9380681b1b55)
+![image](https://github.com/user-attachments/assets/3e818a5d-b10f-49d3-b365-96ca2d964d1a)
+
+#### Once the `top.tcl` file is run, type `start_gui` in `icc2_shell`:
+
+![image](https://github.com/user-attachments/assets/03103f7f-7a8b-4c41-a34e-c4893253e59d)
+![image](https://github.com/user-attachments/assets/b3f824e9-9420-4b7e-bda6-0374d2f3b192)
+![image](https://github.com/user-attachments/assets/31410229-fd5c-45eb-882a-912fe9fdc475)
+![image](https://github.com/user-attachments/assets/73c6bf29-b302-4978-bafb-c312379df983)
+
 
