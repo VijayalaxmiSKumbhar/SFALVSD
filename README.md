@@ -125,9 +125,9 @@
 | [Day 14](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day14 "Day 14")| Inception of open-source EDA, OpenLANE and Sky130 PDK  |Day 14 |
 | [Day 15](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day15 "Day 15")| Good floorplan Vs bad floorplan and introduction to library cells  |Day 15 |
 |[Day 16](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day16 "Day 16") | ICC2 ( IC Compiler II)  |Day 16 |
-|[Day17](http://https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day17 "Day17")   |  RVMYTH CORE |
-|  [Day18](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day18 "Day18") |  VSDBabySoC ICC2 flow |
-|[Day19](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day19 "Day19")|STA using Prime Time (PT) Tool|
+|[Day17](http://https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day17 "Day17")   |  RVMYTH CORE |Day 17 |
+|  [Day18](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day18 "Day18") |  VSDBabySoC ICC2 flow |Day 18|
+|[Day19](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day19 "Day19")|STA using Prime Time (PT) Tool|Day 19|
 
  
 
