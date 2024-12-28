@@ -1,4 +1,4 @@
-# STA using Prime Time
+# STA using Prime Time (PT) Tool
 
 
 #### Extract parasitics information in .SPEF format by using following command :
@@ -73,6 +73,29 @@ close $FH
 ![image](https://github.com/user-attachments/assets/ee5fc8c7-c787-4b6a-92de-feca92a78c95)
 ![image](https://github.com/user-attachments/assets/9f04ebe7-fb4c-4d8e-8955-00e511f89415)
 
+* Worst Negative/Setup Slack `(WNS)` & Worst Hold Slack `(WHS)` for different available PVT corners from Prime Time Analysis
+
+![image](https://github.com/user-attachments/assets/8e9138fc-d5b7-4d71-b744-be039c0faad3)
+
+
+|   PVT_Corner|WNS	   | WHS  |
+| ------------ | ------------ | ------------ |
+| ff_100C_1v65	|2.865155	|-0.150222 |
+|  ff_100C_1v95	|4.298244	|-0.222546|
+|ff_n40C_1v56	|1.151838	|-0.101215|
+|ff_n40C_1v65	|2.232299	|-0.143085|
+|ff_n40C_1v76	|3.196659	|-0.184872|
+|ff_n40C_1v95	|4.313583	|-0.232505|
+|ss_100C_1v40	|-15.293417	|0.764794|
+|ss_100C_1v60	|-7.442810	|0.391557|
+|ss_n40C_1v28	|-53.881828	|1.855523|
+|ss_n40C_1v35	|-34.470398	|1.287956|
+|ss_n40C_1v40	|-26.077168	|1.026193|
+|ss_n40C_1v44	|-21.215034	|0.879572|
+|ss_n40C_1v60	|-9.887131	|0.434462|
+|ss_n40C_1v76	|-4.473462	|0.184826|
+|tt_025C_1v80	|1.071807	|-0.068473|
+|tt_100C_1v80	|1.179451	|-0.058827 |
 
 
 
