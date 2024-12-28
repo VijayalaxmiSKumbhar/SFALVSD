@@ -4,7 +4,7 @@
   <summary>STA using PT</summary>
   <br>
 
-# Extract parasitics information in .SPEF format by using following command :
+#### Extract parasitics information in .SPEF format by using following command :
 
 `write_parasitics -corner func1 -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_parasitics`
 
