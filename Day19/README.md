@@ -98,5 +98,10 @@ close $FH
 |tt_025C_1v80	|1.071807	|-0.068473|
 |tt_100C_1v80	|1.179451	|-0.058827 |
 
+#### `WNS V/s PVT_Corner`
 
+![image](https://github.com/user-attachments/assets/62a4a0fc-6cb7-4612-9d3f-acc7045e32a1)
 
+#### `WHS V/s PVT_Corner`
+
+![image](https://github.com/user-attachments/assets/7d6dc55c-9e64-4ca9-9cbd-232f3987f774)
