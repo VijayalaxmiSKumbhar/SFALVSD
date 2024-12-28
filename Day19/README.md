@@ -1,8 +1,5 @@
 # STA using Prime Time
 
-<details>
-  <summary>STA using PT</summary>
-  <br>
 
 #### Extract parasitics information in .SPEF format by using following command :
 
@@ -77,5 +74,5 @@ close $FH
 ![image](https://github.com/user-attachments/assets/9f04ebe7-fb4c-4d8e-8955-00e511f89415)
 
 
-</details>
+
 
