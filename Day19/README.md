@@ -40,12 +40,13 @@ regexp {.*\/sky130_fd_sc_hd__(.*)\.db$} $lib_file_paths m1 pvt
 set link_path "* /home/vijayalaxmi/SFAL-VSD/src/lib/avsdpll.db /home/vijayalaxmi/SFAL-VSD/src/lib/avsddac.db"
 lappend link_path $lib_file_paths
 
-read_verilog /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route_net_max_cap.v
+read_verilog /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_post_route_net.v
 current_design vsdbabysoc
 
 link_design
 read_sdc /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route.sdc
-read_parasitics /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_parasitics_max_cap.temp1_25.spef
+read_parasitics /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_parasitics.temp1_25.spef
+
 
 set wns [get_attribute [get_timing_paths -delay_type max -max_paths 1] slack]
 set whs [get_attribute [get_timing_paths -delay_type min -max_paths 1] slack]
