@@ -82,6 +82,7 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 
 ```
 
+![image](https://github.com/user-attachments/assets/0ceb076d-b244-46ec-90e6-5495247c64de)
 
 
 
