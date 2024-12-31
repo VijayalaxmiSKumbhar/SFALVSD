@@ -53,3 +53,37 @@
 ECO plays a significant role in adapting and refining hardware designs to keep up with evolving requirements and to resolve issues identified post-design.
 
 </details>
+
+<details>
+<summary>Lab: Timing ECO using Prime Time for VSDBabySoC design</summary>
+<br>
+
+* Script to setup prime time ECO:
+
+```
+
+set link_path "* /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_025C_1v80.db /home/vijayalaxmi/SFAL-VSDsrc/lib/avsdpll.db /home/vijayalaxmi/SFAL-VSD/src/lib/avsddac.db"
+
+read_verilog /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_post_route_net.v
+current_design vsdbabysoc
+link_design
+set_min_library -min_version /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__ff_n40C_1v95.db /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_025C_1v80.db
+
+read_sdc /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route.sdc
+read_parasitics /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_parasitics.temp1_25.spef
+
+update_timing -full
+
+report_analysis_coverage > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/prime_time_analysis_coverage.rpt
+report_constraint -all_violators > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/prime_time_constraint.rpt
+report_timing -delay_type max -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/prime_time_setup_timing.rpt
+report_timing -delay_type min -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/reports/prime_time_hold_timing.rpt
+
+
+```
+
+
+
+
+
+</details>
