@@ -90,5 +90,8 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 ![image](https://github.com/user-attachments/assets/8e07a58f-b3f6-4a36-8b6d-de7ee5e175a8)
 ![image](https://github.com/user-attachments/assets/b81960b2-9337-4331-8e48-d6357948b4b4)
 
+## Prime Time Analysis Coverage Report after `ECO Fixing`:
+
+![image](https://github.com/user-attachments/assets/ed2c4712-855c-4123-a600-fd4b97089297)
 
 </details>
