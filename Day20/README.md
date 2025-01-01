@@ -100,4 +100,11 @@ Screenshot of netlist changes obtained after `fix_eco_timing` and `write_changes
 
 ![image](https://github.com/user-attachments/assets/4e97cbaa-0759-437f-b935-369ae9f467e0)
 
+## Applying ECO changes in ICC2 Shell
+
+* Load the generated script into ICC2 Shell using the following command:
+
+`source /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_eco.tcl`
+
+
 </details>
