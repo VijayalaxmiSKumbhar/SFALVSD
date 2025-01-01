@@ -94,4 +94,10 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 
 ![image](https://github.com/user-attachments/assets/ed2c4712-855c-4123-a600-fd4b97089297)
 
+* `write_changes -format icc2tcl -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_eco.tcl`
+
+Screenshot of netlist changes obtained after `fix_eco_timing` and `write_changes` command execution :
+
+![image](https://github.com/user-attachments/assets/4e97cbaa-0759-437f-b935-369ae9f467e0)
+
 </details>
