@@ -96,7 +96,7 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 
 * `write_changes -format icc2tcl -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_eco.tcl`
 
-Screenshot of netlist changes obtained after `fix_eco_timing` and `write_changes` command execution :
+#### Screenshot of netlist changes obtained after `fix_eco_timing` and `write_changes` command execution :
 
 ![image](https://github.com/user-attachments/assets/4e97cbaa-0759-437f-b935-369ae9f467e0)
 
@@ -106,5 +106,11 @@ Screenshot of netlist changes obtained after `fix_eco_timing` and `write_changes
 
 `source /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_eco.tcl`
 
+* `check_legality` failing after sourcing vsdbabysoc_eco.tcl in ICC2 Compiler to perform ECO and fix Timing Violations :
+
+
+![image](https://github.com/user-attachments/assets/38414119-e008-4548-bfa3-c225c49846b1)
+
+* use `legalize_placement` command to resolve placement legalization issues.
 
 </details>
