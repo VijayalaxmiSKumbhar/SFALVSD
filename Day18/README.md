@@ -490,3 +490,40 @@ Total Number of Routed Contacts =       31711
 
 
 ```
+
+* DRC Summary after running the command:
+
+`route_auto -max_detail_route_iterations 6` 
+
+```
+
+DRC-SUMMARY:
+	@@@@@@@ TOTAL VIOLATIONS =	1
+	Short : 1
+
+
+
+Total Wire Length =                    154990 micron
+Total Number of Contacts =             31711
+Total Number of Wires =                29125
+Total Number of PtConns =              355
+Total Number of Routed Wires =       29125
+Total Routed Wire Length =           154919 micron
+Total Number of Routed Contacts =       31711
+	Layer          li1 :       2923 micron
+	Layer         met1 :       5312 micron
+	Layer         met2 :      62639 micron
+	Layer         met3 :      56999 micron
+	Layer         met4 :      16486 micron
+	Layer         met5 :      10632 micron
+	Via        M4M5_PR :        361
+	Via   M3M4_PR(rot) :       1695
+	Via        M2M3_PR :      10237
+	Via   M2M3_PR(rot) :          2
+	Via        M1M2_PR :         50
+	Via   M1M2_PR(rot) :       9524
+	Via        L1M1_PR :        475
+	Via   L1M1_PR(rot) :       9339
+	Via      L1M1_PR_C :         28
+
+```
