@@ -320,3 +320,133 @@ Max Cap Violations:                  43
 
 ```
 
+## CTS of VSDBabySoC:
+
+* `report_clock_timing -type summary:`
+
+```
+
+****************************************
+Report : clock timing
+        -type summary
+Design : vsdbabysoc
+Version: T-2022.03-SP5
+Date   : Sat Jan 11 09:47:02 2025
+****************************************
+
+  Mode: func1
+  Clock: clk
+                                                                                 Corner
+---------------------------------------------------------------------------------------------------
+  Maximum setup launch latency:
+      core/CPU_imm_a3_reg[11]/CLK                              1.34       rp-+      func1
+
+  Minimum setup capture latency:
+      core/CPU_rd_a2_reg[4]/CLK                                0.55       rp-+      func1
+
+  Minimum hold launch latency:
+      core/CPU_rd_a2_reg[4]/CLK                                0.55       rp-+      func1
+
+  Maximum hold capture latency:
+      core/CPU_imm_a3_reg[11]/CLK                              1.34       rp-+      func1
+
+  Maximum active transition:
+      core/CPU_Xreg_value_a4_reg[11][2]/CLK                    0.82       rp-+      func1
+
+  Minimum active transition:
+      core/CPU_rd_a2_reg[0]/CLK                                0.26       rp-+      func1
+
+  Maximum setup skew:
+      core/CPU_imm_a3_reg[11]/CLK                                         rp-+      func1
+      core/CPU_Xreg_value_a4_reg[3][15]/CLK                    0.77       rp-+      func1
+
+  Maximum hold skew:
+      core/CPU_is_sub_a3_reg/CLK                                          rp-+      func1
+      core/CPU_Xreg_value_a4_reg[9][7]/CLK                     0.78       rp-+      func1
+
+
+1
+
+```
+
+* `report_clock_timing -type skew :`
+
+```
+****************************************
+Report : clock timing
+        -type skew
+        -nworst 1
+        -setup
+Design : vsdbabysoc
+Version: T-2022.03-SP5
+Date   : Sat Jan 11 09:50:45 2025
+****************************************
+
+  Mode: func1
+  Clock: clk
+
+  Clock Pin                                          Latency      Skew             Corner
+---------------------------------------------------------------------------------------------------
+  core/CPU_imm_a3_reg[11]/CLK                           1.34              rp-+      func1
+  core/CPU_src2_value_a3_reg[15]/CLK                    0.57      0.77    rp-+      func1
+
+---------------------------------------------------------------------------------------------------
+1
+
+```
+
+* `report_clock_timing -type latency :`
+
+```
+
+****************************************
+Report : clock timing
+        -type latency
+        -launch
+        -nworst 1
+        -setup
+Design : vsdbabysoc
+Version: T-2022.03-SP5
+Date   : Sat Jan 11 09:52:15 2025
+****************************************
+
+  Mode: func1
+  Clock: clk
+
+                                                 --- Latency ---
+  Clock Pin                             Trans   Source   Offset  Network    Total            Corner
+---------------------------------------------------------------------------------------------------
+  core/CPU_Xreg_value_a4_reg[11][7]/CLK
+                                         0.82     0.00       --     1.34     1.34 rp-+        func1
+---------------------------------------------------------------------------------------------------
+1
+
+```
+
+* `report_clock_timing -type transition :`
+
+```
+
+****************************************
+Report : clock timing
+        -type transition
+        -launch
+        -nworst 1
+        -setup
+Design : vsdbabysoc
+Version: T-2022.03-SP5
+Date   : Sat Jan 11 09:53:29 2025
+****************************************
+
+  Mode: func1
+  Clock: clk
+
+                                            --- Latency ---
+  Clock Pin                            Source  Network    Total    Trans           Corner
+---------------------------------------------------------------------------------------------------
+  core/CPU_Xreg_value_a4_reg[11][2]/CLK
+                                         0.00     1.34     1.34     0.82  rp-+      func1
+---------------------------------------------------------------------------------------------------
+1
+
+```
