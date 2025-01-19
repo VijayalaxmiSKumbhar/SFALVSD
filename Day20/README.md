@@ -106,11 +106,13 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 
 `source /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_eco.tcl`
 
-* `check_legality` failing after sourcing vsdbabysoc_eco.tcl in ICC2 Compiler to perform ECO and fix Timing Violations :
+* `check_legality` after sourcing vsdbabysoc_eco.tcl in ICC2 Compiler to perform ECO and fix Timing Violations : :
 
+![image](https://github.com/user-attachments/assets/2e64ab31-fad1-42d7-ae00-3a05a951ab45)
 
-![image](https://github.com/user-attachments/assets/38414119-e008-4548-bfa3-c225c49846b1)
+* `route_eco` -The route_eco command performs ECO routing. It first connects the open nets and then fixes the DRC violations. The options control which nets are connected and in which areas of the chip the DRC violations are fixed. Use this command only after signal routing has been completed.
 
-* use `legalize_placement` command to resolve placement legalization issues.
+![image](https://github.com/user-attachments/assets/cdabe9ab-1c4e-4177-af8b-2889b6786061)
+![image](https://github.com/user-attachments/assets/1902f64a-a304-448e-8c97-e5272828a28c)
 
 </details>
