@@ -115,4 +115,35 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 ![image](https://github.com/user-attachments/assets/cdabe9ab-1c4e-4177-af8b-2889b6786061)
 ![image](https://github.com/user-attachments/assets/1902f64a-a304-448e-8c97-e5272828a28c)
 
+* We have to again extract .SPEF file and post_route netlist and perform Prime Time STA,to check if our timing violations have been fixed by the ECO or not.
+
+* Script to setup Prime Time STA for post-ECO database :
+
+```
+
+set link_path "* /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_025C_1v80.db /home/vijayalaxmi/SFAL-VSD/src/lib/avsdpll.db /home/vijayalaxmi/SFAL-VSD/src/lib/avsddac.db"
+
+read_verilog /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route_net_max_cap.v
+current_design vsdbabysoc
+link_design
+set_min_library -min_version /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__ff_n40C_1v95.db /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_025C_1v80.db
+
+read_sdc /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route.sdc
+
+read_parasitics /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_parasitics_max_cap.temp1_25.spef
+
+update_timing -full
+
+report_analysis_coverage > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_analysis_coverage.rpt
+report_constraint -all_violators > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_constraint.rpt
+report_timing -delay_type max -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_setup_timing.rpt
+report_timing -delay_type min -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_hold_timing.rpt
+
+```
+
+* report_analysis_coverage report in Prime Time using post_eco database :
+
+![image](https://github.com/user-attachments/assets/3334b5d4-6edf-41e0-82c9-ca12947c391f)
+
+
 </details>
