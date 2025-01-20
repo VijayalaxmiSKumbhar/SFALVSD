@@ -82,17 +82,21 @@ report_timing -delay_type min -capacitance -input_pins -nets -transition_time -n
 
 ```
 
-![image](https://github.com/user-attachments/assets/0ceb076d-b244-46ec-90e6-5495247c64de)
+![image](https://github.com/user-attachments/assets/642f5846-d1c1-4d5e-94e0-98aa0b14e5e4)
+
+## To fix setup violations: `fix_eco_timing -type setup`
+
+![image](https://github.com/user-attachments/assets/61123ad9-0208-42a4-9f1b-fc66bc9294ba)
 
 ## To fix hold violations by inserting buffers:
 `fix_eco_timing -type hold -methods insert_buffer -buffer_list {sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_8}`
 
-![image](https://github.com/user-attachments/assets/8e07a58f-b3f6-4a36-8b6d-de7ee5e175a8)
-![image](https://github.com/user-attachments/assets/b81960b2-9337-4331-8e48-d6357948b4b4)
+![image](https://github.com/user-attachments/assets/b543d930-a004-45b5-a0b8-fb3e343d410e)
 
 ## Prime Time Analysis Coverage Report after `ECO Fixing`:
 
-![image](https://github.com/user-attachments/assets/ed2c4712-855c-4123-a600-fd4b97089297)
+![image](https://github.com/user-attachments/assets/2eff90b1-498e-483b-91fc-65dec3b2406b)
+
 
 * `write_changes -format icc2tcl -output /home/vijayalaxmi/Desktop/VLSI/VSDBabySoC/output/vsdbabysoc_eco.tcl`
 
