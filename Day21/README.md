@@ -75,7 +75,7 @@ set link_path "* /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_
 read_verilog /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route_net_max_cap.v
 current_design vsdbabysoc
 link_design
-set_min_library -min_version /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__ff_n40C_1v95.db /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_025C_1v80.db
+set_min_library -min_version /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__ss_n40C_1v28.db /home/vijayalaxmi/SFAL-VSD/src/timing_libs/sky130_fd_sc_hd__tt_025C_1v80.db
 
 read_sdc /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_post_route.sdc
 
@@ -83,12 +83,10 @@ read_parasitics /home/vijayalaxmi/SFAL-VSD/output/vsdbabysoc_parasitics_max_cap.
 
 update_timing -full
 
-report_analysis_coverage > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_analysis_coverage.rpt
-report_constraint -all_violators > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_constraint.rpt
-report_timing -delay_type max -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_setup_timing.rpt
-report_timing -delay_type min -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/pdflow1/output/reports/prime_time_hold_timing.rpt
-
-
+report_analysis_coverage > /home/vijayalaxmi/Desktop/pdflow2/output/reports/prime_time_analysis_coverage.rpt
+report_constraint -all_violators > /home/vijayalaxmi/Desktop/pdflow2/output/reports/prime_time_constraint.rpti
+report_timing -delay_type max -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/pdflow2/output/reports/prime_time_setup_timing.rpt
+report_timing -delay_type min -capacitance -input_pins -nets -transition_time -nosplit -significant_digits 4 > /home/vijayalaxmi/Desktop/pdflow2/output/reports/prime_time_hold_timing.rpt
 
 ```
 
