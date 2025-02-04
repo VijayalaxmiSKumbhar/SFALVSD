@@ -40,6 +40,7 @@ To fix setup violations: fix_eco_timing -type setup
 To fix hold violations: fix_eco_timing -type hold -methods insert_buffer -buffer_list {sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_8}
 
 ![image](https://github.com/user-attachments/assets/cb371f1d-8ba2-4f8d-a6cf-f59a168a64c9)
+![image](https://github.com/user-attachments/assets/ae6fbe9d-80d7-48c7-b6af-b573da87ffc9)
 
 ![image](https://github.com/user-attachments/assets/87630d17-21a4-495f-b825-52e2c5582bf4)
 
