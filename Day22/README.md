@@ -27,3 +27,20 @@
 
 ![image](https://github.com/user-attachments/assets/f3caa7b6-1d99-4cde-a94e-160467d9ec62)
 
+## Script to setup prime time ECO:
+
+![image](https://github.com/user-attachments/assets/e2ac9e12-fe1b-4022-aae9-3d891556afb9)
+
+![image](https://github.com/user-attachments/assets/9b4044fb-0bf9-48b7-adc0-3b20afb80be7)
+
+To fix setup violations: fix_eco_timing -type setup
+
+![image](https://github.com/user-attachments/assets/de314d97-e4f8-42b8-8d4f-78024476bfc7)
+
+To fix hold violations: fix_eco_timing -type hold -methods insert_buffer -buffer_list {sky130_fd_sc_hd__buf_1 sky130_fd_sc_hd__buf_2 sky130_fd_sc_hd__buf_4 sky130_fd_sc_hd__buf_8}
+
+![image](https://github.com/user-attachments/assets/cb371f1d-8ba2-4f8d-a6cf-f59a168a64c9)
+
+![image](https://github.com/user-attachments/assets/87630d17-21a4-495f-b825-52e2c5582bf4)
+
+![image](https://github.com/user-attachments/assets/ae6fbe9d-80d7-48c7-b6af-b573da87ffc9)
