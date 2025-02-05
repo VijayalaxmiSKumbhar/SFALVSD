@@ -75,6 +75,7 @@
 
 ## Example
 
+
 ![image](https://github.com/user-attachments/assets/21b0683c-e15b-4de5-9d34-ae4e983b1c37)
 
 ## Let us find which is the correct implementation with the following standard cell details
