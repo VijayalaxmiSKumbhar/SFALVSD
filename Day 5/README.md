@@ -155,42 +155,44 @@ begin
 end
 endmodule
 
+```
+
 ![image](https://github.com/user-attachments/assets/53a0aea5-5ec6-4129-8bda-e7e073fdf8a5)
 
-
-```
-read_verilog
+* `read_verilog`
+  
 ![image](https://github.com/user-attachments/assets/11473abd-6c3e-4dfa-b3db-5b5a99026130)
 
-write_verilog: write -f verilog -out lab1_net.v
+* `write_verilog: write -f verilog -out lab1_net.v`
 
 ![image](https://github.com/user-attachments/assets/a4d0db8f-a370-482b-840e-c3fafce2c2e0)
 
-gtech library: Virtual library in DC to understand the design
+* `gtech library: Virtual library in DC to understand the design`
 
 ![image](https://github.com/user-attachments/assets/be1f077a-d9d0-46a5-8a64-d1c10ce0ed3e)
 
-read the library as: read_db sky130RTLDesignAndSynthesisWorkshop/DC_Workshop/lib/sky130_fd_sc_hd__tt_025c_1v80.db
+* `read the library as: read_db sky130RTLDesignAndSynthesisWorkshop/DC_Workshop/lib/sky130_fd_sc_hd__tt_025c_1v80.db`
 
 ![image](https://github.com/user-attachments/assets/6317961b-0820-46e7-8827-8b2b1845d5bb)
 
-set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db
+* `set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db`
 
-set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db} (here * signifies libraries in DC memory)
+* `set link_library {* /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db} (here * signifies libraries in DC memory)`
 
-Syntax to link library 
+* `Syntax to link library` 
 
 ![image](https://github.com/user-attachments/assets/81f2005c-1cbf-4943-bff8-43adf9c9a411)
 
-link
+* `link`
 
 ![image](https://github.com/user-attachments/assets/7261fce0-050d-4b4b-863a-5eabc838a743)
 
-compile
+* `compile`
 
 ![image](https://github.com/user-attachments/assets/5fe5c24e-d4a1-49cd-bdf4-4f41612b4852)
 
-write -f verilog -out lab1_net_with_sky130.v
+* `write -f verilog -out lab1_net_with_sky130.v`
+  
 ![image](https://github.com/user-attachments/assets/edb1cdc6-b97d-44a6-87ab-e5527a98ed42)
 
 
@@ -203,16 +205,18 @@ write -f verilog -out lab1_net_with_sky130.v
 
 ## To launch design_vision type
 
-* csh
-* design_vision
+* `csh`
+* `design_vision`
+  
 ![image](https://github.com/user-attachments/assets/c689ac9f-04e3-4ec8-9abd-642ce3497dd4)
 
-write -f ddc -out lab1.ddc (write is the syntax to tell the tool to write the information in ddc format)
+* `write -f ddc -out lab1.ddc (write is the syntax to tell the tool to write the information in ddc format)`
 ![image](https://github.com/user-attachments/assets/8601b3d2-af84-4167-9355-6c5837a8b10e)
 
-command to start gui is 
-* start_gui
-* read_ddc lab1.ddc
+## command to start gui is 
+* `start_gui`
+* `read_ddc lab1.ddc`
+  
 ![image](https://github.com/user-attachments/assets/a9bdc1ef-49d0-4fb7-b9b8-2ef703a3a4bb)
 
 ## Difference between read_verilog and read_ddc
@@ -233,22 +237,23 @@ command to start gui is
 <summary>Lab 3: dc synopsys dc setup</summary>
 <br>
 
-* csh
-* dc_shell
-* echo $target_library
-* echo $link_library
+* `csh`
+* `dc_shell`
+* `echo $target_library`
+* `echo $link_library`
 * Every time while loading the dc perform the command
   -- set target_library /home/vijayalaxmi/sky130RTLDesignAndSynthesisWorkshop/DC_WORKSHOP/lib/sky130_fd_sc_hd__tt_025C_1v80.db
   -- set link_library {* $target_library}
 * Instead of performing repetitative tasks, the solution is to invoke synopsys dc setup
 ![image](https://github.com/user-attachments/assets/f6b07c50-cbec-4a86-b071-2587dad73802)
 
-gvim .synopsys_dc.setup
+* `gvim .synopsys_dc.setup`
 ![image](https://github.com/user-attachments/assets/b8f51c5c-d5c6-4118-bdd6-1c7bbf8236e1)
 
 
-Invoke dc again
-after that type the command: echo $target_library
+* `Invoke dc again`
+* `after that type the command: echo $target_library`
+  
 ![image](https://github.com/user-attachments/assets/072b034c-9ac0-43e9-a56d-acb1eae71f52)
 
 
@@ -336,7 +341,7 @@ set i [expr $i+1];
   ![image](https://github.com/user-attachments/assets/45f97984-3595-4dd1-81ab-d7beb8ea4065)
 
 ## To launch gvim within the tcl command is
-* sh gvim &
+* `sh gvim &`
   
 ![image](https://github.com/user-attachments/assets/1a333dc2-dd7a-4555-9cd5-62260fee6057)
 
@@ -346,7 +351,7 @@ set i [expr $i+1];
 
 #### Program is corrected
 
-* source myscript.tcl
+* `source myscript.tcl`
   
 ![image](https://github.com/user-attachments/assets/3ae818fa-7b37-4214-82ca-1644c356643c)
 
