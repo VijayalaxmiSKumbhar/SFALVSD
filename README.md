@@ -129,8 +129,8 @@
 |  [Day18](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day18 "Day18") |  VSDBabySoC ICC2 flow |Day 18|
 |[Day19](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day19 "Day19")|STA using Prime Time (PT) Tool|Day 19|
 |  [Day20](https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day20 "Day20") |  ECO using Prime Time | Day 20  |
-| https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day21 | STA Analysis & ECO Second Iteration | Day 21 |
-| https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day22 | STA Analysis & ECO Third Iteration | Day 22 |
+| .[Day21] (https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day21 "Day21") | STA Analysis & ECO Second Iteration | Day 21 |
+| .[Day22] (https://github.com/VijayalaxmiSKumbhar/SFALVSD/tree/main/Day22 "Day22") | STA Analysis & ECO Third Iteration | Day 22 |
 
 
 
