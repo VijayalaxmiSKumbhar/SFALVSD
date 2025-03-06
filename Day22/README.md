@@ -44,4 +44,30 @@
 
 ![image](https://github.com/user-attachments/assets/87630d17-21a4-495f-b825-52e2c5582bf4)
 
+## Table for Worst Negative/Setup Slack (WNS) & Worst Hold Slack (WHS) for different available PVT corners from Prime Time Analysis, for our BabySoC Design :
+
+| PVT_Corner   | WNS         | WHS        |
+| ------------ | ----------- | ---------- |
+| ff_100C_1v65 | 3.124938    | \-0.235642 |
+| ff_100C_1v95 | 4.522051    | \-0.291165 |
+| ff_n40C_1v56 | 1.436169    | \-0.193214 |
+| ff_n40C_1v65 | 2.510405    | \-0.230101 |
+| ff_n40C_1v76 | 3.476581    | \-0.261722 |
+| ff_n40C_1v95 | 4.582528    | \-0.300085 |
+| ss_100C_1v40 | \-12.455952 | 0.59104    |
+| ss_100C_1v60 | \-5.715736  | 0.236287   |
+| ss_n40C_1v28 | \-48.670876 | 1.840496   |
+| ss_n40C_1v35 | \-31.053354 | 1.181901   |
+| ss_n40C_1v40 | \-23.332808 | 0.867832   |
+| ss_n40C_1v44 | \-18.90251  | 0.674178   |
+| ss_n40C_1v60 | \-8.493254  | 0.244431   |
+| ss_n40C_1v76 | \-3.560485  | 0.040591   |
+| tt_025C_1v80 | 1.610215    | \-0.166896 |
+| tt_100C_1v80 | 1.694567    | \-0.156524 |
+
+
+![image](https://github.com/user-attachments/assets/614545e6-d5fe-4f27-948c-604d6ca14e97)
+
+
+![image](https://github.com/user-attachments/assets/30034718-1662-43df-86b4-38f4b3706d1a)
 
