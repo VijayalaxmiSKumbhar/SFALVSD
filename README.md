@@ -10,7 +10,7 @@
 
 * `ICC2 Implementation`: Leveraging the capabilities of IC Compiler II to create a robust SoC design that incorporates automated design processes for efficiency and reliability.
 
-* `PVT-Aware Timing Optimization': Implementing techniques that account for variations in process, voltage, and temperature to ensure accurate timing analysis and adjustments. This approach aims to enhance chip performance and stability under varying conditions.
+* `PVT-Aware Timing Optimization`: Implementing techniques that account for variations in process, voltage, and temperature to ensure accurate timing analysis and adjustments. This approach aims to enhance chip performance and stability under varying conditions.
 
 * `Performance Enhancements`: Aiming for improved power efficiency and timing closure, ensuring that the integrated circuits can operate reliably across different conditions while meeting specified performance metrics.
 
