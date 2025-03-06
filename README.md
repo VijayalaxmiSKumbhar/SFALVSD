@@ -2,11 +2,11 @@
 
 #### This repository documents a semiconductor design basics, including floorplanning, placement, clock tree synthesis (CTS), routing, optimization, and verification organized by VSD.
 
-# Project: VSDBabySoC: ICC2 Implementation & PVT-Aware Timing Optimization
+### Project: VSDBabySoC: ICC2 Implementation & PVT-Aware Timing Optimization
 
-## The primary objectives of the project include the implementation of advanced design methodologies and the optimization of timing performance by considering PVT (Process, Voltage, Temperature) variations.
+##### The primary objectives of the project include the implementation of advanced design methodologies and the optimization of timing performance by considering PVT (Process, Voltage, Temperature) variations.
 
-#### Key components of the project include:
+##### Key components of the project include:
 
 * `ICC2 Implementation`: Leveraging the capabilities of IC Compiler II to create a robust SoC design that incorporates automated design processes for efficiency and reliability.
 
