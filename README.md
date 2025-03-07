@@ -149,21 +149,7 @@
 
 
 
-
-
-
-
-
 ![Vijayalaxmi_SFAL_VSD ceritificate_page-0001](https://github.com/user-attachments/assets/b25114f0-def4-4950-8425-3e0475c9f6d8)
-
-
-
-
-
-
-
-
-
 
 
 
